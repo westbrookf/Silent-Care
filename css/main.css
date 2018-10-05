@@ -1,0 +1,623 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color: #f2f2f2; 
+}
+/* HEADER NAVIGATION MENU STARTS HERE */
+#mainNav{
+  width: 100%;
+  display: flex;
+  background: #fff;
+  position: fixed;
+  z-index: 3;
+}
+/* LOGO STARTS HERE */
+#logo{
+  width: 284px;
+  padding: 20px 0 0 40px;
+}
+#logo img{
+  height: 100px;
+  width: 240px;
+}
+/* MENU NAV STARTS HERE */
+#menu{
+  padding: 46px 0 0 66px;
+}
+#menu a{
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #505050;
+  margin-left: 26px;
+  transition: .8s;
+}
+.appointmentBtn{
+  margin: 46px 0 0 102px;
+  z-index: 1;
+}
+.appointmentBtn a{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #f7ecec;
+  height: 40px;
+  width: 158px;
+  margin: 46px 0 0 0;
+  background-color: orangered;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 1s;
+}
+/* MAIN INTRO SECTION STARTS HERE */
+#showcaseImg{
+  background:linear-gradient(to bottom, #50505073, #50505073), url(../img/img8.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+/*intro headline*/
+#introHead{
+  padding: 480px 0 0 50px;
+}
+#introHead h1{
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #242c35;
+}
+#introHead p{
+  font-size: 20px;
+  font-weight: 400;
+  color: #2a343e;
+  text-transform: capitalize;
+}
+#introBtn{
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0 0 24px;
+}
+#introBtn a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #f7ecec;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1s;
+}
+/* Trust floating box starts here */
+#trustSection{
+  height: 80vh;
+  width: 1000px;
+  margin-top: -20px;
+  margin-left: 220px;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+  box-shadow: 4px 4px 20px #5050507a;
+}
+.trustContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* trust Photo */
+.trustPhoto img{
+  height:80vh;
+  width: 500px;
+  border-radius: 6px;
+}
+/* trust Text Starts Here */
+.trustText{
+  height: 80vh;
+  width: 500px;
+}
+/* trust Text H3 */
+.trustText h3{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  text-align: center;
+  width: 378px;
+  margin-left: 62px;
+  padding-top: 20px;
+}
+/* we provide the best care sub title*/
+.subTitle{
+  font-size: 22px;
+  font-weight: lighter;
+  color: orangered;
+  margin-left: 180px;
+  padding-top: 8px;
+}
+/* Trust description paragraph one and two starts here*/
+.trustDesc1{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #505050;
+  text-align: center;
+  width: 450px;
+  margin-top: 40px;
+  margin-left: 26px;
+}
+.trustDesc2{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #505050;
+  text-align: center;
+  width: 450px;
+  margin-left: 26px;
+}
+/* message icon is here */
+.fa-comment{
+  margin-top: 30px;
+  margin-left: 226px;
+  font-size: 40px;
+  color: orangered;
+}
+/* Email Link*/
+.emailLink{
+  margin-top: 40px;
+  text-align: center;
+}
+.emailLink a{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #505050;
+}
+/* care type row with icons start here*/
+#careTypeContain{
+  margin-top: 60px;
+  height: 20vh;
+  width: 100%;
+}
+.careRow{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* care type icons global*/
+.fa-home-heart, .fa-stethoscope, .fa-user-md{
+  font-size: 30px;
+  color: orangered;
+  padding-bottom: 8px;
+}
+/* care type icons margin (cant do global because of CDS*/
+.fa-home-heart{
+margin-left: 44px;
+}
+.fa-stethoscope{
+  margin-left: 104px;
+}
+.fa-user-md{
+  margin-left: 44px;
+}
+/* Care Type heading*/
+.careType h3{
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+/* care type Read More */
+.readMore{
+  text-align: center;
+  padding-top: 4px;
+}
+.readMore a{
+  text-transform: capitalize;
+  color: inherit;
+}
+/* home Contact Us Section */
+.contactShowcase{
+  background:linear-gradient(to bottom, #50505073, #50505073), url(../img/img10.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;
+}
+/* contact us Text */
+.contactText{
+  padding-top: 270px;
+  text-align: center;
+}
+.contactText h2{
+  font-size: 40px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #e7e7e7;
+}
+/* Home Contatc Us Button */
+.hmeContactBtn{
+  margin-top: 16px;
+}
+.hmeContactBtn a{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  text-transform: capitalize;
+  background-color: orangered;
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+}
+/* contact bar */
+.contactBar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 12vh;
+  width: 1000px;
+  margin-top: -20px;
+  margin-left: 220px;
+  background-color: #00a2e8;
+  border-radius: 6px;
+}
+/* global flex in contact bar to put the icon next to the text*/
+.contactPhone, .contactEmail{
+  display: flex;
+}
+/* contact Phone*/
+.fa-phone-plus{
+  font-size: 30px;
+  color: orangered;
+  padding-top: 16px;
+  padding-right: 8px;
+}
+.contactPhone h3{
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #e7e7e7;
+}
+/* contact Email*/
+.fa-envelope{
+  font-size: 30px;
+  color: orangered;
+  padding-top: 16px;
+  padding-right: 8px;
+}
+.contactEmail h3{
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #e7e7e7;
+}
+/* best Care starts Here */
+.bestCareContain{
+  margin-top: 40px;
+  margin-left: 220px;
+  height: 80vh;
+  width: 1000px;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+  box-shadow: 4px 4px 20px #5050507a;
+}
+/* best care content FLEX*/
+#bestCareContent{
+  display: flex;
+}
+/* Care list */
+.careList{
+  width: 500px;
+  height: 80vh;
+}
+/* best Care Intro */
+.bestCareIntro{
+  width: 370px;
+  padding-top: 90px;
+  padding-left: 50px;
+  list-style-type: none;
+}
+/*  Best care Intro H1*/
+.bestCareIntro h1{
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #505050;
+}
+/* Best Care Giving Section Li Flex */
+.numberSpace{
+  display: flex;
+  padding-top: 30px;
+}
+/* List Number is here */
+.listNum{
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  margin-right: 14px;
+}
+.listNum h2{
+  padding-top: 6px;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #00a2e8;
+}
+/* list content */
+.listContent h3{
+  font-size: 22px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+}
+/* best care Photo*/
+.bestCarePhoto img{
+  height: 80vh;
+  width: 500px;
+  border-radius: 6px;
+}
+/* ASL SECTION STARTS HERE */
+#quickMesContain{
+  margin-top: 40px;
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, #50505073, #50505073), url(../img/img12.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.mesText{
+  text-align: center;
+  padding-top: 106px;
+}
+.mesText h1{
+  font-size: 36px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #f7ecec;
+}
+.mesText p{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #f7ecec;
+  text-transform: capitalize;
+  width: 600px;
+  margin-left: 404px;
+}
+.mesLink{
+  width: 300px;
+  margin: 20px 0 0 550px;
+}
+.mesLink a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #f7ecec;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 1s;
+}
+/* HOME ABOUT US SECTION STARTS HERE*/
+/* About us title*/
+.aboutTitle{
+  text-align: center;
+  margin-top: 40px;
+}
+.aboutTitle h1{
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #505050;
+}
+/* Link buttons start here */
+.linkRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+}
+/* This is a Global H3 for Link Row*/
+.linkRow h3{
+  font-size: 22px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: inherit;
+  cursor: pointer;
+}
+/* spacing for each button except the last Child*/
+#aboutBtn, #approachBtn, #weOfferBtn{
+  padding-right: 20px;
+}
+/* Flexed Home about Us section*/
+#aboutus, #ourapproach, #weoffer, #wework{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hidden{
+  display: none !important;
+}
+.linkContent img{
+  height: 460px;
+  width: 360px;
+  border-radius: 4px;
+}
+/* about Us Text starts here */
+.aboutUsText h2{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  width: 500px;
+}
+.aboutDesc{
+  width: 600px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.aboutDesc2{
+  width: 600px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.moreInfobtn{
+  padding-top: 60px;
+}
+.moreInfobtn a{
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #e7e7e7;
+  background-color: #00a2e8;
+  border-radius: 6px;
+  padding: 10px 20px 10px 20px;
+}
+/* In Home Services row icons Start Here */
+
+/* Global Flex For both rows */
+.inHomeContainer{
+  margin-top: 100px;
+}
+/* In home title starts here */
+.inHomeTitle{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.inHomeTitle h2{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+}
+/* in home title ends here */
+.inHomeRow1, .inHomeRow2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+/* In home row spacing */
+.inHomeRow1{
+  margin-bottom: 40px;
+}
+#globalStyle{
+  font-size: 30px;
+  padding-bottom: 4px;
+}
+/* ASL Showcase Message Starts here */
+#aslShowcase{
+  background: linear-gradient(to right, #5050506c, #5050506c), url(../img/deaf\ Girl.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 70vh;
+  width: 100%;
+  margin-top: 60px;
+  margin-right: 80px;
+  overflow-x: hidden;
+}
+/* ASL  content starts here, this is the margin for the text*/
+.aslContent{
+  padding: 140px 0 0 760px;
+  text-align: left;
+}
+.aslTitle{
+  font-size: 38px;
+  font-weight: lighter;
+  color: #f7ecec;
+  text-transform: capitalize;
+  width: 580px;
+}
+.aslDescription{
+  width: 400px;
+  padding-top: 20px;
+  font-size: 18px;
+  color: #f7ecec;
+}
+/* asl More Information button is here */
+.aslMoreBtn{
+  padding-top: 30px;
+}
+.aslMoreBtn a{
+  font-size: 18px;
+  color: #e7e7e7;
+  padding-top: -20px;
+  background: #00a2e8;
+  padding: 10px 20px 10px 20px;
+  width: 160px;
+  border-radius: 6px;
+}
+/* Contact Section starts here*/
+#homeContact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+/* Google Maps is here */
+#mapLoc{
+  height: 500px;
+  width: 600px;
+}
+/* contact Info Starts here*/
+.contactInfo{
+  height: 500px;
+  width: 600px;
+  background-color: #fff;
+}
+.contactList{
+  list-style-type: none;
+  padding: 80px 0 80px 60px;
+}
+/* Contact title */
+.contactTitle{
+  font-size: 40px;
+  color: orangered;
+  font-weight: lighter;
+  text-transform: capitalize;
+  padding-bottom: 40px;
+}
+/* Contact flex*/
+.contactFlex{
+  display: flex;
+  padding-bottom: 20px;
+}
+.contactFlex h3{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #505050;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+/* Contact Icons */
+#contactIcon{
+  font-size: 30px;
+  color: orangered;
+}
+/* footer Starts here*/
+/*  FOOTER LOGO STARTS HERE */
+#globalFoot{
+  margin-top: 40px;
+  background-color: #fff;
+}
+.copyRight{
+  padding: 10px 0 10px 40px;
+  margin-top: 10px;
+  border-top: 1px solid #5050503f;
+  display: flex;
+  justify-content: space-between;
+}
+.phoneNum{
+  padding-right: 40px;
+}
+/* HOME PAGE ENDS HERE */
+/*HOME PAGE RESPONSIVE */
+
+/* ABOUT PAGE STARTS HERE */
+
+.aboutShowcase{
+  background: linear-gradient(to right, #50505081, #50505081), url(../img/img11.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 70vh;
+  width: 100%;
+}
