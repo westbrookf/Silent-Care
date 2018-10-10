@@ -15,3 +15,17 @@
   color: #4399c1;
   border: 1px solid #4399c1;
 }
+/* ABOUT US PAGE STARTS HERE*/
+/* VALUES ICONS*/
+.fa-hands-heart:hover{
+  color: #4399C1;
+} 
+.fa-tree-alt:hover{
+  color: orangered;
+} 
+.fa-thumbs-up:hover{
+  color: #4399C1;
+} 
+.fa-heart:hover{
+  color: orangered;
+} 

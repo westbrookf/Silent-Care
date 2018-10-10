@@ -13,8 +13,6 @@ body{
   width: 100%;
   display: flex;
   background: #fff;
-  position: fixed;
-  z-index: 3;
 }
 /* LOGO STARTS HERE */
 #logo{
@@ -398,7 +396,6 @@ margin-left: 44px;
 /* HOME ABOUT US SECTION STARTS HERE*/
 /* About us title*/
 .aboutTitle{
-  text-align: center;
   margin-top: 40px;
 }
 .aboutTitle h1{
@@ -406,6 +403,7 @@ margin-left: 44px;
   font-weight: lighter;
   text-transform: capitalize;
   color: #505050;
+  text-align: center;
 }
 /* Link buttons start here */
 .linkRow{
@@ -610,14 +608,398 @@ margin-left: 44px;
   padding-right: 40px;
 }
 /* HOME PAGE ENDS HERE */
-/*HOME PAGE RESPONSIVE */
-
 /* ABOUT PAGE STARTS HERE */
 
 .aboutShowcase{
   background: linear-gradient(to right, #50505081, #50505081), url(../img/img11.jpg);
   background-size: cover;
-  background-position: top;
-  height: 70vh;
+  background-position: center;
+  height: 60vh;
   width: 100%;
+}
+.innerText h1{
+  font-size: 52px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  text-transform: capitalize;
+  padding: 298px 0 0 40px;
+}
+.rightChoice{
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.rightTitle{
+  text-align: center;
+  padding-bottom: 100px;
+}
+.rightTitle h2{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+}
+.factsRow{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+}
+.factsRow li{
+  width: 400px;
+  padding: 20px;
+}
+.fa-check-circle{
+  font-size: 30px;
+  color: #00a2e8;
+}
+.fact h3{
+  font-size: 24px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+}
+.fact p{
+  width: 400px;
+}
+.factsRow li:hover{
+  background-color: #00a2e8;
+}
+/* Transpo Showcase photo*/
+.homeVisitShowcase{
+  background: linear-gradient(to right, #50505085, #50505085), url(../img/house\ meet.jpeg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  width: 100%;
+  margin-top: 40px;
+}
+.visitContent{
+  padding: 190px 0 0 60px;
+}
+.visitTitle{
+  font-size: 32px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  text-transform: capitalize;
+}
+.visitDesc{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #dadada;
+  padding-top: 8px;
+  width: 500px;
+}
+/* Our Values Section is here */
+.ourValue{
+  margin-top: 60px;
+}
+.ourValuesText{
+  text-align: center;
+}
+.ourValuesText h2{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  padding: 40px 0 20px 0; 
+}
+.ourValuesText p{
+  font-size: 14px;
+  font-weight: lighter;
+  color: #505050;
+  width: 600px;
+  margin-left: 410px;
+}
+/* Values Row Start Here */
+.valuesRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.box{
+  text-align: center;
+  width: 300px;
+  padding-left: 20px;
+}
+/* Global Style for the icons */
+.fa-hands-heart, .fa-tree-alt, .fa-thumbs-up, .fa-heart{
+  font-size: 30px;
+  color: #505050;
+  transition: 1s;
+}
+/* Individual icon style */
+.valueTitle{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.valuePara{
+  color: #505050;
+}
+/* Value Contact Us Button */
+.valueContact{
+  text-align: center;
+  padding-top: 30px;
+}
+.valueContact a{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  padding: 10px 20px 10px 20px;
+  background-color: orangered;
+  border-radius: 6px;
+}
+/* Contact Page Starts here*/
+/* Contact Showcase */
+.mainContactShowcase{
+  background: linear-gradient(to right, #50505087, #50505087), url(../img/agenda.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+}
+.mainContactUs h2{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 60px;
+}
+.contactRow{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 70px;
+}
+/* Contact Globals */
+.contactType{
+  text-align: center;
+  padding-top: 30px;
+  height: 200px;
+  width: 300px;
+}
+ .contactType h3{
+   font-size: 26px;
+   font-weight: lighter;
+   color: #505050;
+   text-transform: capitalize;
+}
+ .contactType p{
+   font-size: 18px;
+   font-weight: lighter;
+}
+ /* Global Style For contact type Icons*/
+ #globeConStyle{
+   font-size: 30px;
+}
+ /* Message Form starts here */
+ .contactForm{
+   margin-left: 330px;
+ }
+.formTitle{
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #505050;
+}
+/* Form Styles start here */
+.nameBack{
+  height: 100px;
+  width: 400px;
+  background-color: #00a2e8;
+  border-radius: 6px;
+  margin-top: -60px;
+}
+#nameInput{
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #00a2e8;
+  border-radius: 6px;
+  margin: 20px 0 20px 20px;
+}
+#emailInput{
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #00a2e8;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+#messageInput{
+  font-size: 18px;
+  width: 740px;
+  height: 200px;
+  border: 2px solid #00a2e8;
+  border-radius: 6px;
+  line-height: -20px;
+  margin-top: 18px;
+  margin-left: 18px;
+  text-align: top;
+}
+#contactSubmit{
+  width: 100px;
+  height: 100px;
+}
+.subMesBtn{
+  display: block;
+  padding: 10px 20px 10px 20px;
+  margin-left: 20px;
+  border: 1px solid #00a2e8;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #505050;
+  cursor: pointer;
+}
+/* Place Filler Background image */
+.placeFilled{
+  background: linear-gradient(to right, #50505087, #50505087), url(../img/deaf\ Mother.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: -40px;
+}
+.aslKids{
+  padding-top: 230px;
+  padding-left: 40px;
+}
+.kidsTitle{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  text-transform: capitalize;
+}
+.kidsDesc{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  width: 460px;
+  padding-top: 8px;
+}
+.aslKidBtn{
+  margin-top: 20px;
+}
+.aslKidBtn a{
+ background-color: orangered;
+ padding: 10px 20px 10px 20px;
+ border-radius: 6px;
+ color: #e7e7e7;
+}
+/* SERVICES PAGE STARTS HERE */
+.serviceShowcase{
+  background: linear-gradient(to right, #50505087, #50505087), url(../img/servicesShowcase.jpeg);
+  background-size: cover;
+  background-position: top;
+  height: 60vh;
+  width: 100%;
+}
+.serviceContain{
+  margin-top: 60px;
+}
+.serviceShowTitle{
+  font-size: 60px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  text-transform: capitalize;
+  padding-top: 300px;
+  padding-left: 60px;
+}
+.serviceIntro{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  text-align: center;
+}
+.mainServiceDes{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #505050;
+  width: 600px;
+  text-align: center;
+  margin-left: 408px;
+}
+#serviceMessageIcon{
+  margin-left: 560px;
+}
+.servEmail{
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #505050;
+  padding-left: 10px;
+}
+/* Grid Container*/
+/* Service Type Globals */
+.serviceTypeBlue, .serviceTypeOrange{
+  height: 500px;
+  width: 350px;
+  margin-top: 20px;
+  box-shadow: 4px 4px 20px #85848458;
+  border-radius: 6px;
+}
+.serviceTypeBlue{
+  background-color: #00a2e8;
+}
+.serviceTypeOrange{
+  background-color: orangered;
+}
+#gridPhto{
+  height: 220px;
+  width: 350px;
+  border-radius: 6px;
+}
+/* Background Color for the service title and service Subtext */
+.serviceContentContain{
+  margin-top: -8px;
+  height: 220px;
+  width: 348px;
+  background-color: #f2f2f2;
+  z-index: 2;
+  border: 1px solid #a9a8a85b;
+}
+.serviceTitle{
+  font-size: 26px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 60px;
+}
+.serviceSubtext{
+  font-size: 14px;
+  font-weight: lighter;
+  color: #505050;
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+}
+.serviceLinks{
+  height: 60px;
+  width: 350px;
+  text-align: center;
+  padding-top: 16px;
+}
+.serviceLinks a{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #e7e7e7;
+  text-transform: capitalize;
+}
+.gridContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 160px;
 }
