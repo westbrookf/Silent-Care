@@ -1230,10 +1230,10 @@ margin-left: 44px;
   }
   .aslContent{
     text-align: center;
-    padding: 50px 0 0 0;
+    padding: 120px 0 0 0;
   }
   .aslTitle{
-    font-size: 24px;
+    font-size: 22px;
     width: 380px;
   }
   .aslDescription{
@@ -1242,7 +1242,7 @@ margin-left: 44px;
     margin-left: 20px;
   }
   .aslMoreBtn{
-    margin-left: 110px;
+    margin-left: 120px;
     width: 160px;
   }
   .aslMoreBtn a{
