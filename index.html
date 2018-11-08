@@ -2,37 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--FavIcon-->
+    <link rel="shorcut icon" type="image/jpg" href="img/logo1.jpg">
     <!--Main CSS-->
     <link rel="stylesheet" href="css/main.css">
-    <!--Responsive css-->
-    <link rel="stylesheet" href="css/responsive.css">
     <!--Hover css-->
     <link rel="stylesheet" href="css/hover.css">
     <!--typography-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
     <!--Icons-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
-    <title>Silent Care/ Home</title>
-  </head>
+    <title>Silent Care</title>
   <body>
-    <header id="mainNav">
-      <div id="logo">
-        <a href="index.html"><img src="img/logo1.jpg"></a>
-      </div>
-      <nav id="menu">
-          <a href="index.html">Home</a>
-          <a href="about.html">about us</a>
-          <a href="department">our department</a>
-          <a href="services.html">services</a>
-          <a href="contact.html">contact us</a>
-        </nav>
-      <div class="appointmentBtn">
-        <a href="#">make an appointment</a>
-      </div>
-    </header>
     <main id="showcaseImg">
+        <div id="mainNav" class="navSet" id="visible">
+            <a href="#" id="closeBtn"> &times</a>
+            <div class="logo">
+              <a href="index.html"><img src="img/logo1.jpg"></a>
+            </div>
+            <nav id="menu">
+              <a href="index.html">Home</a>
+              <a href="about.html">about us</a>
+              <a href="services.html">services</a>
+              <a href="contact.html">contact us</a>
+            </nav>
+            <div class="appointmentBtn">
+              <a href="contact.html">make an appointment</a>
+            </div>
+        </div>
+        <a href="#" id="openBtn">&hellip;</a>
       <div id="introHead">
         <h1>
           let our hands work for you
@@ -41,10 +41,11 @@
         <p>hire the best quality of care for your loved ones.</p>
       </div>
       <div id="introBtn">
-        <a href="#"> who we are</a>
-        <a href="#"> what we offer</a>
+        <a href="services.html"> what we offer</a>
+        <a href="about.html"> about our company</a>
       </div>
     </main>
+    <!--Trust Section Starts Here-->
     <section id="trustSection">
       <div class="trustContent">
         <div class="trustPhoto">
@@ -87,7 +88,7 @@
           <span>
           <i class="fal fa-stethoscope"></i>
           </span>
-          <h3>consumer direct service (CDS)</h3>
+          <h3>consumer direct service</h3>
           <div class="readMore">
             <a href="#">read more</a>
           </div>
@@ -110,13 +111,13 @@
     <div class="contactShowcase">
       <div class="contactText">
         <h2>we'll take care of you</h2>
-        <div class="hmeContactBtn">
-          <a href="#">contact us</a>
+        <div id="hmeContactBtn">
+          <p id="conClick">contact us</p>
         </div>
       </div>
     </div>
     <!--contact info bar-->
-    <div class="contactBar">
+    <div id="contactBar">
       <div class="contactPhone">
         <span><i class="fal fa-phone-plus"></i>
         </span>
@@ -307,7 +308,7 @@
           </span>
           <h3>longterm care</h3>
         </div>
-      </div>
+      </div>  
       <!--Row Two Starts here-->
       <div class="inHomeRow2">
         <!--Item one starts here-->
@@ -318,21 +319,21 @@
           <h3>daily hygiene</h3>
         </div>
         <!--Item two starts here-->
-        <div class="item">
+        <div class="item" id="extraSpace">
           <span>
           <i class="fal fa-shopping-bag" id="globalStyle"></i>
           </span>
           <h3>shopping</h3>
         </div>
         <!--Item Three Starts Here-->
-        <div class="item">
+        <div class="item" id="extraSpace">
           <span>
           <i class="fal fa-cookie-bite" id="globalStyle"></i>
           </span>
           <h3>diet monitoring</h3>
         </div>
         <!--Item four starts here-->
-        <div class="item">
+        <div class="item" id="extraSpace">
           <span>
           <i class="fal fa-briefcase-medical" id="globalStyle"></i>
           </span>
@@ -346,21 +347,21 @@
         <h1 class="aslTitle">we offer the best ASL trained professionals.</h1>
         <p class="aslDescription"> Need an ASL trained caregiver? We have ASL certified caregivers to care for you or your loved one.</p>
         <div class="aslMoreBtn">
-          <a href="#">more information</a>
+          <a href="Asl.html">more information</a>
         </div>
       </div>
     </div>
     <!--Home Contact Section-->
     <div id="homeContact">
       <!--google maps are here-->
-      <div id="mapLoc">This Is the map</div>
+      <div id="mapLoc"></div>
       <div class="contactInfo">
         <ul class="contactList">
           <h1 class="contactTitle">contact us</h1>
           <li class="contactFlex">
             <i class="fal fa-map-marked" id="contactIcon"></i>
             <h3>Address:</h3>
-            <p class="loc">7777 Bonhomme Ave STE 1800 Clayton, MO 63105
+            <p class="loc">7777 Bonhomme Ave #1800 Clayton, MO 63105
             </p>
           </li>
           <li class="contactFlex">

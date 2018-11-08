@@ -10,11 +10,6 @@
   border: 1px solid #4399C1;
 }
 /* INTRO HEAD BUTTONS STARTS HERE */
-#introBtn a:hover{
-  background-color: transparent;
-  color: #4399c1;
-  border: 1px solid #4399c1;
-}
 /* ABOUT US PAGE STARTS HERE*/
 /* VALUES ICONS*/
 .fa-hands-heart:hover{

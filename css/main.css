@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -8,50 +9,17 @@
 body{
   background-color: #f2f2f2; 
 }
-/* HEADER NAVIGATION MENU STARTS HERE */
-#mainNav{
-  width: 100%;
-  display: flex;
-  background: #fff;
+/* scroll to top Button 
+#toTop{
+  z-index: 3;
+  font-size: 42px;
+  color: #00a2e8;
+  position: fixed;
+  margin-left: 1350px;
+  display: none;
+  cursor: pointer;
 }
-/* LOGO STARTS HERE */
-#logo{
-  width: 284px;
-  padding: 20px 0 0 40px;
-}
-#logo img{
-  height: 100px;
-  width: 240px;
-}
-/* MENU NAV STARTS HERE */
-#menu{
-  padding: 46px 0 0 66px;
-}
-#menu a{
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: capitalize;
-  color: #505050;
-  margin-left: 26px;
-  transition: .8s;
-}
-.appointmentBtn{
-  margin: 46px 0 0 102px;
-  z-index: 1;
-}
-.appointmentBtn a{
-  font-size: 18px;
-  font-weight: lighter;
-  color: #f7ecec;
-  height: 40px;
-  width: 158px;
-  margin: 46px 0 0 0;
-  background-color: orangered;
-  text-align: center;
-  padding: 12px;
-  border-radius: 10px;
-  transition: 1s;
-}
+
 /* MAIN INTRO SECTION STARTS HERE */
 #showcaseImg{
   background:linear-gradient(to bottom, #50505073, #50505073), url(../img/img8.jpg);
@@ -60,6 +28,53 @@ body{
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
+}
+/* main Nav starts here */
+/* open Btn */
+#openBtn{
+  font-size: 60px;
+  color: orangered;
+  float: right;
+  height: 40px;
+  margin-right: 40px;
+}
+/* Close Btn */
+#closeBtn{
+  font-size: 30px;
+  color: #505050;
+  margin-left: 12px;
+}
+.navSet{
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.488);
+  transition: 0.5s;
+  float: right;
+  overflow-x: hidden;
+}
+.logo img{
+  height: 200px;
+  width: 286px;
+}
+#menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+#menu a{
+  font-size: 22px;
+  color: #505050;
+  text-transform: capitalize;
+  padding-top: 40px;
+}
+.appointmentBtn{
+  margin-top: 80px;
+  text-align: center;
 }
 /*intro headline*/
 #introHead{
@@ -96,8 +111,8 @@ body{
 #trustSection{
   height: 80vh;
   width: 1000px;
-  margin-top: -20px;
-  margin-left: 220px;
+  margin-top: 100px;
+  margin-left: 210px;
   background-color: #e7e7e7;
   border-radius: 6px;
   box-shadow: 4px 4px 20px #5050507a;
@@ -120,52 +135,42 @@ body{
 }
 /* trust Text H3 */
 .trustText h3{
-  font-size: 40px;
+  font-size: 32px;
   font-weight: lighter;
   color: #505050;
   text-transform: capitalize;
   text-align: center;
-  width: 378px;
-  margin-left: 62px;
-  padding-top: 20px;
+  padding-top: 100px;
 }
 /* we provide the best care sub title*/
 .subTitle{
   font-size: 22px;
   font-weight: lighter;
   color: orangered;
-  margin-left: 180px;
+  padding-left: 184px;
   padding-top: 8px;
 }
 /* Trust description paragraph one and two starts here*/
-.trustDesc1{
+.trustDesc1, .trustDesc2{
   font-size: 18px;
   font-weight: lighter;
   color: #505050;
   text-align: center;
   width: 450px;
-  margin-top: 40px;
-  margin-left: 26px;
-}
-.trustDesc2{
-  font-size: 18px;
-  font-weight: lighter;
-  color: #505050;
-  text-align: center;
-  width: 450px;
-  margin-left: 26px;
+  padding-top: 22px;
+  padding-left: 22px;
 }
 /* message icon is here */
 .fa-comment{
-  margin-top: 30px;
-  margin-left: 226px;
+  padding-top: 10px;
+  padding-left: 218px;
   font-size: 40px;
   color: orangered;
 }
 /* Email Link*/
 .emailLink{
-  margin-top: 40px;
-  text-align: center;
+  padding-top: 10px;
+  padding-left: 150px;
 }
 .emailLink a{
   font-size: 18px;
@@ -236,10 +241,10 @@ margin-left: 44px;
   color: #e7e7e7;
 }
 /* Home Contatc Us Button */
-.hmeContactBtn{
+#hmeContactBtn{
   margin-top: 16px;
 }
-.hmeContactBtn a{
+#hmeContactBtn p{
   font-size: 20px;
   font-weight: lighter;
   color: #e7e7e7;
@@ -247,9 +252,12 @@ margin-left: 44px;
   background-color: orangered;
   padding: 10px 20px 10px 20px;
   border-radius: 6px;
+  width: 100px;
+  margin-left: 650px;
+  cursor: pointer;
 }
 /* contact bar */
-.contactBar{
+#contactBar{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -259,6 +267,8 @@ margin-left: 44px;
   margin-left: 220px;
   background-color: #00a2e8;
   border-radius: 6px;
+  opacity: 0;
+  transition: ease-in-out;
 }
 /* global flex in contact bar to put the icon next to the text*/
 .contactPhone, .contactEmail{
@@ -312,7 +322,7 @@ margin-left: 44px;
 /* best Care Intro */
 .bestCareIntro{
   width: 370px;
-  padding-top: 90px;
+  padding-top: 14px;
   padding-left: 50px;
   list-style-type: none;
 }
@@ -397,6 +407,7 @@ margin-left: 44px;
 /* About us title*/
 .aboutTitle{
   margin-top: 40px;
+  width: 100%;
 }
 .aboutTitle h1{
   font-size: 30px;
@@ -605,7 +616,7 @@ margin-left: 44px;
   justify-content: space-between;
 }
 .phoneNum{
-  padding-right: 40px;
+  padding-right: 90px;
 }
 /* HOME PAGE ENDS HERE */
 /* ABOUT PAGE STARTS HERE */
@@ -614,7 +625,7 @@ margin-left: 44px;
   background: linear-gradient(to right, #50505081, #50505081), url(../img/img11.jpg);
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100vh;
   width: 100%;
 }
 .innerText h1{
@@ -622,7 +633,7 @@ margin-left: 44px;
   font-weight: lighter;
   color: #e7e7e7;
   text-transform: capitalize;
-  padding: 298px 0 0 40px;
+  padding: 546px 0 0 40px;
 }
 .rightChoice{
   margin-top: 60px;
@@ -661,9 +672,6 @@ margin-left: 44px;
 }
 .fact p{
   width: 400px;
-}
-.factsRow li:hover{
-  background-color: #00a2e8;
 }
 /* Transpo Showcase photo*/
 .homeVisitShowcase{
@@ -706,10 +714,10 @@ margin-left: 44px;
   padding: 40px 0 20px 0; 
 }
 .ourValuesText p{
-  font-size: 14px;
+  font-size: 18px;
   font-weight: lighter;
   color: #505050;
-  width: 600px;
+  width: 640px;
   margin-left: 410px;
 }
 /* Values Row Start Here */
@@ -760,7 +768,7 @@ margin-left: 44px;
   background: linear-gradient(to right, #50505087, #50505087), url(../img/agenda.jpg);
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100vh;
   width: 100%;
 }
 .mainContactUs h2{
@@ -903,7 +911,7 @@ margin-left: 44px;
   background: linear-gradient(to right, #50505087, #50505087), url(../img/servicesShowcase.jpeg);
   background-size: cover;
   background-position: top;
-  height: 60vh;
+  height: 100vh;
   width: 100%;
 }
 .serviceContain{
@@ -914,7 +922,7 @@ margin-left: 44px;
   font-weight: lighter;
   color: #e7e7e7;
   text-transform: capitalize;
-  padding-top: 300px;
+  padding-top: 500px;
   padding-left: 60px;
 }
 .serviceIntro{
@@ -933,7 +941,7 @@ margin-left: 44px;
   margin-left: 408px;
 }
 #serviceMessageIcon{
-  margin-left: 560px;
+  margin-left: 422px;
 }
 .servEmail{
   font-size: 18px;
@@ -1003,3 +1011,267 @@ margin-left: 44px;
   grid-template-columns: auto auto auto;
   padding: 160px;
 }
+/* Services Portfolio starts here */
+.portContain{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 63vh;
+  width: 100%;
+  margin-top: 60px;
+}
+.textBlock{
+  width: 500px;
+}
+.portTitle{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  width: 600px;
+}
+.portOffers{
+  width: 600px;
+  font-size: 24px;
+  line-height: 40px;
+}
+/* In Home offers Photo */
+.servicePortPhto{
+  box-shadow: 4px 4px 20px #505050;
+  border-radius: 6px;
+  height: 400px;
+  width: 400px;
+  width: 500px;
+}
+
+/* Responsive*/
+@media only screen and (max-width: 425px){
+  body{
+    overflow-x: hidden;
+  }
+  #showcaseImg{
+    height: 40vh;
+  }
+  #openBtn, #closeBtn{
+    display: none;
+  }
+  .navSet{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    float: unset;
+    height: 80px;
+    width: 400px;
+    background-color: transparent;
+    overflow: unset;
+  }
+  .logo img{
+    height: 80px;
+    width: 80px;
+  }
+  #menu{
+    margin-top: -20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #menu a{
+    padding-top: 0px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: orangered;
+  }
+  .appointmentBtn{
+    display: none;
+  }
+  .appointmentBtn a{
+    font-size: 12px;
+  }
+  #introHead{
+    padding-top: 70px;
+    padding-left: 10px;
+  }
+  #introHead h1{
+    font-size: 22px;
+  }
+  #introHead p{
+    font-size: 12px;
+  }
+  #introBtn{
+    width: 230px;
+    margin-left: 10px;
+  }
+  #introBtn a{
+    font-size: 12px;
+    padding: 6px 10px 6px 10px;
+  }
+  #trustSection{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .trustPhoto{
+    display: none;
+  }
+  .trustText h3{
+    width: 400px;
+    font-size: 24px;
+  }
+  .subTitle{
+    padding-left: 140px;
+  }
+  .trustDesc1, .trustDesc2{
+    width: 380px;
+    padding-left: 10px;
+  }
+  .fa-comment{
+    padding-left: 190px;
+  }
+  .emailLink{
+    padding-left: 110px;
+  }
+  .careType h3{
+    font-size: 14px;
+  }
+  .fa-home-heart{
+    margin-left: 24px;
+  }
+  .fa-stethoscope{
+    margin-left: 60px;
+  }
+  .fa-user-md{
+    margin-left: 20px;
+  }
+  .contactShowcase{
+    height: 40vh;
+    background-position:left 25% bottom 45%;
+  }
+  .contactText{
+    padding-top: 100px;
+  }
+  .contactText h2{
+    font-size: 30px;
+  }
+  #hmeContactBtn{
+    width: 100%;
+  }
+  #hmeContactBtn p{
+    margin-left: 130px;
+  }
+  #contactBar{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .fa-phone-plus, .fa-envelope{
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  .contactPhone h3{
+    font-size: 16px;
+  }
+  .contactEmail h3{
+    font-size: 16px;
+  }
+  .bestCareContain{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bestCarePhoto{
+    display: none;
+  }
+  .bestCareIntro{
+    padding-top: 60px;
+    padding-left: 12px;
+  }
+  .mesText{
+    padding-top: 110px;
+  }
+  .mesText h1{
+    font-size: 24px;
+  }
+  .mesText p{
+    font-size: 16px;
+    width: 400px;
+    margin-left: 0px;
+    padding-top: 10px;
+  }
+  .mesLink{
+    padding-top: 10px;
+    margin-left: 54px;
+  }
+  .linkRow{
+    width: 100%;
+  }
+  .linkRow h3{
+    font-size: 14px;
+  }
+  .linkContent img{
+    display: none;
+  }
+  .aboutUsText{
+    text-align: center;
+    width: 380px;
+  }
+  .aboutUsText h2{
+    margin-left: 20px;
+    font-size: 20px;
+    width: 340px;
+  }
+  .aboutDesc, .aboutDesc2{
+    width: 380px;
+  }
+  .inHomeContainer{
+    display: none;
+  }
+  #aslShowcase{
+    height: 40vh;
+  }
+  .aslContent{
+    text-align: center;
+    padding: 50px 0 0 0;
+  }
+  .aslTitle{
+    font-size: 24px;
+    width: 380px;
+  }
+  .aslDescription{
+    font-size: 14px;
+    width: 340px;
+    margin-left: 20px;
+  }
+  .aslMoreBtn{
+    margin-left: 110px;
+    width: 160px;
+  }
+  .aslMoreBtn a{
+    font-size: 14px;
+  }
+  #homeContact{
+    width: 100%;
+  }
+  .contactList{
+    padding-left: 30px;
+  }
+  .contactTitle{
+    font-size: 24px;
+    text-align: left;
+  }
+  #mapLoc{
+    display: none;
+  }
+  #globalFoot{
+    width: 100%;
+  }
+  .copyRight{
+    padding-left: 20px;
+  }
+  .phoneNum{
+    font-size: 12px;
+    padding-right: 10px;
+  }
+}
+
+  
+  
+  

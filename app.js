@@ -1,5 +1,42 @@
-// About our company Slide starts here
 
+
+// Open And Close Main Navigation Section
+let openNav = document.getElementById("openBtn");
+let closeNav = document.getElementById("closeBtn");
+
+openNav.addEventListener("click", Open);
+closeNav.addEventListener("click", Close);
+
+function Open(){
+  if(document.getElementById("mainNav").style.width = '20vw'){
+    document.getElementById("openBtn").style.display = "none";
+  }else{
+    document.getElementById("openBtn").style.opacity = "";
+  }
+}
+
+function Close(){
+  if(document.getElementById("mainNav").style.width = '0'){
+    document.getElementById("openBtn").style.display = "block";
+  }else{
+    document.getElementById("openBtn").style.display = "";
+  }
+}
+
+// CONTACT BAR DISPLAY STARTS HERE 
+let conButton = document.getElementById("conClick");
+
+let hide = document.getElementById("contactBar");
+
+conButton.addEventListener("click", contact)
+
+function contact(){
+  document.getElementById("contactBar").style.opacity = '1';
+}
+
+
+
+// About our company Slide starts here
 //variables
 let about = document.getElementById("aboutBtn");
 let approach = document.getElementById("approachBtn");
