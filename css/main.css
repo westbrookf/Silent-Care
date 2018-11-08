@@ -1047,7 +1047,7 @@ margin-left: 44px;
 }
 
 /* Responsive*/
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 414px){
   body{
     overflow-x: hidden;
   }
@@ -1146,17 +1146,16 @@ margin-left: 44px;
   .contactShowcase{
     height: 40vh;
     background-position:left 25% bottom 45%;
+    background-attachment: unset;
   }
   .contactText{
     padding-top: 100px;
   }
   .contactText h2{
-    font-size: 30px;
-  }
-  #hmeContactBtn{
-    width: 100%;
+    font-size: 24px;
   }
   #hmeContactBtn p{
+    font-size: 14px;
     margin-left: 130px;
   }
   #contactBar{
