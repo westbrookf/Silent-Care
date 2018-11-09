@@ -1048,9 +1048,9 @@ margin-left: 44px;
 
 /* Responsive*/
 @media only screen and (max-width: 414px){
-  body{
+  /* body{
     overflow-x: hidden;
-  }
+  } */
   #showcaseImg{
     height: 40vh;
   }
@@ -1274,6 +1274,54 @@ margin-left: 44px;
   .phoneNum{
     font-size: 12px;
     padding-right: 10px;
+  }
+  /* ABOUT US PAGE STARTS HERE */
+  .aboutShowcase{
+    height: 40vh;
+  }
+  .rightTitle{
+    padding-bottom: 20px;
+  }
+  .innerText h1{
+    padding-top: 140px;
+    padding-left: 10px;
+    font-size: 34px;
+  }
+  .rightChoice{
+    margin-left: 20px;
+  }
+  .factsRow{
+    flex-direction: column;
+  }
+  .fact p{
+    width: 380px;
+  }
+  .homeVisitShowcase{
+    height: 40vh;
+    background-attachment: unset;
+  }
+  .visitContent{
+    padding-top: 140px;
+    padding-left: 10px;
+  }
+  .visitTitle{
+    font-size: 20px;
+    width: 380px;
+    text-align: center;
+  }
+  .visitDesc{
+    display: none;
+  }
+  .ourValuesText p{
+    width: 340px;
+    margin-left: 30px;
+  }
+  .valuesRow{
+    flex-direction: column;
+  }
+  .valueContact{
+    width: 180px;
+    margin-left: 140px;
   }
 }
 
