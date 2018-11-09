@@ -73,8 +73,14 @@ body{
   padding-top: 40px;
 }
 .appointmentBtn{
-  margin-top: 80px;
   text-align: center;
+  margin-top: 60px;
+}
+.appointmentBtn a{
+  color: #303030;
+  border: 1px solid orangered;
+  border-radius: 6px;
+  padding: 6px 12px 6px 12px;
 }
 /*intro headline*/
 #introHead{
@@ -1012,6 +1018,32 @@ margin-left: 44px;
   padding: 160px;
 }
 /* Services Portfolio starts here */
+#portNav{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30vh;
+  background-color: transparent;
+}
+#logo img{
+  height: 200px;
+  width: 300px;
+}
+#inHomeNav{
+  margin-top: -20px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#inHomeNav a{
+  padding-top: 0px;
+  padding-left: 20px;
+  font-size: 24px;
+  color: orangered;
+}
+#inHomeBtn{
+  margin-top: -20px;
+}
 .portContain{
   display: flex;
   flex-flow: row;
@@ -1048,11 +1080,12 @@ margin-left: 44px;
 
 /* Responsive*/
 @media only screen and (max-width: 414px){
-  /* body{
+   body{
     overflow-x: hidden;
-  } */
+  } 
   #showcaseImg{
     height: 40vh;
+    background-attachment: unset;
   }
   #openBtn, #closeBtn{
     display: none;
@@ -1085,9 +1118,6 @@ margin-left: 44px;
   }
   .appointmentBtn{
     display: none;
-  }
-  .appointmentBtn a{
-    font-size: 12px;
   }
   #introHead{
     padding-top: 70px;
@@ -1322,6 +1352,129 @@ margin-left: 44px;
   .valueContact{
     width: 180px;
     margin-left: 140px;
+  }
+  /* SERVICES PAGE STARTS HERE */
+  .serviceShowcase{
+    height: 40vh;
+  }
+  .serviceShowTitle{
+    font-size: 34px;
+    padding-top: 140px;
+    padding-left: 10px;
+  }
+  .serviceIntro{
+    font-size: 24px;
+  }
+  .mainServiceDes{
+    width: 380px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  #serviceMessageIcon{
+    margin-left: -14px;
+  }
+  .servEmail{
+    margin-left: 80px;
+  }
+  .gridContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 30px;
+  }
+  /* EACH SERVICE PROFILE STARTS HERE*/
+  #mainNav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    float: unset;
+    height: 80px;
+    width: 400px;
+    background-color: transparent;
+    overflow: unset;
+  }
+  #logo img{
+    height: 80px;
+    width: 80px;
+  }
+  #menu{
+    margin-top: -20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #menu a{
+    padding-top: 0px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: orangered;
+  }
+  .appointmentBtn{
+    display: none;
+  }
+  .portContain{
+    width: 400px;
+    text-align: center;
+  }
+  .textBlock{
+    width: 380px;
+  }
+  .portTitle{
+    font-size: 30px;
+    width: 380px;
+  }
+  .portOffers{
+    font-size: 16px;
+    width: 380px;
+  }
+  .servicePortPhto{
+    display: none;
+  }
+  /* CONTACT US STARTS HERE */
+  .mainContactShowcase{
+    height: 40vh;
+  }
+  .mainContactUs h2{
+    display: none;
+  }
+  .contactRow{
+    margin-top: 40px;
+  }
+  .contactType h3{
+    font-size: 18px;
+  }
+  .contactType p{
+    font-size: 14px;
+  }
+  .messageForm{
+    width: 400px;
+  }
+  .contactForm{
+    margin-left: 10px;
+  }
+  #messageInput{
+    width: 360px;
+  }
+  .subMesBtn{
+    margin-left: 150px;
+  }
+  .placeFilled{
+    height: 40vh;
+  }
+  .aslKids{
+    padding-top: 0px;
+    text-align: center;
+  }
+  .kidsTitle{
+    padding-top: 90px;
+    margin-left: -30px;
+    font-size: 24px;
+  }
+  .kidsDesc{
+    display: none;
+    font-size: 14px;
+    width: 360px;
+    margin-left: -18px;
+
   }
 }
 

@@ -5,8 +5,8 @@
 
 /* APPOINTMENT BUTTON IN THE HEADER STARTS HERE */
 .appointmentBtn a:hover{
-  background-color: transparent;
-  color: #4399C1;
+  background-color: #4399c1;
+  color: #e7e7e7;
   border: 1px solid #4399C1;
 }
 /* INTRO HEAD BUTTONS STARTS HERE */
