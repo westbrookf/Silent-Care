@@ -9,6 +9,11 @@
   color: #e7e7e7;
   border: 1px solid #4399C1;
 }
+#inHomeBtn a:hover{
+  background-color: #4399c1;
+  color: #e7e7e7;
+  border: 1px solid #4399C1;
+}
 /* INTRO HEAD BUTTONS STARTS HERE */
 /* ABOUT US PAGE STARTS HERE*/
 /* VALUES ICONS*/

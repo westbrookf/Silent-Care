@@ -232,12 +232,12 @@ margin-left: 44px;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 80vh;
+  height: 60vh;
   width: 100%;
 }
 /* contact us Text */
 .contactText{
-  padding-top: 270px;
+  padding-top: 170px;
   text-align: center;
 }
 .contactText h2{
@@ -258,7 +258,7 @@ margin-left: 44px;
   background-color: orangered;
   padding: 10px 20px 10px 20px;
   border-radius: 6px;
-  width: 100px;
+  width: 120px;
   margin-left: 650px;
   cursor: pointer;
 }
@@ -341,7 +341,7 @@ margin-left: 44px;
 /* Best Care Giving Section Li Flex */
 .numberSpace{
   display: flex;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 /* List Number is here */
 .listNum{
@@ -362,6 +362,10 @@ margin-left: 44px;
   font-weight: lighter;
   color: #505050;
   text-transform: capitalize;
+}
+.listContent p{
+  font-size: 18px;
+  padding-top: 10px;
 }
 /* best care Photo*/
 .bestCarePhoto img{
@@ -531,25 +535,27 @@ margin-left: 44px;
 }
 /* ASL  content starts here, this is the margin for the text*/
 .aslContent{
-  padding: 140px 0 0 760px;
-  text-align: left;
+  padding: 180px 0 0 740px;
+  text-align: center;
 }
 .aslTitle{
-  font-size: 38px;
+  font-size: 34px;
   font-weight: lighter;
   color: #f7ecec;
   text-transform: capitalize;
-  width: 580px;
+  width: 600px;
 }
 .aslDescription{
-  width: 400px;
+  width: 500px;
   padding-top: 20px;
+  padding-left: 50px;
   font-size: 18px;
   color: #f7ecec;
 }
 /* asl More Information button is here */
 .aslMoreBtn{
   padding-top: 30px;
+  padding-right: 60px;
 }
 .aslMoreBtn a{
   font-size: 18px;
@@ -690,7 +696,8 @@ margin-left: 44px;
   margin-top: 40px;
 }
 .visitContent{
-  padding: 190px 0 0 60px;
+  padding: 140px 0 0 0;
+  text-align: center;
 }
 .visitTitle{
   font-size: 32px;
@@ -703,6 +710,7 @@ margin-left: 44px;
   font-weight: lighter;
   color: #dadada;
   padding-top: 8px;
+  padding-left: 470px;
   width: 500px;
 }
 /* Our Values Section is here */
@@ -1044,6 +1052,12 @@ margin-left: 44px;
 #inHomeBtn{
   margin-top: -20px;
 }
+#inHomeBtn a{
+  color: #303030;
+  border: 1px solid orangered;
+  border-radius: 6px;
+  padding: 6px 12px 6px 12px;
+}
 .portContain{
   display: flex;
   flex-flow: row;
@@ -1268,6 +1282,7 @@ margin-left: 44px;
     margin-left: 10px;
   }
   .aslDescription{
+    display: none;
     font-size: 14px;
     width: 340px;
     margin-left: 20px;
@@ -1318,7 +1333,7 @@ margin-left: 44px;
     font-size: 34px;
   }
   .rightChoice{
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .factsRow{
     flex-direction: column;
@@ -1348,10 +1363,14 @@ margin-left: 44px;
   }
   .valuesRow{
     flex-direction: column;
+    margin-left: -10px;
+  }
+  .box{
+    padding-top: 20px;
   }
   .valueContact{
     width: 180px;
-    margin-left: 140px;
+    margin-left: 120px;
   }
   /* SERVICES PAGE STARTS HERE */
   .serviceShowcase{
@@ -1479,9 +1498,6 @@ margin-left: 44px;
 }
 
   /* NOTES:
-  MAKE SURE ALL BUTTONS ARE GOING TO PROPER PAGES OR LINKS
-
-  Fix the nav menu on all of the service type portfolio.
 
   Fix spacing on mobile site
 
@@ -1489,9 +1505,6 @@ margin-left: 44px;
 
   Figure out how to get the CDN for fontawesome working 
 
-  Figure out if the <p> in Best trained asl section on homepage is going to stay or not 
-
-  Fix the Appointment Button completly.. it looks terrible
 
   make the Logo width inside the menu smaller
   
