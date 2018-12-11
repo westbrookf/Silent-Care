@@ -1,0 +1,22 @@
+#globalFoot {
+  width: 100%;
+}
+.copyRight {
+  @include Display(row, space-between, unset);
+  p {
+    padding-left: 60px;
+    //Responsive
+    @include Mobile {
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+}
+.phoneNum {
+  h3 {
+    padding-right: 60px;
+    //Responsive
+    font-size: 12px;
+    padding-right: 10px;
+  }
+}

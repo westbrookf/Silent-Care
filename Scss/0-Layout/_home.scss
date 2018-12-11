@@ -1,0 +1,624 @@
+//Trust Section
+#trustSection {
+  height: 70vh;
+  width: 100%;
+}
+.trustContent {
+  height: 70vh;
+  width: 100%;
+  @include Display(row, center, center);
+  .trustPhoto {
+    height: 500px;
+    width: 500px;
+    img {
+      height: 500px;
+      width: 500px;
+    }
+    //Trust Photo Responsive
+    @include Tablet {
+      width: 384px;
+    }
+    @include Mobile {
+      display: none;
+    }
+  }
+  .trustText {
+    background-color: $backColor;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    padding-top: 40px;
+    h3 {
+      font-size: 30px;
+      font-weight: $global-weight;
+      text-transform: capitalize;
+      color: $primary-text;
+      //Responsive
+      @include Tablet {
+        font-size: 24px;
+      }
+    }
+    .subTitle {
+      font-size: 20px;
+      font-weight: $global-weight;
+      text-transform: capitalize;
+      color: $primary-orange;
+      padding-top: 10px;
+    }
+    .trustDesc1 {
+      font-size: 18px;
+      width: 405px;
+      margin-top: 20px;
+      margin-left: 48px;
+      //Responsive
+      @include Tablet {
+        width: 350px;
+        margin-left: 20px;
+      }
+    }
+    .trustDesc2 {
+      font-size: 18px;
+      width: 405px;
+      margin-top: 20px;
+      margin-left: 48px;
+      //Responsive
+      @include Tablet {
+        width: 350px;
+        margin-left: 20px;
+      }
+    }
+    .fa-comment {
+      padding-top: 30px;
+      font-size: 30px;
+      color: $primary-orange;
+      transition: $global-Trans;
+    }
+    .fa-comment:hover {
+      color: $primary-blue;
+    }
+    .emailLink {
+      padding-top: 20px;
+      a {
+        font-size: 20px;
+        font-weight: $global-weight;
+        color: $primary-text;
+        transition: $global-Trans;
+      }
+      a:hover {
+        color: $primary-blue;
+      }
+    }
+    //Trust Content Responsive
+    @include Tablet {
+      width: 384px;
+    }
+  }
+  //Trust Content Responsive
+  @include Laptop {
+    margin-top: 40px;
+  }
+}
+//Care Type Row
+#careTypeContain {
+  height: 30vh;
+  width: 100%;
+  .careRow {
+    height: 30vh;
+    width: 1000px;
+    @include Display(row, space-evenly, center);
+    margin-left: 210px;
+    //Responsive
+    @include Laptop {
+      margin-left: 0px;
+    }
+    @include Tablet {
+      width: 768px;
+    }
+    @include Mobile {
+      width: 400px;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+  .careType {
+    text-align: center;
+    #careIcon {
+      font-size: 30px;
+      color: $primary-orange;
+    }
+    h3 {
+      font-size: 24px;
+      text-transform: capitalize;
+      font-weight: $global-weight;
+      color: $primary-text;
+    }
+    .readMore {
+      a {
+        font-size: 18px;
+        color: $primary-orange;
+        text-transform: capitalize;
+        transition: $global-Trans;
+      }
+      a:hover {
+        color: $primary-blue;
+      }
+    }
+    //careType Responsive
+    @include Mobile {
+      padding-top: 30px;
+    }
+  }
+}
+.contactShowcase {
+  @include Background(url(../img/img10.jpg));
+  background-attachment: fixed;
+  height: 70vh;
+  width: 100%;
+  .contactText {
+    padding-top: 200px;
+    text-align: center;
+    h2 {
+      font-size: 40px;
+      font-weight: $global-weight;
+      text-transform: capitalize;
+      color: $button-text;
+    }
+    #conClick {
+      font-size: 18px;
+      font-weight: lighter;
+      color: $button-text;
+      text-transform: capitalize;
+      background-color: $primary-orange;
+      padding: $Btn;
+      margin-top: 40px;
+      margin-left: 630px;
+      width: 160px;
+      cursor: pointer;
+      transition: $global-Trans;
+      //Responsive
+      @include Laptop {
+        margin-left: 440px;
+      }
+      @include Tablet {
+        margin-left: 300px;
+      }
+      @include Mobile {
+        margin-left: 130px;
+      }
+    }
+    #conClick:hover {
+      @include btnEffect;
+    }
+  }
+  //Contact Showcase Responsive
+  @include Mobile {
+    margin-top: 60px;
+  }
+}
+#contactBar {
+  height: 20vh;
+  width: 1000px;
+  @include Display(row, space-evenly, center);
+  margin-top: -60px;
+  margin-left: 210px;
+  background-color: $primary-blue;
+  opacity: $prim-opacity;
+  transition: 1s;
+  .contactPhone {
+    @include Display(row, unset, unset);
+    .fa-phone-plus {
+      font-size: 30px;
+      color: $button-text;
+      padding-top: 10px;
+      padding-right: 20px;
+      //Responsive
+      @include Mobile {
+        font-size: 16px;
+        padding-right: 10px;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: $global-weight;
+      color: $button-text;
+      text-transform: capitalize;
+      //Responsive
+      @include Mobile {
+        font-size: 16px;
+      }
+    }
+  }
+  .contactEmail {
+    @include Display(row, unset, unset);
+    .fa-envelope {
+      font-size: 30px;
+      color: $button-text;
+      padding-top: 10px;
+      padding-right: 20px;
+      //Responsive
+      @include Mobile {
+        font-size: 16px;
+        padding-right: 10px;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: $global-weight;
+      color: $button-text;
+      text-transform: capitalize;
+      //Responsive
+      @include Mobile {
+        font-size: 16px;
+      }
+    }
+  }
+  //Contact Bar Responsive
+  @include Laptop {
+    margin-left: 10px;
+  }
+  @include Tablet {
+    width: 768px;
+    margin-left: 0px;
+  }
+  @include Mobile {
+    height: 10vh;
+    width: 400px;
+    margin-left: 12px;
+  }
+}
+//Best Care section
+.bestCareContain {
+  height: 70vh;
+  width: 100%;
+  #bestCareContent {
+    height: 70vh;
+    width: 100%;
+    @include Display(row, center, center);
+    .careList {
+      background-color: $backColor;
+      height: 500px;
+      width: 500px;
+      //Responsive
+      @include Tablet {
+        width: 384px;
+      }
+    }
+    .bestCareIntro {
+      padding-top: 60px;
+      padding-left: 60px;
+      h1 {
+        font-size: 28px;
+        font-weight: $global-weight;
+        text-transform: capitalize;
+        color: $primary-text;
+      }
+      //Responsive
+      padding-left: 10px;
+    }
+    //Best Care Content Responsive
+    margin-top: 40px;
+  }
+  .numberSpace {
+    @include Display(row, unset, unset);
+    padding-top: 30px;
+  }
+  .listNum {
+    padding-right: 10px;
+    h2 {
+      font-size: 30px;
+      color: $primary-orange;
+    }
+  }
+  .listContent {
+    width: 360px;
+    h3 {
+      font-size: 22px;
+      font-weight: $global-weight;
+      color: $primary-text;
+      text-transform: capitalize;
+    }
+  }
+  .bestCarePhoto {
+    img {
+      height: 500px;
+      width: 500px;
+      //Responsive
+      @include Tablet {
+        width: 384px;
+      }
+    }
+    //Responsive
+    @include Mobile {
+      display: none;
+    }
+  }
+}
+//Trusted CareGivers
+#quickMesContain {
+  @include Background(url(../img/img12.jpeg));
+  height: 40vh;
+  width: 100%;
+  margin-top: 60px;
+}
+.mesText {
+  padding-top: 100px;
+  text-align: center;
+  h1 {
+    font-size: 30px;
+    font-weight: $global-weight;
+    color: $button-text;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 18px;
+    width: 400px;
+    margin-left: 510px;
+    color: $button-text;
+    //Responsive
+    @include Laptop {
+      margin-left: 310px;
+    }
+    @include Tablet {
+      margin-left: 180px;
+    }
+    @include Mobile {
+      margin-left: 20px;
+    }
+  }
+}
+.mesLink {
+  margin-top: 20px;
+  a {
+    font-size: 18px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $button-text;
+    background-color: $primary-orange;
+    padding: $Btn;
+    transition: $global-Trans;
+  }
+  a:hover {
+    @include btnEffect;
+  }
+}
+//About Silent Care
+.aboutTitle {
+  text-align: center;
+  margin-top: 60px;
+  h1 {
+    font-size: 30px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    text-transform: capitalize;
+  }
+}
+//Link Row
+.linkRow {
+  @include Display(row, space-evenly, center);
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 410px;
+  h3 {
+    font-size: 20px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    text-transform: capitalize;
+    transition: $global-Trans;
+    cursor: pointer;
+    @include Mobile {
+      font-size: 15px;
+    }
+  }
+  h3:hover {
+    color: $primary-orange;
+  }
+  //LinkRow Responisve
+  @include Laptop {
+    margin-left: 200px;
+  }
+  @include Tablet {
+    margin-left: 80px;
+  }
+  @include Mobile {
+    margin-left: 0px;
+    width: 414px;
+  }
+}
+#aboutus,
+#ourapproach,
+#weoffer,
+#wework {
+  margin-top: 40px;
+  @include Display(row, center, center);
+}
+//Hidden Class
+.hidden {
+  display: none !important;
+}
+img {
+  height: 500px;
+  width: 500px;
+  //Responsive
+  @include Tablet {
+    width: 384px;
+  }
+  @include Mobile {
+    display: none;
+  }
+}
+.aboutUsText {
+  height: 500px;
+  width: 500px;
+  padding-top: 40px;
+  padding-left: 10px;
+  text-align: center;
+  background: $backColor;
+  h2 {
+    font-size: 24px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+  }
+  .aboutDesc {
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    padding-top: 30px;
+    margin-left: 15px;
+    width: 450px;
+    //Responsive
+    @include Tablet {
+      width: 354px;
+      margin-left: 10px;
+    }
+  }
+  .aboutDesc2 {
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    padding-top: 30px;
+    margin-left: 15px;
+    width: 450px;
+    //Responsive
+    @include Tablet {
+      width: 354px;
+      margin-left: 10px;
+    }
+  }
+  .moreInfobtn {
+    margin-top: 80px;
+    a {
+      font-size: 18px;
+      font-weight: $global-weight;
+      color: $button-text;
+      padding: $Btn;
+      background-color: $primary-orange;
+      transition: $global-Trans;
+    }
+    a:hover {
+      @include btnEffect;
+    }
+  }
+  //Responsive
+  @include Tablet {
+    width: 384px;
+  }
+}
+//ASL section
+#aslShowcase {
+  @include Background(url(../img/yellow.jpeg));
+  background-position: top;
+  height: 50vh;
+  width: 100%;
+  margin-top: 60px;
+}
+.aslContent {
+  float: right;
+  padding-top: 160px;
+  padding-right: 60px;
+  h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $button-text;
+    text-transform: capitalize;
+    //Responsive
+    @include Tablet {
+      font-size: 24px;
+    }
+    @include Mobile {
+      font-size: 22px;
+      width: 250px;
+      text-align: center;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: $global-weight;
+    width: 450px;
+    //Responsive
+    @include Tablet {
+      width: 350px;
+    }
+    @include Mobile {
+      display: none;
+    }
+  }
+  .aslMoreBtn {
+    margin-top: 20px;
+    a {
+      background-color: $primary-orange;
+      padding: $Btn;
+      font-size: 18px;
+      font-weight: $global-weight;
+      color: $button-text;
+      transition: $global-Trans;
+    }
+    a:hover {
+      @include btnEffect;
+    }
+    //asl More Responsive
+    @include Mobile {
+      margin-left: 30px;
+    }
+  }
+  //ASL Content Responisve
+  @include Tablet {
+    padding-right: 5px;
+    padding-top: 130px;
+  }
+}
+#homeContact {
+  height: 70vh;
+  width: 100%;
+  @include Display(row, center, center);
+}
+#mapLoc {
+  height: 500px;
+  width: 500px;
+  //Responsive
+  @include Mobile {
+    display: none;
+  }
+}
+.contactInfo {
+  padding-top: 40px;
+  padding-left: 60px;
+  text-align: left;
+  height: 500px;
+  width: 500px;
+  background-color: $backColor;
+}
+.contactList {
+  .contactTitle {
+    font-size: 30px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+  }
+  .contactFlex {
+    padding-top: 40px;
+    @include Display(row, unset, unset);
+    h3 {
+      font-size: 24px;
+      #contactIcon {
+        padding-right: 10px;
+      }
+      //Responsive
+      @include Tablet {
+        width: 100px;
+        font-size: 18px;
+      }
+    }
+    p,
+    a {
+      font-size: 18px;
+      font-weight: $global-weight;
+      color: $primary-text;
+      width: 250px;
+      padding-left: 30px;
+      //Responsive
+      @include Tablet {
+        font-size: 18px;
+        padding-left: 10px;
+      }
+    }
+  }
+}

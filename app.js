@@ -1,5 +1,3 @@
-
-
 // Open And Close Main Navigation Section
 let openNav = document.getElementById("openBtn");
 let closeNav = document.getElementById("closeBtn");
@@ -7,34 +5,30 @@ let closeNav = document.getElementById("closeBtn");
 openNav.addEventListener("click", Open);
 closeNav.addEventListener("click", Close);
 
-function Open(){
-  if(document.getElementById("mainNav").style.width = '20vw'){
-    document.getElementById("openBtn").style.display = "none";
-  }else{
-    document.getElementById("openBtn").style.opacity = "";
-  }
+function Open() {
+  const Nav = document.getElementById("mainNav");
+  Nav.style.marginRight = "0px";
+  Nav.style.opacity = "1";
+  openNav.style.opacity = "0";
 }
 
-function Close(){
-  if(document.getElementById("mainNav").style.width = '0'){
-    document.getElementById("openBtn").style.display = "block";
-  }else{
-    document.getElementById("openBtn").style.display = "";
-  }
+function Close() {
+  const Nav = document.getElementById("mainNav");
+  Nav.style.marginRight = "-300px";
+  Nav.style.opacity = "0";
+  openNav.style.opacity = "1";
 }
 
-// CONTACT BAR DISPLAY STARTS HERE 
+// CONTACT BAR DISPLAY STARTS HERE
 let conButton = document.getElementById("conClick");
 
 let hide = document.getElementById("contactBar");
 
-conButton.addEventListener("click", contact)
+conButton.addEventListener("click", contact);
 
-function contact(){
-  document.getElementById("contactBar").style.opacity = '1';
+function contact() {
+  document.getElementById("contactBar").style.opacity = "1";
 }
-
-
 
 // About our company Slide starts here
 //variables
@@ -49,31 +43,26 @@ approach.addEventListener("click", contentLink);
 offer.addEventListener("click", contentLink);
 work.addEventListener("click", contentLink);
 
-
 //Function
-function contentLink(){
+function contentLink() {
   var allContent = document.querySelectorAll("section");
-  for (var i = 0; i < allContent.length; i++){
+  for (var i = 0; i < allContent.length; i++) {
     allContent[i].className = "hidden";
   }
-  var contentId = this.attributes["data-type"].value
+  var contentId = this.attributes["data-type"].value;
   var content = document.getElementById(contentId);
-  if(content.className === "hidden") {
+  if (content.className === "hidden") {
     content.className = "";
-  }else{
+  } else {
     content.className = "hide";
   }
 }
 
 //Google Maps start here
-function initMap(){
+function initMap() {
   var options = {
-    zoom:8,
-    center:{lat:38.6480305, lng:-90.3385605}
-  }
-  var map = new google.maps.Map(document.getElementById('mapLoc'), options);
+    zoom: 8,
+    center: { lat: 38.6480305, lng: -90.3385605 }
+  };
+  var map = new google.maps.Map(document.getElementById("mapLoc"), options);
 }
-
-
-
-

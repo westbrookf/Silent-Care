@@ -1,0 +1,14 @@
+@import "1-Variables/variables";
+
+@import "2-Mixins/global-Mixins";
+
+@import "0-Layout/layout-Dir";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+  text-decoration: none;
+  list-style-type: none;
+}

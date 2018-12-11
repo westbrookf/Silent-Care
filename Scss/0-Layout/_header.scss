@@ -1,0 +1,188 @@
+#showcaseImg {
+  @include Background(url(../img/img8.jpg));
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  //Responsive
+  @include Mobile {
+    height: 30vh;
+    overflow-x: unset;
+  }
+}
+#mainNav {
+  margin-right: -300px;
+  opacity: 0;
+  transition-duration: 1.3s;
+  @include Mobile {
+    margin-right: 0;
+    opacity: 1;
+    @include Display(row, unset, unset);
+    height: 84px;
+  }
+}
+.navSet {
+  float: right;
+  width: 300px;
+  height: 100vh;
+  background-color: #00a2e848;
+  #closeBtn {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: $button-text;
+    transition: 0.6s;
+    //Responsive
+    @include Mobile {
+      display: none;
+    }
+  }
+  #closeBtn:hover {
+    color: $primary-orange;
+  }
+  .logo {
+    padding-top: 40px;
+    padding-left: 20px;
+    img {
+      height: 200px;
+      width: 260px;
+      //responsive
+      @include Mobile {
+        height: 70px;
+        width: 70px;
+      }
+    }
+    //Logo Responsive
+    @include Mobile {
+      padding-top: 0px;
+      padding-left: 10px;
+    }
+  }
+  #menu {
+    @include Display(column, space-evenly, unset);
+    height: 320px;
+    text-align: center;
+    padding-top: 30px;
+    a {
+      font-size: 26px;
+      font-weight: $global-weight;
+      color: $button-text;
+      text-transform: capitalize;
+      width: 160px;
+      margin-left: 80px;
+      transition: 0.6s;
+      //Responsive
+      @include Mobile {
+        font-size: 14px;
+        margin-left: 10px;
+        width: 70px;
+      }
+    }
+    a:hover {
+      color: $primary-orange;
+    }
+    //Responsive
+    @include Mobile {
+      @include Display(row, space-evenly, unset);
+      padding-top: 10px;
+      height: 40px;
+    }
+  }
+  .appointmentBtn {
+    width: 220px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    a {
+      background-color: $primary-orange;
+      font-size: 18px;
+      color: $button-text;
+      font-weight: $global-weight;
+      text-transform: capitalize;
+      padding: $Btn;
+      transition: $global-Trans;
+    }
+    a:hover {
+      @include btnEffect;
+    }
+    //appointment Btn Responsive
+    @include Mobile {
+      display: none;
+    }
+  }
+  // Navset Responsive
+  @include Mobile {
+    float: none;
+    background-color: transparent;
+    width: 100%;
+  }
+}
+#openBtn {
+  font-size: 60px;
+  color: $primary-orange;
+  margin-right: 60px;
+  float: right;
+  opacity: 1;
+  transition-duration: 0.6s;
+  //Responisve
+  @include Mobile {
+    opacity: 0;
+  }
+}
+#openBtn:hover {
+  color: $primary-blue;
+}
+#introHead {
+  padding-top: 400px;
+  padding-left: 60px;
+  h1 {
+    font-size: 50px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $button-text;
+    //Responsive
+    @include Mobile {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 24px;
+    color: $button-text;
+    //Responsive
+    @include Mobile {
+      font-size: 12px;
+    }
+  }
+  //Intro Head Responsive
+  @include Mobile {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+}
+#introBtn {
+  padding-top: 30px;
+  padding-left: 60px;
+  a {
+    background-color: $primary-orange;
+    padding: $Btn;
+    font-size: 18px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $button-text;
+    transition: $global-Trans;
+    //Responsive
+    @include Mobile {
+      font-size: 14px;
+      padding: 5px 10px 5px 10px;
+    }
+  }
+  a:hover {
+    @include btnEffect;
+  }
+  a:nth-last-child(1) {
+    margin-left: 20px;
+  }
+  //Intro Btn Responsive
+  @include Mobile {
+    padding-left: 10px;
+  }
+}
