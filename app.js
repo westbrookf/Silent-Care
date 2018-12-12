@@ -32,10 +32,10 @@ function contact() {
 
 // About our company Slide starts here
 //variables
-let about = document.getElementById("aboutBtn");
-let approach = document.getElementById("approachBtn");
-let offer = document.getElementById("weOfferBtn");
-let work = document.getElementById("weWorkBtn");
+let about = document.querySelectorAll("aboutBtn");
+let approach = document.querySelectorAll("approachBtn");
+let offer = document.querySelectorAll("weOfferBtn");
+let work = document.querySelectorAll("weWorkBtn");
 
 //Event Listeners
 about.addEventListener("click", contentLink);

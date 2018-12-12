@@ -1,0 +1,48 @@
+.portContain {
+  @include Display(row, space-evenly, center);
+}
+.textBlock {
+  width: 600px;
+  margin-left: 40px;
+  .portTitle {
+    font-size: 30px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $primary-text;
+    padding-bottom: 20px;
+    //Responsive
+    @include Mobile {
+      padding-top: 60px;
+      text-align: center;
+    }
+  }
+  .portOffers {
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    line-height: 30px;
+    //Responsive
+    @include Tablet {
+      text-align: center;
+      width: 300px;
+      font-size: 16px;
+    }
+    @include Mobile {
+      font-size: 20px;
+      width: 400px;
+      line-height: 30px;
+      padding-top: 60px;
+    }
+  }
+  //Text Block responsive
+  @include Mobile {
+    margin-bottom: 230px;
+    margin-left: 10px;
+  }
+}
+.servicePortPhto {
+  height: 400px;
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}

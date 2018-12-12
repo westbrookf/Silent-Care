@@ -162,6 +162,10 @@
       font-weight: $global-weight;
       text-transform: capitalize;
       color: $button-text;
+      //Responsive
+      @include Mobile {
+        font-size: 30px;
+      }
     }
     #conClick {
       font-size: 18px;
@@ -183,16 +187,22 @@
         margin-left: 300px;
       }
       @include Mobile {
+        margin-top: 20px;
         margin-left: 130px;
       }
     }
     #conClick:hover {
       @include btnEffect;
     }
+    //Contact Text Responsive
+    @include Mobile {
+      padding-top: 50px;
+    }
   }
   //Contact Showcase Responsive
   @include Mobile {
     margin-top: 60px;
+    height: 30vh;
   }
 }
 #contactBar {

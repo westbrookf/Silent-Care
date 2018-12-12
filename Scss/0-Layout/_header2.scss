@@ -1,0 +1,252 @@
+.headContain {
+  height: 30vh;
+  max-width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  .headerSocial {
+    @include Display(unset, unset, unset);
+    height: 40px;
+    border-bottom: 1px solid #b0b0b0;
+    .address {
+      @include Display(unset, unset, unset);
+      margin-left: 60px;
+      margin-top: 10px;
+      .fa-home {
+        font-size: 20px;
+        color: #303030;
+        //Responsive
+        @include Mobile {
+          font-size: 18px;
+        }
+      }
+      h4 {
+        font-weight: lighter;
+        font-size: 20px;
+        color: #505050;
+        margin-left: 10px;
+        //Responsive
+        @include Tablet {
+          font-size: 16px;
+        }
+        @include Mobile {
+          font-size: 14px;
+        }
+      }
+      //Address Responsive
+      @include Tablet {
+        margin-left: 10px;
+      }
+      @include Mobile {
+        margin-left: 50px;
+      }
+    }
+    .email {
+      @include Display(unset, unset, unset);
+      margin-left: 50px;
+      margin-top: 10px;
+      .fa-envelope {
+        font-size: 20px;
+        color: $primary-text;
+      }
+      h4 {
+        font-family: $primary-font;
+        margin-left: 10px;
+        font-size: 20px;
+        color: $primary-text;
+        font-weight: $global-weight;
+        margin-top: -4px;
+        //Responsive
+        @include Tablet {
+          font-size: 16px;
+        }
+      }
+      //Email Responsive
+      @include Mobile {
+        margin-left: 110px;
+      }
+    }
+    //Header Social Responsive
+    @include Mobile {
+      flex-direction: column;
+      text-align: center;
+      height: 70px;
+    }
+  }
+  .headerContact {
+    height: 18vh;
+    width: 100%;
+    @include Display(row, space-between, unset);
+    .logoContain {
+      @include Display(unset, unset, unset);
+      margin-left: 60px;
+      //Responsive
+      @include Tablet {
+        margin-left: 10px;
+      }
+    }
+    .logo {
+      height: 140px;
+      width: 300px;
+      //Responsive
+      @include Laptop {
+        width: 200px;
+      }
+      @include Tablet {
+        width: 140px;
+      }
+    }
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      font-weight: lighter;
+      padding-top: 20px;
+      color: $primary-text;
+      letter-spacing: 4px;
+    }
+    p {
+      display: block;
+      font-size: 20px;
+      color: $primary-text;
+      letter-spacing: 10px;
+    }
+    .miniContact {
+      @include Display(unset, unset, unset);
+      margin-top: 40px;
+      margin-right: 90px;
+      .phone {
+        @include Display(unset, unset, unset);
+        .fa-phone {
+          font-size: 30px;
+          color: $primary-text;
+          padding-top: 6px;
+          //Responsive
+          @include Tablet {
+            font-size: 18px;
+          }
+        }
+        .contactText {
+          h3 {
+            font-family: $primary-font;
+            font-size: 20px;
+            font-weight: lighter;
+            text-transform: capitalize;
+            color: $primary-text;
+            padding-left: 14px;
+            //Responsive
+            @include Tablet {
+              font-size: 18px;
+            }
+          }
+          h4 {
+            color: $primary-orange;
+            padding-left: 14px;
+            letter-spacing: 2px;
+            //Responsive
+            @include Tablet {
+              font-size: 14px;
+            }
+          }
+        }
+        //Phone Responsive
+        @include Tablet {
+          padding-left: 10px;
+        }
+      }
+      .opHours {
+        @include Display(unset, unset, unset);
+        margin-left: 30px;
+        .fa-clock {
+          font-size: 30px;
+          color: $primary-text;
+          padding-top: 6px;
+          //Responsive
+          @include Tablet {
+            font-size: 18px;
+          }
+        }
+        h3 {
+          font-family: $primary-font;
+          font-size: 20px;
+          font-weight: lighter;
+          text-transform: capitalize;
+          color: $primary-text;
+          padding-left: 14px;
+          //Responsive
+          @include Tablet {
+            font-size: 18px;
+          }
+        }
+        h4 {
+          color: $primary-orange;
+          padding-left: 14px;
+          //Responsive
+          @include Tablet {
+            font-size: 14px;
+          }
+        }
+      }
+      .aptBtn {
+        font-family: $primary-font;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #f7f7f7;
+        height: 60px;
+        padding: 16px;
+        text-transform: capitalize;
+        background-color: $primary-orange;
+        margin-top: -5px;
+        margin-right: -20px;
+        margin-left: 20px;
+        transition: $global-Trans;
+        //Responsive
+        @include Tablet {
+          margin-right: 0px;
+          margin-left: 10px;
+          font-size: 15px;
+        }
+      }
+      .aptBtn:hover {
+        @include btnEffect;
+      }
+      //Mini Contact Responsive
+      @include Laptop {
+        margin-right: 22px;
+      }
+    }
+    //Header Contact Responsive
+    @include Mobile {
+      display: none;
+    }
+  }
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 60px;
+    background-color: $primary-orange;
+    a {
+      font-family: $primary-font;
+      font-size: 20px;
+      font-weight: 300;
+      color: #f7f7f7;
+      text-transform: capitalize;
+      margin-left: 30px;
+      //Responsive
+      @include Mobile {
+        margin-left: 20px;
+      }
+    }
+    a:hover {
+      color: $primary-blue;
+    }
+    //nav Responsive
+    @include Tablet {
+      padding-left: 0px;
+    }
+  }
+  //Head Contain Responsive
+  @include Mobile {
+    height: 15vh;
+  }
+}

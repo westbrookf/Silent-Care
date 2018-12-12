@@ -1,0 +1,144 @@
+.serviceContain {
+  text-align: center;
+  .serviceIntro {
+    font-size: 30px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $primary-text;
+    padding-top: 40px;
+  }
+  .mainServiceDes {
+    font-size: 17px;
+    font-weight: $global-weight;
+    width: 540px;
+    margin-top: 10px;
+    margin-left: 460px;
+    //Responsive
+    @include Laptop {
+      margin-left: 250px;
+    }
+    @include Tablet {
+      margin-left: 120px;
+    }
+    @include Mobile {
+      width: 400px;
+      margin-left: 10px;
+    }
+  }
+  .fa-comment {
+    font-size: 30px;
+    color: $primary-orange;
+    padding-top: 10px;
+  }
+  a {
+    font-size: 20px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    padding-left: 10px;
+  }
+  a:hover {
+    color: $primary-blue;
+  }
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 40px;
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  //Responsive
+  @include Laptop {
+    margin-left: 30px;
+  }
+  @include Tablet {
+    grid-template-columns: auto auto;
+    margin-left: 60px;
+  }
+  @include Mobile {
+    @include Display(column, space-evenly, center);
+    margin-left: 0px;
+  }
+}
+.serviceTypeBlue {
+  width: 400px;
+  transition: $global-Trans;
+  z-index: 99;
+  overflow-x: hidden;
+  background-color: $backColor;
+  #gridPhto {
+    height: 300px;
+    width: 400px;
+  }
+  // Service type blue responsive
+  @include Laptop {
+    width: 300px;
+  }
+  @include Mobile {
+    margin-top: 20px;
+  }
+}
+.serviceTypeBlue:hover {
+  border: 2px solid $primary-blue;
+  transform: scale(1.1);
+  @include btnEffect;
+}
+.serviceTypeOrange {
+  width: 400px;
+  transition: $global-Trans;
+  z-index: 99;
+  overflow-x: hidden;
+  background-color: $backColor;
+  #gridPhto {
+    height: 300px;
+    width: 400px;
+  }
+  // Service type orange responsive
+  @include Laptop {
+    width: 300px;
+  }
+  @include Mobile {
+    margin-top: 20px;
+  }
+}
+.serviceTypeOrange:hover {
+  border: 2px solid $primary-orange;
+  transform: scale(1.1);
+  @include btnEffect;
+  background-color: $primary-orange;
+}
+.serviceContentContain {
+  .serviceTitle {
+    font-size: 26px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $primary-text;
+    text-align: center;
+  }
+  .serviceSubtext {
+    font-size: 17px;
+    font-weight: $global-weight;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
+.serviceLinks {
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-bottom: 20px;
+  a {
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $button-text;
+    background-color: $primary-orange;
+    transition: $global-Trans;
+    padding: $Btn;
+  }
+  a:hover {
+    @include btnEffect;
+  }
+  // Service Links responsive
+  @include Laptop {
+    margin-left: 90px;
+  }
+}

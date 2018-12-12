@@ -16,7 +16,9 @@
   h3 {
     padding-right: 60px;
     //Responsive
-    font-size: 12px;
-    padding-right: 10px;
+    @include Mobile {
+      font-size: 12px;
+      padding-right: 10px;
+    }
   }
 }

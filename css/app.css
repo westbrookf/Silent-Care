@@ -186,9 +186,239 @@
         padding-left: 10px; } }
 
 .phoneNum h3 {
-  padding-right: 60px;
-  font-size: 12px;
-  padding-right: 10px; }
+  padding-right: 60px; }
+  @media only screen and (max-width: 425px) {
+    .phoneNum h3 {
+      font-size: 12px;
+      padding-right: 10px; } }
+
+.headContain {
+  height: 30vh;
+  max-width: 100%;
+  background-color: #fff;
+  z-index: 99; }
+  .headContain .headerSocial {
+    display: flex;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    height: 40px;
+    border-bottom: 1px solid #b0b0b0; }
+    .headContain .headerSocial .address {
+      display: flex;
+      flex-direction: unset;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 60px;
+      margin-top: 10px; }
+      .headContain .headerSocial .address .fa-home {
+        font-size: 20px;
+        color: #303030; }
+        @media only screen and (max-width: 425px) {
+          .headContain .headerSocial .address .fa-home {
+            font-size: 18px; } }
+      .headContain .headerSocial .address h4 {
+        font-weight: lighter;
+        font-size: 20px;
+        color: #505050;
+        margin-left: 10px; }
+        @media only screen and (max-width: 768px) {
+          .headContain .headerSocial .address h4 {
+            font-size: 16px; } }
+        @media only screen and (max-width: 425px) {
+          .headContain .headerSocial .address h4 {
+            font-size: 14px; } }
+      @media only screen and (max-width: 768px) {
+        .headContain .headerSocial .address {
+          margin-left: 10px; } }
+      @media only screen and (max-width: 425px) {
+        .headContain .headerSocial .address {
+          margin-left: 50px; } }
+    .headContain .headerSocial .email {
+      display: flex;
+      flex-direction: unset;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 50px;
+      margin-top: 10px; }
+      .headContain .headerSocial .email .fa-envelope {
+        font-size: 20px;
+        color: #303030; }
+      .headContain .headerSocial .email h4 {
+        font-family: "Open Sans", sans-serif;
+        margin-left: 10px;
+        font-size: 20px;
+        color: #303030;
+        font-weight: lighter;
+        margin-top: -4px; }
+        @media only screen and (max-width: 768px) {
+          .headContain .headerSocial .email h4 {
+            font-size: 16px; } }
+      @media only screen and (max-width: 425px) {
+        .headContain .headerSocial .email {
+          margin-left: 110px; } }
+    @media only screen and (max-width: 425px) {
+      .headContain .headerSocial {
+        flex-direction: column;
+        text-align: center;
+        height: 70px; } }
+  .headContain .headerContact {
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset; }
+    .headContain .headerContact .logoContain {
+      display: flex;
+      flex-direction: unset;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 60px; }
+      @media only screen and (max-width: 768px) {
+        .headContain .headerContact .logoContain {
+          margin-left: 10px; } }
+    .headContain .headerContact .logo {
+      height: 140px;
+      width: 300px; }
+      @media only screen and (max-width: 1024px) {
+        .headContain .headerContact .logo {
+          width: 200px; } }
+      @media only screen and (max-width: 768px) {
+        .headContain .headerContact .logo {
+          width: 140px; } }
+    .headContain .headerContact h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      font-weight: lighter;
+      padding-top: 20px;
+      color: #303030;
+      letter-spacing: 4px; }
+    .headContain .headerContact p {
+      display: block;
+      font-size: 20px;
+      color: #303030;
+      letter-spacing: 10px; }
+    .headContain .headerContact .miniContact {
+      display: flex;
+      flex-direction: unset;
+      justify-content: unset;
+      align-items: unset;
+      margin-top: 40px;
+      margin-right: 90px; }
+      .headContain .headerContact .miniContact .phone {
+        display: flex;
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: unset; }
+        .headContain .headerContact .miniContact .phone .fa-phone {
+          font-size: 30px;
+          color: #303030;
+          padding-top: 6px; }
+          @media only screen and (max-width: 768px) {
+            .headContain .headerContact .miniContact .phone .fa-phone {
+              font-size: 18px; } }
+        .headContain .headerContact .miniContact .phone .contactText h3 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          font-weight: lighter;
+          text-transform: capitalize;
+          color: #303030;
+          padding-left: 14px; }
+          @media only screen and (max-width: 768px) {
+            .headContain .headerContact .miniContact .phone .contactText h3 {
+              font-size: 18px; } }
+        .headContain .headerContact .miniContact .phone .contactText h4 {
+          color: #ff4500;
+          padding-left: 14px;
+          letter-spacing: 2px; }
+          @media only screen and (max-width: 768px) {
+            .headContain .headerContact .miniContact .phone .contactText h4 {
+              font-size: 14px; } }
+        @media only screen and (max-width: 768px) {
+          .headContain .headerContact .miniContact .phone {
+            padding-left: 10px; } }
+      .headContain .headerContact .miniContact .opHours {
+        display: flex;
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: 30px; }
+        .headContain .headerContact .miniContact .opHours .fa-clock {
+          font-size: 30px;
+          color: #303030;
+          padding-top: 6px; }
+          @media only screen and (max-width: 768px) {
+            .headContain .headerContact .miniContact .opHours .fa-clock {
+              font-size: 18px; } }
+        .headContain .headerContact .miniContact .opHours h3 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          font-weight: lighter;
+          text-transform: capitalize;
+          color: #303030;
+          padding-left: 14px; }
+          @media only screen and (max-width: 768px) {
+            .headContain .headerContact .miniContact .opHours h3 {
+              font-size: 18px; } }
+        .headContain .headerContact .miniContact .opHours h4 {
+          color: #ff4500;
+          padding-left: 14px; }
+          @media only screen and (max-width: 768px) {
+            .headContain .headerContact .miniContact .opHours h4 {
+              font-size: 14px; } }
+      .headContain .headerContact .miniContact .aptBtn {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #f7f7f7;
+        height: 60px;
+        padding: 16px;
+        text-transform: capitalize;
+        background-color: #ff4500;
+        margin-top: -5px;
+        margin-right: -20px;
+        margin-left: 20px;
+        transition: 0.6s; }
+        @media only screen and (max-width: 768px) {
+          .headContain .headerContact .miniContact .aptBtn {
+            margin-right: 0px;
+            margin-left: 10px;
+            font-size: 15px; } }
+      .headContain .headerContact .miniContact .aptBtn:hover {
+        box-shadow: 5px 5px 10px black;
+        background-color: #00a2e8; }
+      @media only screen and (max-width: 1024px) {
+        .headContain .headerContact .miniContact {
+          margin-right: 22px; } }
+    @media only screen and (max-width: 425px) {
+      .headContain .headerContact {
+        display: none; } }
+  .headContain .nav {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 60px;
+    background-color: #ff4500; }
+    .headContain .nav a {
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: #f7f7f7;
+      text-transform: capitalize;
+      margin-left: 30px; }
+      @media only screen and (max-width: 425px) {
+        .headContain .nav a {
+          margin-left: 20px; } }
+    .headContain .nav a:hover {
+      color: #00a2e8; }
+    @media only screen and (max-width: 768px) {
+      .headContain .nav {
+        padding-left: 0px; } }
+  @media only screen and (max-width: 425px) {
+    .headContain {
+      height: 15vh; } }
 
 #trustSection {
   height: 70vh;
@@ -332,6 +562,9 @@
       font-weight: lighter;
       text-transform: capitalize;
       color: #e7e7e7; }
+      @media only screen and (max-width: 425px) {
+        .contactShowcase .contactText h2 {
+          font-size: 30px; } }
     .contactShowcase .contactText #conClick {
       font-size: 18px;
       font-weight: lighter;
@@ -352,13 +585,18 @@
           margin-left: 300px; } }
       @media only screen and (max-width: 425px) {
         .contactShowcase .contactText #conClick {
+          margin-top: 20px;
           margin-left: 130px; } }
     .contactShowcase .contactText #conClick:hover {
       box-shadow: 5px 5px 10px black;
       background-color: #00a2e8; }
+    @media only screen and (max-width: 425px) {
+      .contactShowcase .contactText {
+        padding-top: 50px; } }
   @media only screen and (max-width: 425px) {
     .contactShowcase {
-      margin-top: 60px; } }
+      margin-top: 60px;
+      height: 30vh; } }
 
 #contactBar {
   height: 20vh;
@@ -750,6 +988,377 @@ img {
       .contactList .contactFlex a {
         font-size: 18px;
         padding-left: 10px; } }
+
+.rightChoice {
+  height: 40vh;
+  width: 100%;
+  margin-top: 40px; }
+  @media only screen and (max-width: 425px) {
+    .rightChoice {
+      height: 96vh; } }
+
+.rightTitle {
+  text-align: center; }
+  .rightTitle h2 {
+    font-size: 26px;
+    font-weight: lighter;
+    color: #303030;
+    text-transform: capitalize; }
+
+.factsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px; }
+  @media only screen and (max-width: 425px) {
+    .factsRow {
+      flex-direction: column; } }
+
+.fact {
+  width: 400px;
+  height: 200px;
+  text-align: center; }
+  .fact h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #e7e7e7;
+    text-transform: capitalize;
+    padding-top: 40px; }
+    @media only screen and (max-width: 768px) {
+      .fact h3 {
+        padding-top: 10px; } }
+  .fact p {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #e7e7e7;
+    line-height: 24px;
+    width: 350px;
+    margin-left: 20px; }
+    @media only screen and (max-width: 1024px) {
+      .fact p {
+        width: 300px; } }
+    @media only screen and (max-width: 768px) {
+      .fact p {
+        width: 200px; } }
+    @media only screen and (max-width: 425px) {
+      .fact p {
+        width: 300px;
+        margin-left: 0;
+        margin-top: 10px; } }
+  @media only screen and (max-width: 1024px) {
+    .fact {
+      width: 340px; } }
+  @media only screen and (max-width: 768px) {
+    .fact {
+      width: 250px; } }
+  @media only screen and (max-width: 425px) {
+    .fact {
+      width: 300px;
+      margin-top: 20px; } }
+
+#timeBack {
+  background-color: #ff4500;
+  transition: 0.6s; }
+
+#timeBack:hover {
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8; }
+
+#communication {
+  background-color: #00a2e8;
+  transition: 0.6s; }
+
+#communication:hover {
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8;
+  background-color: #ff4500; }
+
+#careQual {
+  background-color: #ff4500;
+  transition: 0.6s; }
+
+#careQual:hover {
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8; }
+
+.homeVisitShowcase {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/housemeet.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  background-position: top; }
+
+.visitContent {
+  padding-top: 200px;
+  text-align: center; }
+  .visitContent .visitTitle {
+    font-size: 34px;
+    font-weight: lighter;
+    color: #e7e7e7;
+    text-transform: capitalize; }
+
+.ourValue {
+  width: 100%; }
+
+.ourValuesText {
+  text-align: center;
+  margin-top: 40px; }
+  .ourValuesText h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize; }
+  .ourValuesText p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #303030;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 460px; }
+    @media only screen and (max-width: 1024px) {
+      .ourValuesText p {
+        margin-left: 270px; } }
+    @media only screen and (max-width: 768px) {
+      .ourValuesText p {
+        margin-left: 130px; } }
+    @media only screen and (max-width: 425px) {
+      .ourValuesText p {
+        width: 425px;
+        margin-left: 0px; } }
+
+.valuesRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: unset;
+  margin-top: 40px; }
+  @media only screen and (max-width: 425px) {
+    .valuesRow {
+      flex-direction: column;
+      margin-left: 50px; } }
+
+.box {
+  text-align: center;
+  width: 300px; }
+  .box #globeStyle {
+    font-size: 30px;
+    font-weight: lighter; }
+  .box .valueTitle {
+    font-size: 24px;
+    font-weight: lighter;
+    text-transform: capitalize; }
+  .box .valuePara {
+    font-size: 17px;
+    color: #303030; }
+    @media only screen and (max-width: 768px) {
+      .box .valuePara {
+        font-size: 14px; } }
+  @media only screen and (max-width: 425px) {
+    .box {
+      padding-top: 20px; } }
+
+.valueContact {
+  margin-top: 40px;
+  margin-left: 640px;
+  margin-bottom: 40px; }
+  .valueContact a {
+    font-size: 20px;
+    background-color: #ff4500;
+    padding: 10px 20px 10px 20px;
+    color: #e7e7e7;
+    transition: 0.6s; }
+  .valueContact a:hover {
+    box-shadow: 5px 5px 10px black;
+    background-color: #00a2e8; }
+  @media only screen and (max-width: 1024px) {
+    .valueContact {
+      margin-left: 440px; } }
+  @media only screen and (max-width: 768px) {
+    .valueContact {
+      margin-left: 320px; } }
+  @media only screen and (max-width: 425px) {
+    .valueContact {
+      margin-left: 140px; } }
+
+.serviceContain {
+  text-align: center; }
+  .serviceContain .serviceIntro {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030;
+    padding-top: 40px; }
+  .serviceContain .mainServiceDes {
+    font-size: 17px;
+    font-weight: lighter;
+    width: 540px;
+    margin-top: 10px;
+    margin-left: 460px; }
+    @media only screen and (max-width: 1024px) {
+      .serviceContain .mainServiceDes {
+        margin-left: 250px; } }
+    @media only screen and (max-width: 768px) {
+      .serviceContain .mainServiceDes {
+        margin-left: 120px; } }
+    @media only screen and (max-width: 425px) {
+      .serviceContain .mainServiceDes {
+        width: 400px;
+        margin-left: 10px; } }
+  .serviceContain .fa-comment {
+    font-size: 30px;
+    color: #ff4500;
+    padding-top: 10px; }
+  .serviceContain a {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #303030;
+    padding-left: 10px; }
+  .serviceContain a:hover {
+    color: #00a2e8; }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 40px;
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 1024px) {
+    .gridContainer {
+      margin-left: 30px; } }
+  @media only screen and (max-width: 768px) {
+    .gridContainer {
+      grid-template-columns: auto auto;
+      margin-left: 60px; } }
+  @media only screen and (max-width: 425px) {
+    .gridContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 0px; } }
+
+.serviceTypeBlue {
+  width: 400px;
+  transition: 0.6s;
+  z-index: 99;
+  overflow-x: hidden;
+  background-color: #e7e7e7; }
+  .serviceTypeBlue #gridPhto {
+    height: 300px;
+    width: 400px; }
+  @media only screen and (max-width: 1024px) {
+    .serviceTypeBlue {
+      width: 300px; } }
+  @media only screen and (max-width: 425px) {
+    .serviceTypeBlue {
+      margin-top: 20px; } }
+
+.serviceTypeBlue:hover {
+  border: 2px solid #00a2e8;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8; }
+
+.serviceTypeOrange {
+  width: 400px;
+  transition: 0.6s;
+  z-index: 99;
+  overflow-x: hidden;
+  background-color: #e7e7e7; }
+  .serviceTypeOrange #gridPhto {
+    height: 300px;
+    width: 400px; }
+  @media only screen and (max-width: 1024px) {
+    .serviceTypeOrange {
+      width: 300px; } }
+  @media only screen and (max-width: 425px) {
+    .serviceTypeOrange {
+      margin-top: 20px; } }
+
+.serviceTypeOrange:hover {
+  border: 2px solid #ff4500;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8;
+  background-color: #ff4500; }
+
+.serviceContentContain .serviceTitle {
+  font-size: 26px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #303030;
+  text-align: center; }
+.serviceContentContain .serviceSubtext {
+  font-size: 17px;
+  font-weight: lighter;
+  padding-left: 10px;
+  text-align: center; }
+
+.serviceLinks {
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-bottom: 20px; }
+  .serviceLinks a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #e7e7e7;
+    background-color: #ff4500;
+    transition: 0.6s;
+    padding: 10px 20px 10px 20px; }
+  .serviceLinks a:hover {
+    box-shadow: 5px 5px 10px black;
+    background-color: #00a2e8; }
+  @media only screen and (max-width: 1024px) {
+    .serviceLinks {
+      margin-left: 90px; } }
+
+.portContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.textBlock {
+  width: 600px;
+  margin-left: 40px; }
+  .textBlock .portTitle {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030;
+    padding-bottom: 20px; }
+    @media only screen and (max-width: 425px) {
+      .textBlock .portTitle {
+        padding-top: 60px;
+        text-align: center; } }
+  .textBlock .portOffers {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #303030;
+    line-height: 30px; }
+    @media only screen and (max-width: 768px) {
+      .textBlock .portOffers {
+        text-align: center;
+        width: 300px;
+        font-size: 16px; } }
+    @media only screen and (max-width: 425px) {
+      .textBlock .portOffers {
+        font-size: 20px;
+        width: 400px;
+        line-height: 30px;
+        padding-top: 60px; } }
+  @media only screen and (max-width: 425px) {
+    .textBlock {
+      margin-bottom: 230px;
+      margin-left: 10px; } }
+
+.servicePortPhto {
+  height: 400px;
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 90px; }
 
 * {
   margin: 0;

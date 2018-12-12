@@ -1,0 +1,202 @@
+.rightChoice {
+  height: 40vh;
+  width: 100%;
+  margin-top: 40px;
+  //Responsive
+  @include Mobile {
+    height: 96vh;
+  }
+}
+.rightTitle {
+  text-align: center;
+  h2 {
+    font-size: 26px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    text-transform: capitalize;
+  }
+}
+.factsRow {
+  @include Display(row, space-evenly, center);
+  padding-top: 30px;
+  //Responsive
+  @include Mobile {
+    flex-direction: column;
+  }
+}
+.fact {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  h3 {
+    font-size: 24px;
+    font-weight: $global-weight;
+    color: $button-text;
+    text-transform: capitalize;
+    padding-top: 40px;
+    //Responsive
+    @include Tablet {
+      padding-top: 10px;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: $global-weight;
+    color: $button-text;
+    line-height: 24px;
+    width: 350px;
+    margin-left: 20px;
+    //Responsive
+    @include Laptop {
+      width: 300px;
+    }
+    @include Tablet {
+      width: 200px;
+    }
+    @include Mobile {
+      width: 300px;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  //Fact Responsive
+  @include Laptop {
+    width: 340px;
+  }
+  @include Tablet {
+    width: 250px;
+  }
+  @include Mobile {
+    width: 300px;
+    margin-top: 20px;
+  }
+}
+#timeBack {
+  background-color: $primary-orange;
+  transition: $global-Trans;
+}
+#timeBack:hover {
+  @include btnEffect;
+}
+#communication {
+  background-color: $primary-blue;
+  transition: $global-Trans;
+}
+#communication:hover {
+  @include btnEffect;
+  background-color: $primary-orange;
+}
+#careQual {
+  background-color: $primary-orange;
+  transition: $global-Trans;
+}
+#careQual:hover {
+  @include btnEffect;
+}
+//Home Vist Section
+.homeVisitShowcase {
+  @include Background(url(../img/housemeet.jpeg));
+  height: 70vh;
+  width: 100%;
+  background-position: top;
+}
+.visitContent {
+  padding-top: 200px;
+  text-align: center;
+  .visitTitle {
+    font-size: 34px;
+    font-weight: $global-weight;
+    color: $button-text;
+    text-transform: capitalize;
+  }
+}
+.ourValue {
+  width: 100%;
+}
+.ourValuesText {
+  text-align: center;
+  margin-top: 40px;
+  h2 {
+    font-size: 30px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 460px;
+    //Responsive
+    @include Laptop {
+      margin-left: 270px;
+    }
+    @include Tablet {
+      margin-left: 130px;
+    }
+    @include Mobile {
+      width: 425px;
+      margin-left: 0px;
+    }
+  }
+}
+.valuesRow {
+  @include Display(row, space-evenly, unset);
+  margin-top: 40px;
+  //Responsive
+  @include Mobile {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+}
+.box {
+  text-align: center;
+  width: 300px;
+  #globeStyle {
+    font-size: 30px;
+    font-weight: $global-weight;
+  }
+  .valueTitle {
+    font-size: 24px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+  }
+  .valuePara {
+    font-size: 17px;
+    color: $primary-text;
+    //responsive
+    @include Tablet {
+      font-size: 14px;
+    }
+  }
+  //Box responsive
+  @include Mobile {
+    padding-top: 20px;
+  }
+}
+.valueContact {
+  margin-top: 40px;
+  margin-left: 640px;
+  margin-bottom: 40px;
+  a {
+    font-size: 20px;
+    background-color: $primary-orange;
+    padding: $Btn;
+    color: $button-text;
+    transition: $global-Trans;
+  }
+  a:hover {
+    @include btnEffect;
+  }
+  //Value Contact Responsive
+  @include Laptop {
+    margin-left: 440px;
+  }
+  @include Tablet {
+    margin-left: 320px;
+  }
+  @include Mobile {
+    margin-left: 140px;
+  }
+}
