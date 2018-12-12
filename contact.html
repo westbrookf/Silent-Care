@@ -7,9 +7,7 @@
     <!-- FavIcon -->
     <link rel="shorcut icon" type="image/jpg" href="img/logo1.jpg" />
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Hover css -->
-    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/app.css" />
     <!-- typography -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400i"
@@ -26,27 +24,45 @@
   </head>
 
   <body>
-    <div class="mainContactShowcase">
-      <div id="mainNav" class="navSet">
-        <a href="#" id="closeBtn"> &times</a>
-        <div class="logo">
-          <a href="index.html"><img src="img/logo1.jpg"/></a>
+    <header class="headContain" id="top">
+      <div class="headerSocial">
+        <div class="address">
+          <span> <i class="fal fa-home"></i> </span>
+          <h4>7777 Bonhomme Ave #1800 Clayton, MO 63105</h4>
         </div>
-        <nav id="menu">
-          <a href="index.html">Home</a> <a href="about.html">about us</a>
-          <a href="services.html">services</a>
-          <a href="contact.html">contact us</a>
-        </nav>
-        <div class="appointmentBtn">
-          <a href="contact.html">make an appointment</a>
+        <div class="email">
+          <span> <i class="fal fa-envelope"></i> </span>
+          <h4>silentcare11@gmail.com</h4>
         </div>
       </div>
-      <a href="#" id="openBtn">&hellip;</a>
-      <div class="innerText"><h1>contact us</h1></div>
-    </div>
+      <div class="headerContact">
+        <div class="logoContain"><img src="img/logo1.jpg" class="logo" /></div>
+        <div class="miniContact">
+          <div class="phone">
+            <span> <i class="fal fa-phone"></i> </span>
+            <div class="contactText">
+              <h3>contact us</h3>
+              <h4>(314) 607-1220</h4>
+            </div>
+          </div>
+          <div class="opHours">
+            <span> <i class="fal fa-clock"></i> </span>
+            <div class="hoursText">
+              <h3>working hours</h3>
+              <h4>Mon - Fri: 10:00am - 6:00pm</h4>
+            </div>
+          </div>
+          <a href="#" class="aptBtn">make an appointment</a>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="index.html">Home</a> <a href="about.html">about us</a>
+        <a href="services.html">services</a>
+        <a href="contact.html">contact us</a>
+      </div>
+    </header>
     <!-- Contact Row -->
     <div class="mainContactUs">
-      <h2>contact us</h2>
       <div class="contactRow">
         <!-- Address -->
         <div class="contactType">
@@ -63,7 +79,7 @@
         </div>
         <!-- Email -->
         <div class="contactType">
-          <div class="email">
+          <div class="emailBlock">
             <span>
               <i class="fal fa-envelope-open" id="globeConStyle"></i>
             </span>
@@ -73,7 +89,7 @@
         </div>
         <!-- Phone Number -->
         <div class="contactType">
-          <div class="phone">
+          <div class="phoneBlock">
             <span> <i class="fal fa-phone" id="globeConStyle"></i> </span>
             <h3 class="phoneTitle">phone</h3>
             <p class="phoneNumber">(314) 797-7142</p>
@@ -103,17 +119,6 @@
         <br /><br />
         <button class="subMesBtn" type="submit" value="Submit">Submit</button>
       </form>
-    </div>
-    <!-- Place Filler Background Image -->
-    <div class="placeFilled">
-      <div class="aslKids">
-        <h2 class="kidsTitle">ASL services for children</h2>
-        <p class="kidsDesc">
-          Finding ASL services for children can be difficult, we have Caregivers
-          specially trained to care for children with ASL needs.
-        </p>
-        <div class="aslKidBtn"><a href="Asl.html">ASL kids</a></div>
-      </div>
     </div>
     <!-- Footer Section Starts Here -->
     <footer id="globalFoot">

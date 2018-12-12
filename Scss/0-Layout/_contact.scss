@@ -1,0 +1,243 @@
+.mainContactUs {
+  width: 100%;
+}
+.contactRow {
+  width: 1200px;
+  @include Display(row, space-evenly, center);
+  margin-top: 60px;
+  margin-left: 110px;
+  //Responsive
+  @include Laptop {
+    width: 1000px;
+    margin-left: 10px;
+  }
+  @include Tablet {
+    width: 700px;
+    margin-left: 40px;
+  }
+  @include Mobile {
+    width: 400px;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+}
+.location {
+  width: 360px;
+  border: 2px solid #30303030;
+  text-align: center;
+  padding: 20px;
+  transition: $global-Trans;
+  #globeConStyle {
+    font-size: 30px;
+    color: $button-text;
+    background-color: $primary-blue;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  .address {
+    font-size: 26px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $primary-text;
+  }
+  //Location Responsive
+  @include Laptop {
+    width: 300px;
+  }
+  @include Tablet {
+    width: 225px;
+  }
+  @include Mobile {
+    margin-bottom: 20px;
+  }
+}
+.location:hover {
+  @include btnEffect;
+  background-color: $primary-orange;
+  transform: scale(1.1);
+}
+//Email
+.emailBlock {
+  height: 194px;
+  width: 360px;
+  border: 2px solid #30303030;
+  text-align: center;
+  padding: 20px;
+  transition: $global-Trans;
+  #globeConStyle {
+    font-size: 30px;
+    color: $button-text;
+    background-color: $primary-orange;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  .emailTitle {
+    font-size: 26px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $primary-text;
+  }
+  //Email Responsive
+  @include Laptop {
+    width: 300px;
+  }
+  @include Tablet {
+    width: 225px;
+    height: 215px;
+  }
+  @include Mobile {
+    margin-bottom: 20px;
+  }
+}
+.emailBlock:hover {
+  background-color: $primary-blue;
+  @include btnEffect;
+  transform: scale(1.1);
+}
+//Phone
+.phoneBlock {
+  height: 194px;
+  width: 360px;
+  border: 2px solid #30303030;
+  text-align: center;
+  padding: 20px;
+  transition: $global-Trans;
+  #globeConStyle {
+    font-size: 30px;
+    color: $button-text;
+    background-color: $primary-blue;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  .phoneTitle {
+    font-size: 26px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $primary-text;
+  }
+  //Phone Responsive
+  @include Laptop {
+    width: 300px;
+  }
+  @include Tablet {
+    width: 225px;
+    height: 215px;
+  }
+}
+.phoneBlock:hover {
+  @include btnEffect;
+  background-color: $primary-orange;
+  transform: scale(1.1);
+}
+.messageForm {
+  height: 600px;
+  width: 1200px;
+  background-color: $backColor;
+  margin-top: 100px;
+  margin-left: 110px;
+  transition: $global-Trans;
+  .formTitle {
+    font-size: 30px;
+    font-weight: $global-weight;
+    text-transform: capitalize;
+    color: $primary-text;
+    text-align: center;
+    padding-top: 120px;
+  }
+  //message Form responsive
+  @include Laptop {
+    width: 1000px;
+    margin-left: 10px;
+  }
+  @include Tablet {
+    width: 700px;
+    margin-left: 40px;
+  }
+  @include Mobile {
+    width: 390px;
+    margin-left: 18px;
+  }
+}
+.messageForm:hover {
+  background-color: $primary-blue;
+}
+.contactForm {
+  padding-top: 20px;
+  padding-left: 180px;
+  #nameInput {
+    height: 40px;
+    width: 400px;
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    padding-left: 10px;
+    //Responsive
+    @include Tablet {
+      width: 300px;
+      margin-left: 30px;
+    }
+    @include Mobile {
+      width: 360px;
+      margin-left: 0px;
+    }
+  }
+  #emailInput {
+    height: 40px;
+    width: 400px;
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    padding-left: 10px;
+    //Responsive
+    @include Tablet {
+      width: 300px;
+    }
+    @include Mobile {
+      width: 360px;
+      margin-top: 20px;
+    }
+  }
+  #messageInput {
+    height: 200px;
+    width: 800px;
+    font-size: 18px;
+    font-weight: $global-weight;
+    color: $primary-text;
+    padding-left: 10px;
+    margin-top: 20px;
+    //Responsive
+    @include Tablet {
+      width: 660px;
+    }
+    @include Mobile {
+      width: 360px;
+      padding-left: 0px;
+    }
+  }
+  .subMesBtn {
+    height: 40px;
+    width: 90px;
+    margin-left: 710px;
+    font-size: 18px;
+    font-weight: $global-weight;
+    transition: $global-Trans;
+    //Responsive
+    @include Tablet {
+      margin-left: 570px;
+    }
+    @include Mobile {
+      margin-left: 270px;
+    }
+  }
+  .subMesBtn:hover {
+    @include btnEffect;
+    background-color: $primary-orange;
+  }
+  //Contact Form Responsive
+  @include Laptop {
+    padding-left: 120px;
+  }
+  @include Tablet {
+    padding-left: 20px;
+  }
+}

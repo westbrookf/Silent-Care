@@ -1360,6 +1360,232 @@ img {
   margin-top: 40px;
   margin-bottom: 90px; }
 
+.mainContactUs {
+  width: 100%; }
+
+.contactRow {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 110px; }
+  @media only screen and (max-width: 1024px) {
+    .contactRow {
+      width: 1000px;
+      margin-left: 10px; } }
+  @media only screen and (max-width: 768px) {
+    .contactRow {
+      width: 700px;
+      margin-left: 40px; } }
+  @media only screen and (max-width: 425px) {
+    .contactRow {
+      width: 400px;
+      flex-direction: column;
+      margin-left: 0px; } }
+
+.location {
+  width: 360px;
+  border: 2px solid #30303030;
+  text-align: center;
+  padding: 20px;
+  transition: 0.6s; }
+  .location #globeConStyle {
+    font-size: 30px;
+    color: #e7e7e7;
+    background-color: #00a2e8;
+    border-radius: 50%;
+    padding: 20px; }
+  .location .address {
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030; }
+  @media only screen and (max-width: 1024px) {
+    .location {
+      width: 300px; } }
+  @media only screen and (max-width: 768px) {
+    .location {
+      width: 225px; } }
+  @media only screen and (max-width: 425px) {
+    .location {
+      margin-bottom: 20px; } }
+
+.location:hover {
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8;
+  background-color: #ff4500;
+  transform: scale(1.1); }
+
+.emailBlock {
+  height: 194px;
+  width: 360px;
+  border: 2px solid #30303030;
+  text-align: center;
+  padding: 20px;
+  transition: 0.6s; }
+  .emailBlock #globeConStyle {
+    font-size: 30px;
+    color: #e7e7e7;
+    background-color: #ff4500;
+    border-radius: 50%;
+    padding: 20px; }
+  .emailBlock .emailTitle {
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030; }
+  @media only screen and (max-width: 1024px) {
+    .emailBlock {
+      width: 300px; } }
+  @media only screen and (max-width: 768px) {
+    .emailBlock {
+      width: 225px;
+      height: 215px; } }
+  @media only screen and (max-width: 425px) {
+    .emailBlock {
+      margin-bottom: 20px; } }
+
+.emailBlock:hover {
+  background-color: #00a2e8;
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8;
+  transform: scale(1.1); }
+
+.phoneBlock {
+  height: 194px;
+  width: 360px;
+  border: 2px solid #30303030;
+  text-align: center;
+  padding: 20px;
+  transition: 0.6s; }
+  .phoneBlock #globeConStyle {
+    font-size: 30px;
+    color: #e7e7e7;
+    background-color: #00a2e8;
+    border-radius: 50%;
+    padding: 20px; }
+  .phoneBlock .phoneTitle {
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030; }
+  @media only screen and (max-width: 1024px) {
+    .phoneBlock {
+      width: 300px; } }
+  @media only screen and (max-width: 768px) {
+    .phoneBlock {
+      width: 225px;
+      height: 215px; } }
+
+.phoneBlock:hover {
+  box-shadow: 5px 5px 10px black;
+  background-color: #00a2e8;
+  background-color: #ff4500;
+  transform: scale(1.1); }
+
+.messageForm {
+  height: 600px;
+  width: 1200px;
+  background-color: #e7e7e7;
+  margin-top: 100px;
+  margin-left: 110px;
+  transition: 0.6s; }
+  .messageForm .formTitle {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030;
+    text-align: center;
+    padding-top: 120px; }
+  @media only screen and (max-width: 1024px) {
+    .messageForm {
+      width: 1000px;
+      margin-left: 10px; } }
+  @media only screen and (max-width: 768px) {
+    .messageForm {
+      width: 700px;
+      margin-left: 40px; } }
+  @media only screen and (max-width: 425px) {
+    .messageForm {
+      width: 390px;
+      margin-left: 18px; } }
+
+.messageForm:hover {
+  background-color: #00a2e8; }
+
+.contactForm {
+  padding-top: 20px;
+  padding-left: 180px; }
+  .contactForm #nameInput {
+    height: 40px;
+    width: 400px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #303030;
+    padding-left: 10px; }
+    @media only screen and (max-width: 768px) {
+      .contactForm #nameInput {
+        width: 300px;
+        margin-left: 30px; } }
+    @media only screen and (max-width: 425px) {
+      .contactForm #nameInput {
+        width: 360px;
+        margin-left: 0px; } }
+  .contactForm #emailInput {
+    height: 40px;
+    width: 400px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #303030;
+    padding-left: 10px; }
+    @media only screen and (max-width: 768px) {
+      .contactForm #emailInput {
+        width: 300px; } }
+    @media only screen and (max-width: 425px) {
+      .contactForm #emailInput {
+        width: 360px;
+        margin-top: 20px; } }
+  .contactForm #messageInput {
+    height: 200px;
+    width: 800px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #303030;
+    padding-left: 10px;
+    margin-top: 20px; }
+    @media only screen and (max-width: 768px) {
+      .contactForm #messageInput {
+        width: 660px; } }
+    @media only screen and (max-width: 425px) {
+      .contactForm #messageInput {
+        width: 360px;
+        padding-left: 0px; } }
+  .contactForm .subMesBtn {
+    height: 40px;
+    width: 90px;
+    margin-left: 710px;
+    font-size: 18px;
+    font-weight: lighter;
+    transition: 0.6s; }
+    @media only screen and (max-width: 768px) {
+      .contactForm .subMesBtn {
+        margin-left: 570px; } }
+    @media only screen and (max-width: 425px) {
+      .contactForm .subMesBtn {
+        margin-left: 270px; } }
+  .contactForm .subMesBtn:hover {
+    box-shadow: 5px 5px 10px black;
+    background-color: #00a2e8;
+    background-color: #ff4500; }
+  @media only screen and (max-width: 1024px) {
+    .contactForm {
+      padding-left: 120px; } }
+  @media only screen and (max-width: 768px) {
+    .contactForm {
+      padding-left: 20px; } }
+
 * {
   margin: 0;
   padding: 0;
