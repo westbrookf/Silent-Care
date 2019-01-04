@@ -7,7 +7,7 @@
   overflow-x: hidden; }
   @media only screen and (max-width: 425px) {
     #showcaseImg {
-      height: 40vh;
+      height: 30vh;
       overflow-x: unset; } }
 
 .showLogo {
@@ -154,7 +154,7 @@
         font-size: 12px; } }
   @media only screen and (max-width: 425px) {
     #introHead {
-      padding-top: 40px;
+      padding-top: 0px;
       padding-left: 10px; } }
 
 #introBtn {
@@ -517,7 +517,8 @@
 
 #careTypeContain {
   height: 20vh;
-  width: 100%; }
+  width: 100%;
+  overflow-y: hidden; }
   #careTypeContain .careRow {
     height: 20vh;
     width: 1000px;
@@ -535,11 +536,9 @@
         width: 768px; } }
     @media only screen and (max-width: 425px) {
       #careTypeContain .careRow {
-        height: 100%;
         width: 400px;
         flex-direction: column;
-        margin-top: 20px;
-        overflow-y: unset; } }
+        margin-top: 20px; } }
   #careTypeContain .careType {
     text-align: center; }
     #careTypeContain .careType #careIcon {
@@ -560,9 +559,6 @@
     @media only screen and (max-width: 425px) {
       #careTypeContain .careType {
         padding-top: 30px; } }
-  @media only screen and (max-width: 425px) {
-    #careTypeContain {
-      height: 100%; } }
 
 .contactShowcase {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/img10.jpg);
@@ -770,11 +766,7 @@
         margin-left: 180px; } }
     @media only screen and (max-width: 425px) {
       .mesText p {
-        margin-left: 20px;
-        display: none; } }
-  @media only screen and (max-width: 425px) {
-    .mesText {
-      padding-top: 70px; } }
+        margin-left: 20px; } }
 
 .mesLink {
   margin-top: 20px; }
@@ -926,6 +918,7 @@
     @media only screen and (max-width: 425px) {
       .aslContent h1 {
         font-size: 22px;
+        width: 250px;
         text-align: center; } }
   .aslContent p {
     font-size: 20px;
@@ -952,15 +945,11 @@
       background-color: #00a2e8; }
     @media only screen and (max-width: 425px) {
       .aslContent .aslMoreBtn {
-        margin-left: 110px; } }
+        margin-left: 30px; } }
   @media only screen and (max-width: 768px) {
     .aslContent {
       padding-right: 5px;
       padding-top: 130px; } }
-  @media only screen and (max-width: 425px) {
-    .aslContent {
-      padding-top: 190px;
-      width: 100%; } }
 
 #homeContact {
   height: 70vh;
@@ -984,9 +973,6 @@
   height: 500px;
   width: 500px;
   background-color: #f5f5f5; }
-  @media only screen and (max-width: 425px) {
-    .contactInfo {
-      padding-left: 20px; } }
 
 .contactList .contactTitle {
   font-size: 30px;
@@ -1006,9 +992,6 @@
       .contactList .contactFlex h3 {
         width: 100px;
         font-size: 18px; } }
-    @media only screen and (max-width: 425px) {
-      .contactList .contactFlex h3 {
-        width: 130px; } }
   .contactList .contactFlex p,
   .contactList .contactFlex a {
     font-size: 18px;

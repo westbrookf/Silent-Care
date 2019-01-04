@@ -23,7 +23,7 @@
     }
   }
   .trustText {
-    background-color: $backColor;
+    background-color: #f5f5f5;
     height: 500px;
     width: 500px;
     text-align: center;
@@ -100,13 +100,14 @@
 }
 //Care Type Row
 #careTypeContain {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   .careRow {
-    height: 30vh;
+    height: 20vh;
     width: 1000px;
     @include Display(row, space-evenly, center);
     margin-left: 210px;
+    overflow-y: hidden;
     //Responsive
     @include Laptop {
       margin-left: 0px;
@@ -115,15 +116,18 @@
       width: 768px;
     }
     @include Mobile {
+      height: 100%;
       width: 400px;
       flex-direction: column;
       margin-top: 20px;
+      overflow-y: unset;
     }
   }
   .careType {
     text-align: center;
+    // padding-top: 110px;
     #careIcon {
-      font-size: 30px;
+      font-size: 40px;
       color: $primary-orange;
     }
     h3 {
@@ -131,6 +135,7 @@
       text-transform: capitalize;
       font-weight: $global-weight;
       color: $primary-text;
+      // margin-top: 100px;
     }
     .readMore {
       a {
@@ -147,6 +152,10 @@
     @include Mobile {
       padding-top: 30px;
     }
+  }
+  //Care type Container Responsive
+  @include Mobile {
+    height: 100%;
   }
 }
 .contactShowcase {
@@ -285,7 +294,7 @@
     width: 100%;
     @include Display(row, center, center);
     .careList {
-      background-color: $backColor;
+      background-color: #f5f5f5;
       height: 500px;
       width: 500px;
       //Responsive
@@ -303,7 +312,9 @@
         color: $primary-text;
       }
       //Responsive
-      padding-left: 10px;
+      @include Mobile {
+        padding-left: 10px;
+      }
     }
     //Best Care Content Responsive
     margin-top: 40px;
@@ -373,7 +384,12 @@
     }
     @include Mobile {
       margin-left: 20px;
+      display: none;
     }
+  }
+  //MesText Responsive
+  @include Mobile {
+    padding-top: 70px;
   }
 }
 .mesLink {
@@ -445,15 +461,17 @@
 .hidden {
   display: none !important;
 }
-img {
-  height: 500px;
-  width: 500px;
-  //Responsive
-  @include Tablet {
-    width: 384px;
-  }
-  @include Mobile {
-    display: none;
+.linkContentPhto {
+  img {
+    height: 500px;
+    width: 500px;
+    //Responsive
+    @include Tablet {
+      width: 384px;
+    }
+    @include Mobile {
+      display: none;
+    }
   }
 }
 .aboutUsText {
@@ -462,7 +480,7 @@ img {
   padding-top: 40px;
   padding-left: 10px;
   text-align: center;
-  background: $backColor;
+  background-color: #f5f5f5;
   h2 {
     font-size: 24px;
     font-weight: $global-weight;
@@ -517,16 +535,16 @@ img {
 #aslShowcase {
   @include Background(url(../img/yellow.jpeg));
   background-position: top;
-  height: 50vh;
+  height: 80vh;
   width: 100%;
   margin-top: 60px;
 }
 .aslContent {
   float: right;
-  padding-top: 160px;
+  padding-top: 220px;
   padding-right: 60px;
   h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: lighter;
     color: $button-text;
     text-transform: capitalize;
@@ -536,14 +554,14 @@ img {
     }
     @include Mobile {
       font-size: 22px;
-      width: 250px;
       text-align: center;
     }
   }
   p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: $global-weight;
-    width: 450px;
+    width: 500px;
+    color: $button-text;
     //Responsive
     @include Tablet {
       width: 350px;
@@ -567,13 +585,17 @@ img {
     }
     //asl More Responsive
     @include Mobile {
-      margin-left: 30px;
+      margin-left: 110px;
     }
   }
   //ASL Content Responisve
   @include Tablet {
     padding-right: 5px;
     padding-top: 130px;
+  }
+  @include Mobile {
+    padding-top: 190px;
+    width: 100%;
   }
 }
 #homeContact {
@@ -595,7 +617,11 @@ img {
   text-align: left;
   height: 500px;
   width: 500px;
-  background-color: $backColor;
+  background-color: #f5f5f5;
+  //Responsive
+  @include Mobile {
+    padding-left: 20px;
+  }
 }
 .contactList {
   .contactTitle {
@@ -615,6 +641,9 @@ img {
       @include Tablet {
         width: 100px;
         font-size: 18px;
+      }
+      @include Mobile {
+        width: 130px;
       }
     }
     p,

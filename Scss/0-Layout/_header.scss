@@ -5,8 +5,23 @@
   overflow-x: hidden;
   //Responsive
   @include Mobile {
-    height: 30vh;
+    height: 40vh;
     overflow-x: unset;
+  }
+}
+.showLogo {
+  display: inline-flex;
+  padding-left: 60px;
+  padding-top: 40px;
+  .hmeLink {
+    img {
+      height: 150px;
+      width: 300px;
+    }
+  }
+  //Responsive
+  @include Mobile {
+    display: none;
   }
 }
 #mainNav {
@@ -132,7 +147,7 @@
   color: $primary-blue;
 }
 #introHead {
-  padding-top: 400px;
+  padding-top: 280px;
   padding-left: 60px;
   h1 {
     font-size: 50px;
@@ -154,7 +169,7 @@
   }
   //Intro Head Responsive
   @include Mobile {
-    padding-top: 0px;
+    padding-top: 40px;
     padding-left: 10px;
   }
 }
