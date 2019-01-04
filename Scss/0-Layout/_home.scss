@@ -546,6 +546,7 @@
   //Responsive
   @include Mobile {
     height: 40vh;
+    position: relative;
   }
 }
 .aslContent {
