@@ -212,6 +212,7 @@
   @include Mobile {
     margin-top: 60px;
     height: 30vh;
+    background-attachment: unset;
   }
 }
 #contactBar {
@@ -360,6 +361,10 @@
   height: 40vh;
   width: 100%;
   margin-top: 60px;
+  //Responsive
+  @include Mobile {
+    height: 30vh;
+  }
 }
 .mesText {
   padding-top: 100px;
@@ -538,6 +543,10 @@
   height: 80vh;
   width: 100%;
   margin-top: 60px;
+  //Responsive
+  @include Mobile {
+    height: 30vh;
+  }
 }
 .aslContent {
   float: right;
@@ -594,7 +603,7 @@
     padding-top: 130px;
   }
   @include Mobile {
-    padding-top: 190px;
+    padding-top: 80px;
     width: 100%;
   }
 }

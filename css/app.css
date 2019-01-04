@@ -613,7 +613,8 @@
   @media only screen and (max-width: 425px) {
     .contactShowcase {
       margin-top: 60px;
-      height: 30vh; } }
+      height: 30vh;
+      background-attachment: unset; } }
 
 #contactBar {
   height: 20vh;
@@ -748,6 +749,9 @@
   height: 40vh;
   width: 100%;
   margin-top: 60px; }
+  @media only screen and (max-width: 425px) {
+    #quickMesContain {
+      height: 30vh; } }
 
 .mesText {
   padding-top: 100px;
@@ -910,6 +914,9 @@
   height: 80vh;
   width: 100%;
   margin-top: 60px; }
+  @media only screen and (max-width: 425px) {
+    #aslShowcase {
+      height: 30vh; } }
 
 .aslContent {
   float: right;
@@ -959,7 +966,7 @@
       padding-top: 130px; } }
   @media only screen and (max-width: 425px) {
     .aslContent {
-      padding-top: 190px;
+      padding-top: 80px;
       width: 100%; } }
 
 #homeContact {
