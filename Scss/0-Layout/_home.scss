@@ -530,10 +530,17 @@
     a:hover {
       @include btnEffect;
     }
+    //Responsive
+    @include Mobile {
+      margin-top: 30px;
+    }
   }
   //Responsive
   @include Tablet {
     width: 384px;
+  }
+  @include Mobile {
+    height: 600px;
   }
 }
 //ASL section
