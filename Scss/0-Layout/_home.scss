@@ -547,7 +547,7 @@
 #aslShowcase {
   @include Background(url(../img/yellow.jpeg));
   background-position: top;
-  height: 80vh;
+  height: 400px;
   width: 100%;
   margin-top: 60px;
   //Responsive
@@ -611,7 +611,7 @@
     padding-top: 130px;
   }
   @include Mobile {
-    padding-top: 60px;
+    padding-top:80px;
     width: 100%;
   }
 }
