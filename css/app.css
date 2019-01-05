@@ -1042,7 +1042,8 @@
   margin-top: 40px; }
   @media only screen and (max-width: 425px) {
     .rightChoice {
-      height: 96vh; } }
+      height: 100%;
+      margin-bottom: 40px; } }
 
 .rightTitle {
   text-align: center; }
@@ -1136,6 +1137,9 @@
   height: 70vh;
   width: 100%;
   background-position: top; }
+  @media only screen and (max-width: 425px) {
+    .homeVisitShowcase {
+      height: 30vh; } }
 
 .visitContent {
   padding-top: 200px;
@@ -1145,6 +1149,12 @@
     font-weight: lighter;
     color: #e7e7e7;
     text-transform: capitalize; }
+    @media only screen and (max-width: 425px) {
+      .visitContent .visitTitle {
+        font-size: 24px; } }
+  @media only screen and (max-width: 425px) {
+    .visitContent {
+      padding-top: 50px; } }
 
 .ourValue {
   width: 100%; }
@@ -1557,10 +1567,7 @@
   @media only screen and (max-width: 425px) {
     .messageForm {
       width: 390px;
-      margin-left: 18px; } }
-
-.messageForm:hover {
-  background-color: #00a2e8; }
+      margin-left: 12px; } }
 
 .contactForm {
   padding-top: 20px;

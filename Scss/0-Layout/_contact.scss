@@ -155,11 +155,8 @@
   }
   @include Mobile {
     width: 390px;
-    margin-left: 18px;
+    margin-left: 12px;
   }
-}
-.messageForm:hover {
-  background-color: $primary-blue;
 }
 .contactForm {
   padding-top: 20px;

@@ -4,7 +4,8 @@
   margin-top: 40px;
   //Responsive
   @include Mobile {
-    height: 96vh;
+    height: 100%;
+    margin-bottom: 40px;
   }
 }
 .rightTitle {
@@ -99,6 +100,10 @@
   height: 70vh;
   width: 100%;
   background-position: top;
+  //Responsive
+  @include Mobile {
+    height: 30vh;
+  }
 }
 .visitContent {
   padding-top: 200px;
@@ -108,6 +113,14 @@
     font-weight: $global-weight;
     color: $button-text;
     text-transform: capitalize;
+    //Responsive
+    @include Mobile {
+      font-size: 24px;
+    }
+  }
+  //Responsive
+  @include Mobile {
+    padding-top: 50px;
   }
 }
 .ourValue {
