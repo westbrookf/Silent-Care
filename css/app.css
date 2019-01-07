@@ -7,8 +7,7 @@
   overflow-x: hidden; }
   @media only screen and (max-width: 425px) {
     #showcaseImg {
-      height: 40vh;
-      overflow-x: unset; } }
+      height: 40vh; } }
 
 .showLogo {
   display: inline-flex;
@@ -22,9 +21,8 @@
       display: none; } }
 
 #mainNav {
-  margin-right: -300px;
   opacity: 0;
-  transition-duration: 1.3s; }
+  width: 0px; }
   @media only screen and (max-width: 425px) {
     #mainNav {
       margin-right: 0;
@@ -618,73 +616,46 @@
       background-attachment: unset; } }
 
 #contactBar {
-  height: 20vh;
-  width: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: -60px;
-  margin-left: 210px;
-  background-color: #00a2e8;
-  opacity: 0;
-  transition: 1s; }
-  #contactBar .contactPhone {
-    display: flex;
-    flex-direction: row;
-    justify-content: unset;
-    align-items: unset; }
-    #contactBar .contactPhone .fa-phone-plus {
-      font-size: 30px;
-      color: #e7e7e7;
-      padding-top: 10px;
-      padding-right: 20px; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactPhone .fa-phone-plus {
-          font-size: 16px;
-          padding-right: 10px; } }
-    #contactBar .contactPhone h3 {
-      font-size: 20px;
-      font-weight: lighter;
-      color: #e7e7e7;
-      text-transform: capitalize; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactPhone h3 {
-          font-size: 16px; } }
-  #contactBar .contactEmail {
-    display: flex;
-    flex-direction: row;
-    justify-content: unset;
-    align-items: unset; }
-    #contactBar .contactEmail .fa-envelope {
-      font-size: 30px;
-      color: #e7e7e7;
-      padding-top: 10px;
-      padding-right: 20px; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactEmail .fa-envelope {
-          font-size: 16px;
-          padding-right: 10px; } }
-    #contactBar .contactEmail h3 {
-      font-size: 20px;
-      font-weight: lighter;
-      color: #e7e7e7;
-      text-transform: capitalize; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactEmail h3 {
-          font-size: 16px; } }
-  @media only screen and (max-width: 1024px) {
-    #contactBar {
-      margin-left: 10px; } }
-  @media only screen and (max-width: 768px) {
-    #contactBar {
-      width: 768px;
-      margin-left: 0px; } }
-  @media only screen and (max-width: 425px) {
-    #contactBar {
-      height: 10vh;
-      width: 400px;
-      margin-left: 12px; } }
+  margin-top: -120px; }
+  #contactBar .block {
+    height: 300px;
+    width: 300px;
+    border: 2px solid #a5a5a52a;
+    background-color: #f9f9f9;
+    text-align: left;
+    overflow: hidden;
+    opacity: 0; }
+    #contactBar .block .conRowIcon {
+      font-size: 120px;
+      color: #00a2e8;
+      margin-top: -30px;
+      margin-left: -20px;
+      padding: 20px;
+      border: 6px solid #00a2e8;
+      border-radius: 100px; }
+    #contactBar .block .conTextContain {
+      height: 130px;
+      background-color: #fff; }
+      #contactBar .block .conTextContain h3 {
+        font-size: 30px;
+        font-weight: lighter;
+        color: #303030;
+        text-transform: capitalize;
+        border-top: 4px solid orange;
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-left: 20px; }
+      #contactBar .block .conTextContain p {
+        font-size: 18px;
+        font-weight: lighter;
+        color: #303030;
+        width: 240px;
+        padding-top: 4px;
+        padding-left: 20px; }
 
 .bestCareContain {
   height: 70vh;
@@ -918,7 +889,8 @@
   background-size: cover;
   background-position: center;
   background-position: top;
-  height: 400px;
+  background-attachment: fixed;
+  height: 50vh;
   width: 100%;
   margin-top: 60px; }
   @media only screen and (max-width: 425px) {
@@ -928,7 +900,7 @@
 
 .aslContent {
   float: right;
-  padding-top: 220px;
+  padding-top: 140px;
   padding-right: 60px; }
   .aslContent h1 {
     font-size: 40px;

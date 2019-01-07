@@ -6,7 +6,6 @@
   //Responsive
   @include Mobile {
     height: 40vh;
-    overflow-x: unset;
   }
 }
 .showLogo {
@@ -25,9 +24,8 @@
   }
 }
 #mainNav {
-  margin-right: -300px;
   opacity: 0;
-  transition-duration: 1.3s;
+  width: 0px;
   @include Mobile {
     margin-right: 0;
     opacity: 1;

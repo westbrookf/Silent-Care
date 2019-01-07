@@ -6,17 +6,62 @@ openNav.addEventListener("click", Open);
 closeNav.addEventListener("click", Close);
 
 function Open() {
-  const Nav = document.getElementById("mainNav");
-  Nav.style.marginRight = "0px";
-  Nav.style.opacity = "1";
-  openNav.style.opacity = "0";
+  let NavTimeline = anime.timeline();
+  NavTimeline.add({
+    targets: "#openBtn",
+    opacity: 0,
+    duration: 300
+  })
+    .add({
+      targets: ".showLogo",
+      opacity: ["1", "0"],
+      duration: 500,
+      easing: "easeInSine"
+    })
+    .add({
+      targets: "#mainNav",
+      opacity: ["0", ".5", "1"],
+      width: "300px",
+      duration: 600,
+      easing: "easeInSine"
+    })
+    .add({
+      targets: ".logo",
+      opacity: ["0", "1"],
+      delay: 2,
+      duration: 600,
+      easing: "linear"
+    });
 }
 
 function Close() {
-  const Nav = document.getElementById("mainNav");
-  Nav.style.marginRight = "-300px";
-  Nav.style.opacity = "0";
-  openNav.style.opacity = "1";
+  let CloseTimeline = anime.timeline();
+
+  CloseTimeline.add({
+    targets: ".logo",
+    opacity: ["1", "0"],
+    duration: 400,
+    delay: 2,
+    easing: "easeInSine"
+  })
+    .add({
+      targets: "#mainNav",
+      opacity: ["1", "0"],
+      width: ["0px"],
+      duration: 700,
+      easing: "easeOutSine"
+    })
+    .add({
+      targets: "#openBtn",
+      opacity: 1,
+      duration: 300
+    })
+    .add({
+      targets: ".showLogo",
+      opacity: ["0", "1"],
+      duration: 500,
+      easing: "linear"
+    });
 }
 
 // CONTACT BAR DISPLAY STARTS HERE
@@ -27,8 +72,52 @@ let hide = document.getElementById("contactBar");
 conButton.addEventListener("click", contact);
 
 function contact() {
-  document.getElementById("contactBar").style.opacity = "1";
+  const opnTimeline = anime.timeline();
+  opnTimeline
+    // .add({
+    //   targets: ".block",
+    //   opacity: ["0", "1"],
+    //   easing: "easeInOutSine",
+    //   duration: 400
+    // })
+    .add({
+      targets: ".block",
+      opacity: ["0", "1"],
+      easing: "easeInOutSine",
+      boxshadow: ["10px", "10px", "30px", "#303030"]
+    })
+    .add({
+      targets: ".blockOne",
+      duration: 600
+    })
+    .add({
+      targets: ".blockTwo",
+      duration: 900
+    })
+    .add({
+      targets: ".blockThree",
+      duration: 1000
+    });
 }
+// let conBlock = document.getElementById("conBlock");
+// conBlock.addEventListener("mouseover", conChange);
+// function conChange() {
+//   let contactTimeline = anime.timeline();
+//   contactTimeline
+//     .add({
+//       targets: ".block",
+//       backgroundColor: "#00a2e8",
+//       easing: "linear",
+//       duration: 300
+//       // opacity: 0.8
+//     })
+//     .add({
+//       targets: ".conRowIcon",
+//       color: "#ff4500",
+//       opacity: ".6",
+//       border: "#ff4500"
+//     });
+// }
 
 // About our company Slide starts here
 //variables

@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
     <!--Icons-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
+
     <title>Silent Care</title>
   <body>
     <main id="showcaseImg">
@@ -110,20 +111,38 @@
     </div>
     <!--contact info bar-->
     <div id="contactBar">
-      <div class="contactPhone">
-        <span><i class="fal fa-phone-plus"></i>
-        </span>
-        <h3> main office<br>
-          (314)797-7142
-        </h3>
+      <div class="block blockOne" id="conBlock">
+        <div class="contactPhone">
+          <span><i class="fal fa-phone-plus conRowIcon"></i>
+          </span>
+          <div class="conTextContain">
+            <h3> main office</h3>
+            <p class="phoneContent">(314)797-7142</p>
+          </div>
+        </div>
       </div>
-      <div class="contactEmail">
-        <span>
-        <i class="fal fa-envelope"></i>
-        </span>
-        <h3> email <br>
-          silentcare11@gmail.com
-        </h3>
+      <div class="block blockTwo">
+        <div class="contactEmail">
+          <span>
+            <i class="fal fa-envelope conRowIcon"></i>
+          </span>
+          <div class="conTextContain">
+            <h3> email</h3>
+            <p class="emailContent">silentcare11@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="block blockThree">
+        <div class="contactAdress">
+          <span>
+              <i class="fal fa-building conRowIcon"></i>
+          </span>
+          <div class="conTextContain">
+            <h3> address</h3>
+            <p class="locContent">7777 Bonhomme Ave #1800 Clayton, MO 63105
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <!--Best Care Giver Section-->
@@ -320,6 +339,7 @@
       </div>  
     </footer>
     <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHyU0tfosKoRxhDIJpf7YubYeMpdIup3Y&callback=initMap"
     async defer></script>
   </body>

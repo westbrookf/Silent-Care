@@ -216,74 +216,48 @@
   }
 }
 #contactBar {
-  height: 20vh;
-  width: 1000px;
   @include Display(row, space-evenly, center);
-  margin-top: -60px;
-  margin-left: 210px;
-  background-color: $primary-blue;
-  opacity: $prim-opacity;
-  transition: 1s;
-  .contactPhone {
-    @include Display(row, unset, unset);
-    .fa-phone-plus {
-      font-size: 30px;
-      color: $button-text;
-      padding-top: 10px;
-      padding-right: 20px;
-      //Responsive
-      @include Mobile {
-        font-size: 16px;
-        padding-right: 10px;
+  margin-top: -120px;
+  .block {
+    height: 300px;
+    width: 300px;
+    border: 2px solid #a5a5a52a;
+    background-color: #f9f9f9;
+    text-align: left;
+    overflow: hidden;
+    opacity: 0;
+    .conRowIcon {
+      font-size: 120px;
+      color: $primary-blue;
+      margin-top: -30px;
+      margin-left: -20px;
+      padding: 20px;
+      // opacity: 0.4;
+      border: 6px solid $primary-blue;
+      border-radius: 100px;
+    }
+    .conTextContain {
+      height: 130px;
+      background-color: #fff;
+      h3 {
+        font-size: 30px;
+        font-weight: lighter;
+        color: $primary-text;
+        text-transform: capitalize;
+        border-top: 4px solid orange;
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: lighter;
+        color: $primary-text;
+        width: 240px;
+        padding-top: 4px;
+        padding-left: 20px;
       }
     }
-    h3 {
-      font-size: 20px;
-      font-weight: $global-weight;
-      color: $button-text;
-      text-transform: capitalize;
-      //Responsive
-      @include Mobile {
-        font-size: 16px;
-      }
-    }
-  }
-  .contactEmail {
-    @include Display(row, unset, unset);
-    .fa-envelope {
-      font-size: 30px;
-      color: $button-text;
-      padding-top: 10px;
-      padding-right: 20px;
-      //Responsive
-      @include Mobile {
-        font-size: 16px;
-        padding-right: 10px;
-      }
-    }
-    h3 {
-      font-size: 20px;
-      font-weight: $global-weight;
-      color: $button-text;
-      text-transform: capitalize;
-      //Responsive
-      @include Mobile {
-        font-size: 16px;
-      }
-    }
-  }
-  //Contact Bar Responsive
-  @include Laptop {
-    margin-left: 10px;
-  }
-  @include Tablet {
-    width: 768px;
-    margin-left: 0px;
-  }
-  @include Mobile {
-    height: 10vh;
-    width: 400px;
-    margin-left: 12px;
   }
 }
 //Best Care section
@@ -547,7 +521,8 @@
 #aslShowcase {
   @include Background(url(../img/yellow.jpeg));
   background-position: top;
-  height: 400px;
+  background-attachment: fixed;
+  height: 50vh;
   width: 100%;
   margin-top: 60px;
   //Responsive
@@ -558,7 +533,7 @@
 }
 .aslContent {
   float: right;
-  padding-top: 220px;
+  padding-top: 140px;
   padding-right: 60px;
   h1 {
     font-size: 40px;
@@ -611,7 +586,7 @@
     padding-top: 130px;
   }
   @include Mobile {
-    padding-top:80px;
+    padding-top: 80px;
     width: 100%;
   }
 }
