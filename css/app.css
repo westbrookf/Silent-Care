@@ -1394,7 +1394,7 @@
     @media only screen and (max-width: 425px) {
       .textBlock .portOffers {
         font-size: 20px;
-        width: 400px;
+        width: 390px;
         line-height: 30px;
         padding-top: 60px; } }
   @media only screen and (max-width: 425px) {
@@ -1407,6 +1407,9 @@
   width: 400px;
   margin-top: 40px;
   margin-bottom: 90px; }
+  @media only screen and (max-width: 425px) {
+    .servicePortPhto {
+      display: none; } }
 
 .mainContactUs {
   width: 100%; }
