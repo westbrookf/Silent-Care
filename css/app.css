@@ -914,7 +914,8 @@
   margin-top: 60px; }
   @media only screen and (max-width: 425px) {
     #aslShowcase {
-      height: 30vh; } }
+      height: 30vh;
+      background-attachment: unset; } }
 
 .aslContent {
   float: right;

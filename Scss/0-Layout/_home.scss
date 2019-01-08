@@ -547,6 +547,7 @@
   //Responsive
   @include Mobile {
     height: 30vh;
+    background-attachment: unset;
     // position: relative;
   }
 }
