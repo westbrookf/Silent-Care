@@ -6,6 +6,7 @@
   //Responsive
   @include Mobile {
     height: 40vh;
+    overflow-x: unset;
   }
 }
 .showLogo {

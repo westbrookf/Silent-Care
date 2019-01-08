@@ -90,12 +90,12 @@ function contact() {
       targets: ".bestCareContain",
       marginTop: "-20px",
       easing: "linear",
-      duration: 400
+      delay: 500
     })
     .add({
       targets: ".blockOne",
       opacity: ["0", "1"],
-      duration: 400,
+      duration: 300,
       easing: "easeInSine"
     })
     .add({

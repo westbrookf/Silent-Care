@@ -7,7 +7,8 @@
   overflow-x: hidden; }
   @media only screen and (max-width: 425px) {
     #showcaseImg {
-      height: 40vh; } }
+      height: 40vh;
+      overflow-x: unset; } }
 
 .showLogo {
   display: inline-flex;
@@ -591,8 +592,8 @@
       margin-top: 40px;
       margin-left: 630px;
       width: 160px;
-      cursor: pointer;
-      transition: 0.6s; }
+      transition: 0.6s;
+      cursor: pointer; }
       @media only screen and (max-width: 1024px) {
         .contactShowcase .contactText #conClick {
           margin-left: 440px; } }
@@ -658,7 +659,18 @@
   #contactBar .blockOne,
   #contactBar .blockTwo,
   #contactBar .blockThree {
-    opacity: 0; }
+    opacity: 1; }
+    @media only screen and (max-width: 425px) {
+      #contactBar .blockOne,
+      #contactBar .blockTwo,
+      #contactBar .blockThree {
+        padding-top: 40px; } }
+  @media only screen and (max-width: 425px) {
+    #contactBar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; } }
 
 .bestCareContain {
   height: 70vh;

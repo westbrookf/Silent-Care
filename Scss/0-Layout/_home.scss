@@ -186,8 +186,8 @@
       margin-top: 40px;
       margin-left: 630px;
       width: 160px;
-      cursor: pointer;
       transition: $global-Trans;
+      cursor: pointer;
       //Responsive
       @include Laptop {
         margin-left: 440px;
@@ -261,7 +261,15 @@
   .blockOne,
   .blockTwo,
   .blockThree {
-    opacity: 0;
+    opacity: 1;
+    //responsive
+    @include Mobile {
+      padding-top: 40px;
+    }
+  }
+  //Contact Bar responsive
+  @include Mobile {
+    @include Display(column, space-evenly, center);
   }
 }
 //Best Care section
