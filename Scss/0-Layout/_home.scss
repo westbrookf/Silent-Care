@@ -261,15 +261,16 @@
   .blockOne,
   .blockTwo,
   .blockThree {
-    opacity: 1;
+    opacity: 0;
     //responsive
     @include Mobile {
-      padding-top: 40px;
+      margin-top: 40px;
     }
   }
   //Contact Bar responsive
   @include Mobile {
     @include Display(column, space-evenly, center);
+    margin-top: 20px;
   }
 }
 //Best Care section
