@@ -914,8 +914,7 @@
   margin-top: 60px; }
   @media only screen and (max-width: 425px) {
     #aslShowcase {
-      height: 40vh;
-      position: relative; } }
+      height: 30vh; } }
 
 .aslContent {
   float: right;
@@ -965,7 +964,7 @@
       padding-top: 130px; } }
   @media only screen and (max-width: 425px) {
     .aslContent {
-      padding-top: 120px;
+      padding-top: 80px;
       width: 100%; } }
 
 #homeContact {

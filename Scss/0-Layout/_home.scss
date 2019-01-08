@@ -546,8 +546,8 @@
   margin-top: 60px;
   //Responsive
   @include Mobile {
-    height: 40vh;
-    position: relative;
+    height: 30vh;
+    // position: relative;
   }
 }
 .aslContent {
@@ -605,7 +605,7 @@
     padding-top: 130px;
   }
   @include Mobile {
-    padding-top: 120px;
+    padding-top: 80px;
     width: 100%;
   }
 }
