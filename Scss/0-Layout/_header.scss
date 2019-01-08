@@ -6,7 +6,6 @@
   //Responsive
   @include Mobile {
     height: 40vh;
-    overflow-x: unset;
   }
 }
 .showLogo {
@@ -87,7 +86,7 @@
       //Responsive
       @include Mobile {
         font-size: 14px;
-        margin-left: 0px;
+        margin-left: 80px;
       }
     }
     a:hover {
