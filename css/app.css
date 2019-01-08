@@ -635,6 +635,9 @@
       padding: 20px;
       border: 6px solid #00a2e8;
       border-radius: 100px; }
+      @media only screen and (max-width: 425px) {
+        #contactBar .block .conRowIcon {
+          font-size: 40px; } }
     #contactBar .block .conTextContain {
       height: 130px;
       background-color: #fff; }
@@ -729,6 +732,9 @@
   @media only screen and (max-width: 425px) {
     .bestCareContain .bestCarePhoto {
       display: none; } }
+  @media only screen and (max-width: 425px) {
+    .bestCareContain {
+      margin-top: -1050px; } }
 
 #quickMesContain {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/img12.jpeg);

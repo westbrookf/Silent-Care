@@ -234,6 +234,10 @@
       // opacity: 0.4;
       border: 6px solid $primary-blue;
       border-radius: 100px;
+      //responsive
+      @include Mobile {
+        font-size: 40px;
+      }
     }
     .conTextContain {
       height: 130px;
@@ -342,6 +346,10 @@
     @include Mobile {
       display: none;
     }
+  }
+  //Best Care Contain
+  @include Mobile {
+    margin-top: -1050px;
   }
 }
 //Trusted CareGivers
