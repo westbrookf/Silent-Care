@@ -627,8 +627,7 @@
     border: 2px solid #a5a5a52a;
     background-color: #f9f9f9;
     text-align: left;
-    overflow: hidden;
-    opacity: 0; }
+    overflow: hidden; }
     #contactBar .block .conRowIcon {
       font-size: 120px;
       color: #00a2e8;
@@ -645,7 +644,7 @@
         font-weight: lighter;
         color: #303030;
         text-transform: capitalize;
-        border-top: 4px solid orange;
+        border-top: 4px solid #ff4500;
         margin-top: 30px;
         padding-top: 10px;
         padding-left: 20px; }
@@ -656,10 +655,15 @@
         width: 240px;
         padding-top: 4px;
         padding-left: 20px; }
+  #contactBar .blockOne,
+  #contactBar .blockTwo,
+  #contactBar .blockThree {
+    opacity: 0; }
 
 .bestCareContain {
   height: 70vh;
-  width: 100%; }
+  width: 100%;
+  margin-top: -160px; }
   .bestCareContain #bestCareContent {
     height: 70vh;
     width: 100%;
@@ -667,6 +671,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: absolute;
     margin-top: 40px; }
     .bestCareContain #bestCareContent .careList {
       background-color: #f5f5f5;
@@ -863,7 +868,7 @@
         width: 354px;
         margin-left: 10px; } }
   .aboutUsText .moreInfobtn {
-    margin-top: 80px; }
+    margin-top: 50px; }
     .aboutUsText .moreInfobtn a {
       font-size: 18px;
       font-weight: lighter;

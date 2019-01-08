@@ -225,7 +225,6 @@
     background-color: #f9f9f9;
     text-align: left;
     overflow: hidden;
-    opacity: 0;
     .conRowIcon {
       font-size: 120px;
       color: $primary-blue;
@@ -244,7 +243,7 @@
         font-weight: lighter;
         color: $primary-text;
         text-transform: capitalize;
-        border-top: 4px solid orange;
+        border-top: 4px solid $primary-orange;
         margin-top: 30px;
         padding-top: 10px;
         padding-left: 20px;
@@ -259,15 +258,22 @@
       }
     }
   }
+  .blockOne,
+  .blockTwo,
+  .blockThree {
+    opacity: 0;
+  }
 }
 //Best Care section
 .bestCareContain {
   height: 70vh;
   width: 100%;
+  margin-top: -160px;
   #bestCareContent {
     height: 70vh;
     width: 100%;
     @include Display(row, center, center);
+    position: absolute;
     .careList {
       background-color: #f5f5f5;
       height: 500px;
@@ -492,7 +498,7 @@
     }
   }
   .moreInfobtn {
-    margin-top: 80px;
+    margin-top: 50px;
     a {
       font-size: 18px;
       font-weight: $global-weight;

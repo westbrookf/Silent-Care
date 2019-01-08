@@ -80,23 +80,35 @@ function contact() {
     //   easing: "easeInOutSine",
     //   duration: 400
     // })
+    // .add({
+    //   targets: ".block",
+    //   opacity: ["0", "1"],
+    //   easing: "easeInOutSine",
+    //   boxshadow: ["10px", "10px", "30px", "#303030"]
+    // })
     .add({
-      targets: ".block",
-      opacity: ["0", "1"],
-      easing: "easeInOutSine",
-      boxshadow: ["10px", "10px", "30px", "#303030"]
+      targets: ".bestCareContain",
+      marginTop: "-20px",
+      easing: "linear",
+      duration: 400
     })
     .add({
       targets: ".blockOne",
-      duration: 600
+      opacity: ["0", "1"],
+      duration: 400,
+      easing: "easeInSine"
     })
     .add({
       targets: ".blockTwo",
-      duration: 900
+      opacity: ["0", "1"],
+      duration: 600,
+      easing: "easeInSine"
     })
     .add({
       targets: ".blockThree",
-      duration: 1000
+      opacity: ["0", "1"],
+      duration: 800,
+      easing: "easeInSine"
     });
 }
 // let conBlock = document.getElementById("conBlock");
