@@ -628,16 +628,13 @@
     text-align: left;
     overflow: hidden; }
     #contactBar .block .conRowIcon {
-      font-size: 120px;
+      font-size: 100px;
       color: #00a2e8;
-      margin-top: -30px;
-      margin-left: -20px;
+      margin-top: 10px;
+      margin-left: 70px;
       padding: 20px;
       border: 6px solid #00a2e8;
       border-radius: 100px; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .block .conRowIcon {
-          font-size: 40px; } }
     #contactBar .block .conTextContain {
       height: 130px;
       background-color: #fff; }
@@ -826,7 +823,7 @@
   @media only screen and (max-width: 425px) {
     .linkRow {
       margin-left: 0px;
-      width: 414px; } }
+      width: 400px; } }
 
 #aboutus,
 #ourapproach,
@@ -968,7 +965,7 @@
       padding-top: 130px; } }
   @media only screen and (max-width: 425px) {
     .aslContent {
-      padding-top: 80px;
+      padding-top: 120px;
       width: 100%; } }
 
 #homeContact {
@@ -1149,7 +1146,7 @@
         font-size: 24px; } }
   @media only screen and (max-width: 425px) {
     .visitContent {
-      padding-top: 50px; } }
+      padding-top: 90px; } }
 
 .ourValue {
   width: 100%; }
@@ -1255,7 +1252,7 @@
         margin-left: 120px; } }
     @media only screen and (max-width: 425px) {
       .serviceContain .mainServiceDes {
-        width: 400px;
+        width: 390px;
         margin-left: 10px; } }
   .serviceContain .fa-comment {
     font-size: 30px;
@@ -1562,7 +1559,7 @@
   @media only screen and (max-width: 425px) {
     .messageForm {
       width: 390px;
-      margin-left: 12px; } }
+      margin-left: 6px; } }
 
 .contactForm {
   padding-top: 20px;

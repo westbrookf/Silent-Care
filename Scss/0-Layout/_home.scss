@@ -226,18 +226,14 @@
     text-align: left;
     overflow: hidden;
     .conRowIcon {
-      font-size: 120px;
+      font-size: 100px;
       color: $primary-blue;
-      margin-top: -30px;
-      margin-left: -20px;
+      margin-top: 10px;
+      margin-left: 70px;
       padding: 20px;
       // opacity: 0.4;
       border: 6px solid $primary-blue;
       border-radius: 100px;
-      //responsive
-      @include Mobile {
-        font-size: 40px;
-      }
     }
     .conTextContain {
       height: 130px;
@@ -449,7 +445,7 @@
   }
   @include Mobile {
     margin-left: 0px;
-    width: 414px;
+    width: 400px;
   }
 }
 #aboutus,
@@ -609,7 +605,7 @@
     padding-top: 130px;
   }
   @include Mobile {
-    padding-top: 80px;
+    padding-top: 120px;
     width: 100%;
   }
 }
