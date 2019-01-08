@@ -82,7 +82,7 @@
       @media only screen and (max-width: 425px) {
         .navSet #menu a {
           font-size: 14px;
-          margin-left: 80px; } }
+          margin-left: 10px; } }
     .navSet #menu a:hover {
       color: #ff4500; }
     @media only screen and (max-width: 425px) {
