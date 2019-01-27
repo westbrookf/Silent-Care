@@ -1,52 +1,114 @@
-.portContain {
-  @include Display(row, space-evenly, center);
+.portContainer {
+  width: 90%;
+  @include Display(row, space-evenly, unset);
+  margin-top: 60px;
+  margin-left: 70px;
 }
-.textBlock {
-  width: 600px;
-  margin-left: 40px;
+.postPhto {
+  overflow: hidden;
+  img {
+    width: 700px;
+    height: 400px;
+    transition: 0.6s;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+.portContent {
+  padding-top: 30px;
+  width: 700px;
   .portTitle {
+    font-family: $primary-font;
     font-size: 30px;
-    font-weight: $global-weight;
     text-transform: capitalize;
-    color: $primary-text;
+    color: $primary-orange;
+  }
+  .paraBlockOne,
+  .paraBlockTwo {
+    padding-top: 20px;
     padding-bottom: 20px;
-    //Responsive
-    @include Mobile {
-      padding-top: 60px;
-      text-align: center;
-    }
-  }
-  .portOffers {
     font-size: 18px;
-    font-weight: $global-weight;
-    color: $primary-text;
     line-height: 30px;
-    //Responsive
-    @include Tablet {
-      text-align: center;
-      width: 300px;
-      font-size: 16px;
-    }
-    @include Mobile {
-      font-size: 20px;
-      width: 390px;
-      line-height: 30px;
-      padding-top: 60px;
-    }
   }
-  //Text Block responsive
-  @include Mobile {
-    margin-bottom: 230px;
-    margin-left: 10px;
+  .ownerQuoteBlock {
+    height: 180px;
+    width: 700px;
+    background-color: $primary-orange;
+    text-align: center;
+    .ownerQuote {
+      font-size: 24px;
+      color: white;
+      font-weight: lighter;
+      text-transform: capitalize;
+      width: 450px;
+      margin-left: 120px;
+      padding-top: 50px;
+    }
   }
 }
-.servicePortPhto {
-  height: 400px;
-  width: 400px;
-  margin-top: 40px;
-  margin-bottom: 90px;
-  //Responsive
-  @include Mobile {
-    display: none;
+.rightNav {
+  width: 500px;
+  .servIcons {
+    height: 400px;
+    width: 500px;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    .icon {
+      border: 1px solid $primary-orange;
+      text-align: center;
+      .gridIcon {
+        font-size: 50px;
+        padding-top: 40px;
+        color: $primary-blue;
+        transition: 0.6s;
+      }
+      .gridIcon:hover {
+        color: $primary-orange;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .mreServices {
+    height: 360px;
+    width: 500px;
+    .servThumbnail {
+      transition: 0.7s;
+      .thumbLink {
+        @include Display(row, space-evenly, unset);
+        margin-top: 30px;
+        img {
+          height: 60px;
+          width: 60px;
+        }
+        .servMiniDesc {
+          font-size: 18px;
+          font-weight: 500;
+          color: $primary-text;
+          width: 500px;
+          padding-left: 8px;
+        }
+      }
+    }
+    .servThumbnail:hover {
+      transform: scale(1.1);
+    }
+  }
+  .visitUs {
+    height: 70px;
+    text-align: center;
+    background-color: #f5f5f5;
+    h2 {
+      font-size: 30px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      padding-top: 15px;
+    }
+  }
+  #asideMap {
+    height: 300px;
+    background-color: black;
+    margin-bottom: 20px;
   }
 }

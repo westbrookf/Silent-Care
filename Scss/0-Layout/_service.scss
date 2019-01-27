@@ -10,9 +10,9 @@
   .mainServiceDes {
     font-size: 17px;
     font-weight: $global-weight;
-    width: 540px;
+    width: 650px;
     margin-top: 10px;
-    margin-left: 460px;
+    margin-left: 400px;
     //Responsive
     @include Laptop {
       margin-left: 250px;
@@ -60,15 +60,20 @@
     margin-left: 0px;
   }
 }
-.serviceTypeBlue {
+.serviceType {
   width: 400px;
   transition: $global-Trans;
   z-index: 99;
   overflow-x: hidden;
   background-color: $backColor;
+  border: 2px solid $backColor;
   #gridPhto {
-    height: 300px;
+    height: 220px;
     width: 400px;
+    transition: $global-Trans;
+  }
+  #gridPhto:hover {
+    transform: scale(1.1);
   }
   // Service type blue responsive
   @include Laptop {
@@ -78,53 +83,26 @@
     margin-top: 20px;
   }
 }
-.serviceTypeBlue:hover {
-  border: 2px solid $primary-blue;
-  transform: scale(1.1);
-  @include btnEffect;
-}
-.serviceTypeOrange {
-  width: 400px;
-  transition: $global-Trans;
-  z-index: 99;
-  overflow-x: hidden;
-  background-color: $backColor;
-  #gridPhto {
-    height: 300px;
-    width: 400px;
-  }
-  // Service type orange responsive
-  @include Laptop {
-    width: 300px;
-  }
-  @include Mobile {
-    margin-top: 20px;
-  }
-}
-.serviceTypeOrange:hover {
-  border: 2px solid $primary-orange;
-  transform: scale(1.1);
-  @include btnEffect;
-  background-color: $primary-orange;
-}
 .serviceContentContain {
   .serviceTitle {
     font-size: 26px;
     font-weight: $global-weight;
     text-transform: capitalize;
     color: $primary-text;
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
   }
   .serviceSubtext {
     font-size: 17px;
     font-weight: $global-weight;
     padding-left: 10px;
-    text-align: center;
+    text-align: left;
+    width: 380px;
   }
 }
 .serviceLinks {
   margin-top: 20px;
-  margin-left: 140px;
+  margin-left: 10px;
   margin-bottom: 20px;
   a {
     font-size: 18px;

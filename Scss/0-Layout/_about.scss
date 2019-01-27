@@ -29,10 +29,13 @@
   width: 400px;
   height: 200px;
   text-align: center;
+  background-color: #f5f5f5;
+  border: 3px solid $primary-orange;
+  transition: $global-Trans;
   h3 {
     font-size: 24px;
     font-weight: $global-weight;
-    color: $button-text;
+    color: $primary-text;
     text-transform: capitalize;
     padding-top: 40px;
     //Responsive
@@ -43,7 +46,7 @@
   p {
     font-size: 16px;
     font-weight: $global-weight;
-    color: $button-text;
+    color: $primary-text;
     line-height: 24px;
     width: 350px;
     margin-left: 20px;
@@ -72,41 +75,25 @@
     margin-top: 20px;
   }
 }
-#timeBack {
-  background-color: $primary-orange;
-  transition: $global-Trans;
-}
-#timeBack:hover {
+.fact:hover {
+  transform: scale(1.1);
   @include btnEffect;
-}
-#communication {
-  background-color: $primary-blue;
-  transition: $global-Trans;
-}
-#communication:hover {
-  @include btnEffect;
-  background-color: $primary-orange;
-}
-#careQual {
-  background-color: $primary-orange;
-  transition: $global-Trans;
-}
-#careQual:hover {
-  @include btnEffect;
+  background-color: #f5f5f5;
 }
 //Home Vist Section
 .homeVisitShowcase {
   @include Background(url(../img/housemeet.jpeg));
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   background-position: top;
+  background-attachment: fixed;
   //Responsive
   @include Mobile {
     height: 30vh;
   }
 }
 .visitContent {
-  padding-top: 200px;
+  padding-top: 170px;
   text-align: center;
   .visitTitle {
     font-size: 34px;
@@ -138,9 +125,9 @@
     font-size: 18px;
     font-weight: $global-weight;
     color: $primary-text;
-    width: 500px;
+    width: 700px;
     margin-top: 20px;
-    margin-left: 460px;
+    margin-left: 360px;
     //Responsive
     @include Laptop {
       margin-left: 270px;
@@ -166,8 +153,11 @@
 .box {
   text-align: center;
   width: 300px;
+  border: 3px solid $primary-orange;
+  padding: 20px;
+  background-color: #f5f5f5;
   #globeStyle {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: $global-weight;
   }
   .valueTitle {

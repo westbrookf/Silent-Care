@@ -1,6 +1,6 @@
 // Open And Close Main Navigation Section
-let openNav = document.getElementById("openBtn");
-let closeNav = document.getElementById("closeBtn");
+let openNav = document.querySelector("#openBtn");
+let closeNav = document.querySelector("#closeBtn");
 
 openNav.addEventListener("click", Open);
 closeNav.addEventListener("click", Close);
@@ -63,7 +63,6 @@ function Close() {
       easing: "linear"
     });
 }
-
 // CONTACT BAR DISPLAY STARTS HERE
 let conButton = document.getElementById("conClick");
 
@@ -133,10 +132,10 @@ function contact() {
 
 // About our company Slide starts here
 //variables
-let about = document.querySelector("#aboutBtn");
-let approach = document.querySelector("#approachBtn");
-let offer = document.querySelector("#weOfferBtn");
-let work = document.querySelector("#weWorkBtn");
+let about = document.getElementById("aboutBtn");
+let approach = document.getElementById("approachBtn");
+let offer = document.getElementById("weOfferBtn");
+let work = document.getElementById("weWorkBtn");
 
 //Event Listeners
 about.addEventListener("click", contentLink);
@@ -161,9 +160,11 @@ function contentLink() {
 
 //Google Maps start here
 function initMap() {
-  var options = {
-    zoom: 8,
-    center: { lat: 38.6480305, lng: -90.3385605 }
-  };
-  var map = new google.maps.Map(document.getElementById("mapLoc"), options);
+  var uluru = { lat: 38.6480305, lng: -90.3385605 };
+  var map = new google.maps.Map(document.getElementById("mapLoc"), {
+    zoom: 10,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({ position: uluru, map: map });
+  return marker;
 }

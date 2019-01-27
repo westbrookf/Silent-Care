@@ -7,8 +7,7 @@
   overflow-x: hidden; }
   @media only screen and (max-width: 425px) {
     #showcaseImg {
-      height: 30vh;
-      overflow-x: unset; } }
+      height: 40vh; } }
 
 .showLogo {
   display: inline-flex;
@@ -22,9 +21,8 @@
       display: none; } }
 
 #mainNav {
-  margin-right: -300px;
   opacity: 0;
-  transition-duration: 1.3s; }
+  width: 0px; }
   @media only screen and (max-width: 425px) {
     #mainNav {
       margin-right: 0;
@@ -84,8 +82,7 @@
       @media only screen and (max-width: 425px) {
         .navSet #menu a {
           font-size: 14px;
-          margin-left: 10px;
-          width: 70px; } }
+          margin-left: 10px; } }
     .navSet #menu a:hover {
       color: #ff4500; }
     @media only screen and (max-width: 425px) {
@@ -95,7 +92,8 @@
         justify-content: space-evenly;
         align-items: unset;
         padding-top: 10px;
-        height: 40px; } }
+        height: 40px;
+        width: 306px; } }
   .navSet .appointmentBtn {
     width: 220px;
     text-align: center;
@@ -154,7 +152,7 @@
         font-size: 12px; } }
   @media only screen and (max-width: 425px) {
     #introHead {
-      padding-top: 0px;
+      padding-top: 40px;
       padding-left: 10px; } }
 
 #introBtn {
@@ -182,7 +180,9 @@
       padding-left: 10px; } }
 
 #globalFoot {
-  width: 100%; }
+  width: 100%;
+  background-color: #e4e4e4;
+  padding: 10px; }
 
 .copyRight {
   display: flex;
@@ -517,8 +517,7 @@
 
 #careTypeContain {
   height: 20vh;
-  width: 100%;
-  overflow-y: hidden; }
+  width: 100%; }
   #careTypeContain .careRow {
     height: 20vh;
     width: 1000px;
@@ -536,9 +535,11 @@
         width: 768px; } }
     @media only screen and (max-width: 425px) {
       #careTypeContain .careRow {
+        height: 100%;
         width: 400px;
         flex-direction: column;
-        margin-top: 20px; } }
+        margin-top: 20px;
+        overflow-y: unset; } }
   #careTypeContain .careType {
     text-align: center; }
     #careTypeContain .careType #careIcon {
@@ -559,6 +560,9 @@
     @media only screen and (max-width: 425px) {
       #careTypeContain .careType {
         padding-top: 30px; } }
+  @media only screen and (max-width: 425px) {
+    #careTypeContain {
+      height: 100%; } }
 
 .contactShowcase {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/img10.jpg);
@@ -588,8 +592,8 @@
       margin-top: 40px;
       margin-left: 630px;
       width: 160px;
-      cursor: pointer;
-      transition: 0.6s; }
+      transition: 0.6s;
+      cursor: pointer; }
       @media only screen and (max-width: 1024px) {
         .contactShowcase .contactText #conClick {
           margin-left: 440px; } }
@@ -609,80 +613,70 @@
   @media only screen and (max-width: 425px) {
     .contactShowcase {
       margin-top: 60px;
-      height: 30vh; } }
+      height: 30vh;
+      background-attachment: unset; } }
 
 #contactBar {
-  height: 20vh;
-  width: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: -60px;
-  margin-left: 210px;
-  background-color: #00a2e8;
-  opacity: 0;
-  transition: 1s; }
-  #contactBar .contactPhone {
-    display: flex;
-    flex-direction: row;
-    justify-content: unset;
-    align-items: unset; }
-    #contactBar .contactPhone .fa-phone-plus {
-      font-size: 30px;
-      color: #e7e7e7;
-      padding-top: 10px;
-      padding-right: 20px; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactPhone .fa-phone-plus {
-          font-size: 16px;
-          padding-right: 10px; } }
-    #contactBar .contactPhone h3 {
-      font-size: 20px;
-      font-weight: lighter;
-      color: #e7e7e7;
-      text-transform: capitalize; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactPhone h3 {
-          font-size: 16px; } }
-  #contactBar .contactEmail {
-    display: flex;
-    flex-direction: row;
-    justify-content: unset;
-    align-items: unset; }
-    #contactBar .contactEmail .fa-envelope {
-      font-size: 30px;
-      color: #e7e7e7;
-      padding-top: 10px;
-      padding-right: 20px; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactEmail .fa-envelope {
-          font-size: 16px;
-          padding-right: 10px; } }
-    #contactBar .contactEmail h3 {
-      font-size: 20px;
-      font-weight: lighter;
-      color: #e7e7e7;
-      text-transform: capitalize; }
-      @media only screen and (max-width: 425px) {
-        #contactBar .contactEmail h3 {
-          font-size: 16px; } }
-  @media only screen and (max-width: 1024px) {
-    #contactBar {
-      margin-left: 10px; } }
-  @media only screen and (max-width: 768px) {
-    #contactBar {
-      width: 768px;
-      margin-left: 0px; } }
+  margin-top: -120px; }
+  #contactBar .block {
+    height: 300px;
+    width: 300px;
+    border: 2px solid #a5a5a52a;
+    background-color: #f9f9f9;
+    text-align: left;
+    overflow: hidden; }
+    #contactBar .block .conRowIcon {
+      font-size: 100px;
+      color: #00a2e8;
+      margin-top: 10px;
+      margin-left: 70px;
+      padding: 20px;
+      border: 6px solid #00a2e8;
+      border-radius: 100px; }
+    #contactBar .block .conTextContain {
+      height: 130px;
+      background-color: #fff; }
+      #contactBar .block .conTextContain h3 {
+        font-size: 30px;
+        font-weight: lighter;
+        color: #303030;
+        text-transform: capitalize;
+        border-top: 4px solid #ff4500;
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-left: 20px; }
+      #contactBar .block .conTextContain p {
+        font-size: 18px;
+        font-weight: lighter;
+        color: #303030;
+        width: 240px;
+        padding-top: 4px;
+        padding-left: 20px; }
+  #contactBar .blockOne,
+  #contactBar .blockTwo,
+  #contactBar .blockThree {
+    opacity: 0; }
+    @media only screen and (max-width: 425px) {
+      #contactBar .blockOne,
+      #contactBar .blockTwo,
+      #contactBar .blockThree {
+        margin-top: 40px; } }
   @media only screen and (max-width: 425px) {
     #contactBar {
-      height: 10vh;
-      width: 400px;
-      margin-left: 12px; } }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 20px; } }
 
 .bestCareContain {
   height: 70vh;
-  width: 100%; }
+  width: 100%;
+  margin-top: -160px; }
   .bestCareContain #bestCareContent {
     height: 70vh;
     width: 100%;
@@ -690,6 +684,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: absolute;
     margin-top: 40px; }
     .bestCareContain #bestCareContent .careList {
       background-color: #f5f5f5;
@@ -736,6 +731,9 @@
   @media only screen and (max-width: 425px) {
     .bestCareContain .bestCarePhoto {
       display: none; } }
+  @media only screen and (max-width: 425px) {
+    .bestCareContain {
+      margin-top: -1050px; } }
 
 #quickMesContain {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/img12.jpeg);
@@ -744,6 +742,9 @@
   height: 40vh;
   width: 100%;
   margin-top: 60px; }
+  @media only screen and (max-width: 425px) {
+    #quickMesContain {
+      height: 30vh; } }
 
 .mesText {
   padding-top: 100px;
@@ -766,7 +767,11 @@
         margin-left: 180px; } }
     @media only screen and (max-width: 425px) {
       .mesText p {
-        margin-left: 20px; } }
+        margin-left: 20px;
+        display: none; } }
+  @media only screen and (max-width: 425px) {
+    .mesText {
+      padding-top: 70px; } }
 
 .mesLink {
   margin-top: 20px; }
@@ -820,7 +825,7 @@
   @media only screen and (max-width: 425px) {
     .linkRow {
       margin-left: 0px;
-      width: 414px; } }
+      width: 400px; } }
 
 #aboutus,
 #ourapproach,
@@ -879,7 +884,7 @@
         width: 354px;
         margin-left: 10px; } }
   .aboutUsText .moreInfobtn {
-    margin-top: 80px; }
+    margin-top: 50px; }
     .aboutUsText .moreInfobtn a {
       font-size: 18px;
       font-weight: lighter;
@@ -890,22 +895,33 @@
     .aboutUsText .moreInfobtn a:hover {
       box-shadow: 5px 5px 10px black;
       background-color: #00a2e8; }
+    @media only screen and (max-width: 425px) {
+      .aboutUsText .moreInfobtn {
+        margin-top: 30px; } }
   @media only screen and (max-width: 768px) {
     .aboutUsText {
       width: 384px; } }
+  @media only screen and (max-width: 425px) {
+    .aboutUsText {
+      height: 600px; } }
 
 #aslShowcase {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/yellow.jpeg);
   background-size: cover;
   background-position: center;
   background-position: top;
-  height: 80vh;
+  background-attachment: fixed;
+  height: 50vh;
   width: 100%;
   margin-top: 60px; }
+  @media only screen and (max-width: 425px) {
+    #aslShowcase {
+      height: 30vh;
+      background-attachment: unset; } }
 
 .aslContent {
   float: right;
-  padding-top: 220px;
+  padding-top: 140px;
   padding-right: 60px; }
   .aslContent h1 {
     font-size: 40px;
@@ -918,7 +934,6 @@
     @media only screen and (max-width: 425px) {
       .aslContent h1 {
         font-size: 22px;
-        width: 250px;
         text-align: center; } }
   .aslContent p {
     font-size: 20px;
@@ -945,11 +960,15 @@
       background-color: #00a2e8; }
     @media only screen and (max-width: 425px) {
       .aslContent .aslMoreBtn {
-        margin-left: 30px; } }
+        margin-left: 110px; } }
   @media only screen and (max-width: 768px) {
     .aslContent {
       padding-right: 5px;
       padding-top: 130px; } }
+  @media only screen and (max-width: 425px) {
+    .aslContent {
+      padding-top: 80px;
+      width: 100%; } }
 
 #homeContact {
   height: 70vh;
@@ -973,6 +992,9 @@
   height: 500px;
   width: 500px;
   background-color: #f5f5f5; }
+  @media only screen and (max-width: 425px) {
+    .contactInfo {
+      padding-left: 20px; } }
 
 .contactList .contactTitle {
   font-size: 30px;
@@ -992,6 +1014,9 @@
       .contactList .contactFlex h3 {
         width: 100px;
         font-size: 18px; } }
+    @media only screen and (max-width: 425px) {
+      .contactList .contactFlex h3 {
+        width: 130px; } }
   .contactList .contactFlex p,
   .contactList .contactFlex a {
     font-size: 18px;
@@ -1011,7 +1036,8 @@
   margin-top: 40px; }
   @media only screen and (max-width: 425px) {
     .rightChoice {
-      height: 96vh; } }
+      height: 100%;
+      margin-bottom: 40px; } }
 
 .rightTitle {
   text-align: center; }
@@ -1034,11 +1060,14 @@
 .fact {
   width: 400px;
   height: 200px;
-  text-align: center; }
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 3px solid #ff4500;
+  transition: 0.6s; }
   .fact h3 {
     font-size: 24px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: #303030;
     text-transform: capitalize;
     padding-top: 40px; }
     @media only screen and (max-width: 768px) {
@@ -1047,7 +1076,7 @@
   .fact p {
     font-size: 16px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: #303030;
     line-height: 24px;
     width: 350px;
     margin-left: 20px; }
@@ -1073,47 +1102,38 @@
       width: 300px;
       margin-top: 20px; } }
 
-#timeBack {
-  background-color: #ff4500;
-  transition: 0.6s; }
-
-#timeBack:hover {
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8; }
-
-#communication {
-  background-color: #00a2e8;
-  transition: 0.6s; }
-
-#communication:hover {
+.fact:hover {
+  transform: scale(1.1);
   box-shadow: 5px 5px 10px black;
   background-color: #00a2e8;
-  background-color: #ff4500; }
-
-#careQual {
-  background-color: #ff4500;
-  transition: 0.6s; }
-
-#careQual:hover {
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8; }
+  background-color: #f5f5f5; }
 
 .homeVisitShowcase {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/housemeet.jpeg);
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 50vh;
   width: 100%;
-  background-position: top; }
+  background-position: top;
+  background-attachment: fixed; }
+  @media only screen and (max-width: 425px) {
+    .homeVisitShowcase {
+      height: 30vh; } }
 
 .visitContent {
-  padding-top: 200px;
+  padding-top: 170px;
   text-align: center; }
   .visitContent .visitTitle {
     font-size: 34px;
     font-weight: lighter;
     color: #e7e7e7;
     text-transform: capitalize; }
+    @media only screen and (max-width: 425px) {
+      .visitContent .visitTitle {
+        font-size: 24px; } }
+  @media only screen and (max-width: 425px) {
+    .visitContent {
+      padding-top: 90px; } }
 
 .ourValue {
   width: 100%; }
@@ -1129,9 +1149,9 @@
     font-size: 18px;
     font-weight: lighter;
     color: #303030;
-    width: 500px;
+    width: 700px;
     margin-top: 20px;
-    margin-left: 460px; }
+    margin-left: 360px; }
     @media only screen and (max-width: 1024px) {
       .ourValuesText p {
         margin-left: 270px; } }
@@ -1140,7 +1160,7 @@
         margin-left: 130px; } }
     @media only screen and (max-width: 425px) {
       .ourValuesText p {
-        width: 425px;
+        width: 400px;
         margin-left: 0px; } }
 
 .valuesRow {
@@ -1156,9 +1176,12 @@
 
 .box {
   text-align: center;
-  width: 300px; }
+  width: 300px;
+  border: 3px solid #ff4500;
+  padding: 20px;
+  background-color: #f5f5f5; }
   .box #globeStyle {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: lighter; }
   .box .valueTitle {
     font-size: 24px;
@@ -1208,9 +1231,9 @@
   .serviceContain .mainServiceDes {
     font-size: 17px;
     font-weight: lighter;
-    width: 540px;
+    width: 650px;
     margin-top: 10px;
-    margin-left: 460px; }
+    margin-left: 400px; }
     @media only screen and (max-width: 1024px) {
       .serviceContain .mainServiceDes {
         margin-left: 250px; } }
@@ -1219,7 +1242,7 @@
         margin-left: 120px; } }
     @media only screen and (max-width: 425px) {
       .serviceContain .mainServiceDes {
-        width: 400px;
+        width: 390px;
         margin-left: 10px; } }
   .serviceContain .fa-comment {
     font-size: 30px;
@@ -1255,66 +1278,43 @@
       align-items: center;
       margin-left: 0px; } }
 
-.serviceTypeBlue {
+.serviceType {
   width: 400px;
   transition: 0.6s;
   z-index: 99;
   overflow-x: hidden;
-  background-color: #e7e7e7; }
-  .serviceTypeBlue #gridPhto {
-    height: 300px;
-    width: 400px; }
+  background-color: #e7e7e7;
+  border: 2px solid #e7e7e7; }
+  .serviceType #gridPhto {
+    height: 220px;
+    width: 400px;
+    transition: 0.6s; }
+  .serviceType #gridPhto:hover {
+    transform: scale(1.1); }
   @media only screen and (max-width: 1024px) {
-    .serviceTypeBlue {
+    .serviceType {
       width: 300px; } }
   @media only screen and (max-width: 425px) {
-    .serviceTypeBlue {
+    .serviceType {
       margin-top: 20px; } }
-
-.serviceTypeBlue:hover {
-  border: 2px solid #00a2e8;
-  transform: scale(1.1);
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8; }
-
-.serviceTypeOrange {
-  width: 400px;
-  transition: 0.6s;
-  z-index: 99;
-  overflow-x: hidden;
-  background-color: #e7e7e7; }
-  .serviceTypeOrange #gridPhto {
-    height: 300px;
-    width: 400px; }
-  @media only screen and (max-width: 1024px) {
-    .serviceTypeOrange {
-      width: 300px; } }
-  @media only screen and (max-width: 425px) {
-    .serviceTypeOrange {
-      margin-top: 20px; } }
-
-.serviceTypeOrange:hover {
-  border: 2px solid #ff4500;
-  transform: scale(1.1);
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8;
-  background-color: #ff4500; }
 
 .serviceContentContain .serviceTitle {
   font-size: 26px;
   font-weight: lighter;
   text-transform: capitalize;
   color: #303030;
-  text-align: center; }
+  text-align: left;
+  padding-left: 10px; }
 .serviceContentContain .serviceSubtext {
   font-size: 17px;
   font-weight: lighter;
   padding-left: 10px;
-  text-align: center; }
+  text-align: left;
+  width: 380px; }
 
 .serviceLinks {
   margin-top: 20px;
-  margin-left: 140px;
+  margin-left: 10px;
   margin-bottom: 20px; }
   .serviceLinks a {
     font-size: 18px;
@@ -1330,51 +1330,61 @@
     .serviceLinks {
       margin-left: 90px; } }
 
-.portContain {
+.portContainer {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: unset;
+  margin-left: 50px; }
 
-.textBlock {
-  width: 600px;
-  margin-left: 40px; }
-  .textBlock .portTitle {
+.postPhto img {
+  width: 700px;
+  height: 400px; }
+
+.portContent {
+  padding-top: 30px;
+  width: 700px; }
+  .portContent .portTitle {
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    font-weight: lighter;
     text-transform: capitalize;
-    color: #303030;
-    padding-bottom: 20px; }
-    @media only screen and (max-width: 425px) {
-      .textBlock .portTitle {
-        padding-top: 60px;
-        text-align: center; } }
-  .textBlock .portOffers {
+    color: #ff4500; }
+  .portContent .paraBlockOne,
+  .portContent .paraBlockTwo {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 18px;
-    font-weight: lighter;
-    color: #303030;
     line-height: 30px; }
-    @media only screen and (max-width: 768px) {
-      .textBlock .portOffers {
-        text-align: center;
-        width: 300px;
-        font-size: 16px; } }
-    @media only screen and (max-width: 425px) {
-      .textBlock .portOffers {
-        font-size: 20px;
-        width: 400px;
-        line-height: 30px;
-        padding-top: 60px; } }
-  @media only screen and (max-width: 425px) {
-    .textBlock {
-      margin-bottom: 230px;
-      margin-left: 10px; } }
+  .portContent .ownerQuoteBlock {
+    height: 180px;
+    width: 700px;
+    background-color: #ff4500;
+    text-align: center; }
+    .portContent .ownerQuoteBlock .ownerQuote {
+      font-size: 24px;
+      color: white;
+      font-weight: lighter;
+      text-transform: capitalize;
+      width: 450px;
+      margin-left: 120px;
+      padding-top: 50px; }
 
-.servicePortPhto {
-  height: 400px;
-  width: 400px;
-  margin-top: 40px;
-  margin-bottom: 90px; }
+.rightNav {
+  width: 500px; }
+  .rightNav .servIcons {
+    height: 400px;
+    width: 500px;
+    background-color: #f5f5f5; }
+  .rightNav .mreServices {
+    height: 400px;
+    width: 500px; }
+  .rightNav .appLink {
+    height: 200px;
+    background-color: blue; }
+  .rightNav #asideMap {
+    height: 200px;
+    background-color: black; }
 
 .mainContactUs {
   width: 100%; }
@@ -1526,10 +1536,7 @@
   @media only screen and (max-width: 425px) {
     .messageForm {
       width: 390px;
-      margin-left: 18px; } }
-
-.messageForm:hover {
-  background-color: #00a2e8; }
+      margin-left: 6px; } }
 
 .contactForm {
   padding-top: 20px;

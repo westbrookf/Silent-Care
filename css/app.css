@@ -180,7 +180,9 @@
       padding-left: 10px; } }
 
 #globalFoot {
-  width: 100%; }
+  width: 100%;
+  background-color: #e4e4e4;
+  padding: 10px; }
 
 .copyRight {
   display: flex;
@@ -1058,11 +1060,14 @@
 .fact {
   width: 400px;
   height: 200px;
-  text-align: center; }
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 3px solid #ff4500;
+  transition: 0.6s; }
   .fact h3 {
     font-size: 24px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: #303030;
     text-transform: capitalize;
     padding-top: 40px; }
     @media only screen and (max-width: 768px) {
@@ -1071,7 +1076,7 @@
   .fact p {
     font-size: 16px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: #303030;
     line-height: 24px;
     width: 350px;
     margin-left: 20px; }
@@ -1097,44 +1102,26 @@
       width: 300px;
       margin-top: 20px; } }
 
-#timeBack {
-  background-color: #ff4500;
-  transition: 0.6s; }
-
-#timeBack:hover {
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8; }
-
-#communication {
-  background-color: #00a2e8;
-  transition: 0.6s; }
-
-#communication:hover {
+.fact:hover {
+  transform: scale(1.1);
   box-shadow: 5px 5px 10px black;
   background-color: #00a2e8;
-  background-color: #ff4500; }
-
-#careQual {
-  background-color: #ff4500;
-  transition: 0.6s; }
-
-#careQual:hover {
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8; }
+  background-color: #f5f5f5; }
 
 .homeVisitShowcase {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/housemeet.jpeg);
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 50vh;
   width: 100%;
-  background-position: top; }
+  background-position: top;
+  background-attachment: fixed; }
   @media only screen and (max-width: 425px) {
     .homeVisitShowcase {
       height: 30vh; } }
 
 .visitContent {
-  padding-top: 200px;
+  padding-top: 170px;
   text-align: center; }
   .visitContent .visitTitle {
     font-size: 34px;
@@ -1162,9 +1149,9 @@
     font-size: 18px;
     font-weight: lighter;
     color: #303030;
-    width: 500px;
+    width: 700px;
     margin-top: 20px;
-    margin-left: 460px; }
+    margin-left: 360px; }
     @media only screen and (max-width: 1024px) {
       .ourValuesText p {
         margin-left: 270px; } }
@@ -1189,9 +1176,12 @@
 
 .box {
   text-align: center;
-  width: 300px; }
+  width: 300px;
+  border: 3px solid #ff4500;
+  padding: 20px;
+  background-color: #f5f5f5; }
   .box #globeStyle {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: lighter; }
   .box .valueTitle {
     font-size: 24px;
@@ -1241,9 +1231,9 @@
   .serviceContain .mainServiceDes {
     font-size: 17px;
     font-weight: lighter;
-    width: 540px;
+    width: 650px;
     margin-top: 10px;
-    margin-left: 460px; }
+    margin-left: 400px; }
     @media only screen and (max-width: 1024px) {
       .serviceContain .mainServiceDes {
         margin-left: 250px; } }
@@ -1288,66 +1278,43 @@
       align-items: center;
       margin-left: 0px; } }
 
-.serviceTypeBlue {
+.serviceType {
   width: 400px;
   transition: 0.6s;
   z-index: 99;
   overflow-x: hidden;
-  background-color: #e7e7e7; }
-  .serviceTypeBlue #gridPhto {
-    height: 300px;
-    width: 400px; }
+  background-color: #e7e7e7;
+  border: 2px solid #e7e7e7; }
+  .serviceType #gridPhto {
+    height: 220px;
+    width: 400px;
+    transition: 0.6s; }
+  .serviceType #gridPhto:hover {
+    transform: scale(1.1); }
   @media only screen and (max-width: 1024px) {
-    .serviceTypeBlue {
+    .serviceType {
       width: 300px; } }
   @media only screen and (max-width: 425px) {
-    .serviceTypeBlue {
+    .serviceType {
       margin-top: 20px; } }
-
-.serviceTypeBlue:hover {
-  border: 2px solid #00a2e8;
-  transform: scale(1.1);
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8; }
-
-.serviceTypeOrange {
-  width: 400px;
-  transition: 0.6s;
-  z-index: 99;
-  overflow-x: hidden;
-  background-color: #e7e7e7; }
-  .serviceTypeOrange #gridPhto {
-    height: 300px;
-    width: 400px; }
-  @media only screen and (max-width: 1024px) {
-    .serviceTypeOrange {
-      width: 300px; } }
-  @media only screen and (max-width: 425px) {
-    .serviceTypeOrange {
-      margin-top: 20px; } }
-
-.serviceTypeOrange:hover {
-  border: 2px solid #ff4500;
-  transform: scale(1.1);
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8;
-  background-color: #ff4500; }
 
 .serviceContentContain .serviceTitle {
   font-size: 26px;
   font-weight: lighter;
   text-transform: capitalize;
   color: #303030;
-  text-align: center; }
+  text-align: left;
+  padding-left: 10px; }
 .serviceContentContain .serviceSubtext {
   font-size: 17px;
   font-weight: lighter;
   padding-left: 10px;
-  text-align: center; }
+  text-align: left;
+  width: 380px; }
 
 .serviceLinks {
   margin-top: 20px;
-  margin-left: 140px;
+  margin-left: 10px;
   margin-bottom: 20px; }
   .serviceLinks a {
     font-size: 18px;
@@ -1363,54 +1330,106 @@
     .serviceLinks {
       margin-left: 90px; } }
 
-.portContain {
+.portContainer {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: unset;
+  margin-top: 60px;
+  margin-left: 70px; }
 
-.textBlock {
-  width: 600px;
-  margin-left: 40px; }
-  .textBlock .portTitle {
+.postPhto {
+  overflow: hidden; }
+  .postPhto img {
+    width: 700px;
+    height: 400px;
+    transition: 0.6s; }
+  .postPhto img:hover {
+    transform: scale(1.1); }
+
+.portContent {
+  padding-top: 30px;
+  width: 700px; }
+  .portContent .portTitle {
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    font-weight: lighter;
     text-transform: capitalize;
-    color: #303030;
-    padding-bottom: 20px; }
-    @media only screen and (max-width: 425px) {
-      .textBlock .portTitle {
-        padding-top: 60px;
-        text-align: center; } }
-  .textBlock .portOffers {
+    color: #ff4500; }
+  .portContent .paraBlockOne,
+  .portContent .paraBlockTwo {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 18px;
-    font-weight: lighter;
-    color: #303030;
     line-height: 30px; }
-    @media only screen and (max-width: 768px) {
-      .textBlock .portOffers {
-        text-align: center;
-        width: 300px;
-        font-size: 16px; } }
-    @media only screen and (max-width: 425px) {
-      .textBlock .portOffers {
-        font-size: 20px;
-        width: 390px;
-        line-height: 30px;
-        padding-top: 60px; } }
-  @media only screen and (max-width: 425px) {
-    .textBlock {
-      margin-bottom: 230px;
-      margin-left: 10px; } }
+  .portContent .ownerQuoteBlock {
+    height: 180px;
+    width: 700px;
+    background-color: #ff4500;
+    text-align: center; }
+    .portContent .ownerQuoteBlock .ownerQuote {
+      font-size: 24px;
+      color: white;
+      font-weight: lighter;
+      text-transform: capitalize;
+      width: 450px;
+      margin-left: 120px;
+      padding-top: 50px; }
 
-.servicePortPhto {
-  height: 400px;
-  width: 400px;
-  margin-top: 40px;
-  margin-bottom: 90px; }
-  @media only screen and (max-width: 425px) {
-    .servicePortPhto {
-      display: none; } }
+.rightNav {
+  width: 500px; }
+  .rightNav .servIcons {
+    height: 400px;
+    width: 500px;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 250px 250px; }
+    .rightNav .servIcons .icon {
+      border: 1px solid #ff4500;
+      text-align: center; }
+      .rightNav .servIcons .icon .gridIcon {
+        font-size: 50px;
+        padding-top: 40px;
+        color: #00a2e8;
+        transition: 0.6s; }
+      .rightNav .servIcons .icon .gridIcon:hover {
+        color: #ff4500;
+        transform: scale(1.1); }
+  .rightNav .mreServices {
+    height: 360px;
+    width: 500px; }
+    .rightNav .mreServices .servThumbnail {
+      transition: 0.7s; }
+      .rightNav .mreServices .servThumbnail .thumbLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: unset;
+        margin-top: 30px; }
+        .rightNav .mreServices .servThumbnail .thumbLink img {
+          height: 60px;
+          width: 60px; }
+        .rightNav .mreServices .servThumbnail .thumbLink .servMiniDesc {
+          font-size: 18px;
+          font-weight: 500;
+          color: #303030;
+          width: 500px;
+          padding-left: 8px; }
+    .rightNav .mreServices .servThumbnail:hover {
+      transform: scale(1.1); }
+  .rightNav .visitUs {
+    height: 70px;
+    text-align: center;
+    background-color: #f5f5f5; }
+    .rightNav .visitUs h2 {
+      font-size: 30px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      padding-top: 15px; }
+  .rightNav #asideMap {
+    height: 300px;
+    background-color: black;
+    margin-bottom: 20px; }
 
 .mainContactUs {
   width: 100%; }
