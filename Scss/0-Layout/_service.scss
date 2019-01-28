@@ -61,11 +61,12 @@
   }
 }
 .serviceType {
+  height: 300px;
   width: 400px;
   transition: $global-Trans;
   z-index: 99;
-  overflow-x: hidden;
-  background-color: $backColor;
+  overflow: hidden;
+  background-color: white;
   border: 2px solid $backColor;
   #gridPhto {
     height: 220px;
@@ -84,12 +85,14 @@
   }
 }
 .serviceContentContain {
+  @include Display(row, space-evenly, unset);
   .serviceTitle {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: $global-weight;
     text-transform: capitalize;
     color: $primary-text;
     text-align: left;
+    padding-top: 16px;
     padding-left: 10px;
   }
   .serviceSubtext {

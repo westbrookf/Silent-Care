@@ -52,7 +52,7 @@
               <h4>Mon - Fri: 10:00am - 6:00pm</h4>
             </div>
           </div>
-          <a href="#" class="aptBtn">make an appointment</a>
+          <a href="contact.html" class="aptBtn">make an appointment</a>
         </div>
       </div>
       <div class="nav">
@@ -61,65 +61,37 @@
         <a href="contact.html">contact us</a>
       </div>
     </header>
-    <!-- Contact Row -->
-    <div class="mainContactUs">
-      <div class="contactRow">
-        <!-- Address -->
-        <div class="contactType">
-          <div class="location">
-            <span>
-              <i class="fal fa-map-marker-alt" id="globeConStyle"></i>
-            </span>
-            <h3 class="address">address</h3>
-            <p class="addressLoc">
-              7777 Bonhomme Ave #1800<br />
-              Clayton, Mo 63105
-            </p>
-          </div>
-        </div>
-        <!-- Email -->
-        <div class="contactType">
-          <div class="emailBlock">
-            <span>
-              <i class="fal fa-envelope-open" id="globeConStyle"></i>
-            </span>
-            <h3 class="emailTitle">email</h3>
-            <p class="emailLocation">silentcare11@gmail.com</p>
-          </div>
-        </div>
-        <!-- Phone Number -->
-        <div class="contactType">
-          <div class="phoneBlock">
-            <span> <i class="fal fa-phone" id="globeConStyle"></i> </span>
-            <h3 class="phoneTitle">phone</h3>
-            <p class="phoneNumber">(314) 797-7142</p>
-          </div>
-        </div>
+    <section class="contactRowContainer">
+      <div class="contactOption contactAddress">
+        <span> <i class="fal fa-map-marker-alt optIcon"></i> </span>
+        <h2>Address</h2>
+        <p>7777 Bonhomme Ave #1800 Clayton, MO 63105</p>
       </div>
-    </div>
-    <!-- Contact Message form -->
-    <div class="messageForm">
-      <h2 class="formTitle">get in touch</h2>
-      <form action="mailto:silentcare11@gmail.com" class="contactForm">
-        <div class="formWrapper">
-          <input
-            name="Name"
-            type="text"
-            placeholder="Your Name"
-            id="nameInput"
-          />
-          <input
-            name="email"
-            type="email"
-            placeholder="Your Email"
-            id="emailInput"
-          />
-        </div>
-        <textarea placeholder=" Message" id="messageInput"></textarea>
-        <br /><br />
-        <button class="subMesBtn" type="submit" value="Submit">Submit</button>
+      <div class="contactOption contactPgEmail">
+        <span> <i class="fal fa-envelope optIcon"></i></span>
+        <h2>Email</h2>
+        <p>SilentCare11@gmail.com</p>
+      </div>
+      <div class="contactOption contactPhone">
+        <span> <i class="fal fa-phone optIcon"></i></span>
+        <h2>Phone</h2>
+        <p>(314)797-7142</p>
+      </div>
+    </section>
+    <div class="messageContainer">
+      <div class="sendMessage">
+        <h2>send a message</h2>
+        <p>get in touch</p>
+      </div>
+      <form class="messageForm">
+        <input type="text" class="input Name" placeholder="Your Name" />
+        <input type="email" class="input inptName" placeholder="Your Email" />
+        <textarea placeholder="We're Listening" class="messageInput"></textarea>
+        <button type="submit" class="submitBtn">Submit</button>
       </form>
     </div>
+    <div class="mapOverlay"></div>
+    <div class="contMap" id="contactPgMap"></div>
     <!-- Footer Section Starts Here -->
     <footer id="globalFoot">
       <div class="copyRight">
@@ -127,6 +99,12 @@
         <div class="phoneNum"><h3>314-797-7142</h3></div>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script src="contact.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgzVR3EsqWuAORZpQUCjGqqfLNHw_J4F8&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
