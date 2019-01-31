@@ -15,23 +15,51 @@
     font-weight: $global-weight;
     color: $primary-text;
     text-transform: capitalize;
+    @include Mobile {
+      font-size: 24px;
+    }
   }
 }
+
+.threeFacts {
+  height: auto;
+  width: 100%;
+}
 .factsRow {
+  width: 90%;
   @include Display(row, space-evenly, center);
   padding-top: 30px;
+  margin-left: 70px;
   //Responsive
+  @include Laptop {
+    margin-left: 50px;
+  }
+  @include lgLaptop {
+    margin-left: 40px;
+  }
   @include Mobile {
     flex-direction: column;
+    margin-left: 30px;
   }
 }
 .fact {
-  width: 400px;
-  height: 200px;
+  width: 28vw;
+  height: 22vh;
   text-align: center;
   background-color: #f5f5f5;
   border: 3px solid $primary-orange;
   transition: $global-Trans;
+  //Fact Responsive
+  @include Laptop {
+    width: 26vw;
+  }
+  @include lgMobile {
+    width: 28vw;
+  }
+  @include Mobile {
+    width: 60vw;
+    margin-top: 10px;
+  }
   h3 {
     font-size: 24px;
     font-weight: $global-weight;
@@ -39,8 +67,16 @@
     text-transform: capitalize;
     padding-top: 40px;
     //Responsive
+    @include Laptop {
+      padding-top: 20px;
+      font-size: 20px;
+    }
     @include Tablet {
       padding-top: 10px;
+      font-size: 18px;
+    }
+    @include Mobile {
+      font-size: 20px;
     }
   }
   p {
@@ -48,31 +84,19 @@
     font-weight: $global-weight;
     color: $primary-text;
     line-height: 24px;
-    width: 350px;
+    width: 90%;
     margin-left: 20px;
     //Responsive
     @include Laptop {
-      width: 300px;
+      font-size: 14px;
     }
     @include Tablet {
-      width: 200px;
+      margin-left: 10px;
+      line-height: unset;
     }
     @include Mobile {
-      width: 300px;
-      margin-left: 0;
-      margin-top: 10px;
+      font-size: 16px;
     }
-  }
-  //Fact Responsive
-  @include Laptop {
-    width: 340px;
-  }
-  @include Tablet {
-    width: 250px;
-  }
-  @include Mobile {
-    width: 300px;
-    margin-top: 20px;
   }
 }
 .fact:hover {
@@ -125,19 +149,27 @@
     font-size: 18px;
     font-weight: $global-weight;
     color: $primary-text;
-    width: 700px;
+    width: 47%;
     margin-top: 20px;
     margin-left: 360px;
     //Responsive
+    @include lgLaptop {
+      margin-left: 320px;
+    }
     @include Laptop {
       margin-left: 270px;
     }
     @include Tablet {
-      margin-left: 130px;
+      margin-left: 160px;
+      width: 60%;
+    }
+    @include lgMobile {
+      width: 80%;
+      margin-left: 60px;
     }
     @include Mobile {
       width: 400px;
-      margin-left: 0px;
+      margin-left: 10px;
     }
   }
 }
@@ -147,23 +179,37 @@
   //Responsive
   @include Mobile {
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 90px;
   }
 }
 .box {
   text-align: center;
-  width: 300px;
+  width: 20%;
   border: 3px solid $primary-orange;
   padding: 20px;
   background-color: #f5f5f5;
+  //Box responsive
+  @include Mobile {
+    width: 70%;
+    margin-top: 12px;
+    padding-top: 20px;
+  }
   #globeStyle {
     font-size: 40px;
     font-weight: $global-weight;
+    //Responsive
+    @include lgMobile {
+      font-size: 26px;
+    }
   }
   .valueTitle {
     font-size: 24px;
     font-weight: $global-weight;
     text-transform: capitalize;
+    //Responsive
+    @include lgMobile {
+      font-size: 18px;
+    }
   }
   .valuePara {
     font-size: 17px;
@@ -173,15 +219,27 @@
       font-size: 14px;
     }
   }
-  //Box responsive
-  @include Mobile {
-    padding-top: 20px;
-  }
 }
 .valueContact {
   margin-top: 40px;
   margin-left: 640px;
   margin-bottom: 40px;
+  //Value Contact Responsive
+  @include lgLaptop {
+    margin-left: 530px;
+  }
+  @include Laptop {
+    margin-left: 440px;
+  }
+  @include Tablet {
+    margin-left: 320px;
+  }
+  @include lgMobile {
+    margin-left: 250px;
+  }
+  @include Mobile {
+    margin-left: 140px;
+  }
   a {
     font-size: 20px;
     background-color: $primary-orange;
@@ -191,15 +249,5 @@
   }
   a:hover {
     @include btnEffect;
-  }
-  //Value Contact Responsive
-  @include Laptop {
-    margin-left: 440px;
-  }
-  @include Tablet {
-    margin-left: 320px;
-  }
-  @include Mobile {
-    margin-left: 140px;
   }
 }

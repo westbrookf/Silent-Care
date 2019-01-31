@@ -1,42 +1,69 @@
 //Trust Section
 #trustSection {
-  height: 70vh;
+  height: auto;
   width: 100%;
 }
 .trustContent {
   height: 70vh;
-  width: 100%;
+  width: 70%;
+  margin-top: 60px;
+  margin-left: 220px;
   @include Display(row, center, center);
+  //Responsive
+  @include lgLaptop {
+    margin-left: 170px;
+  }
+  @include Laptop {
+    margin-left: 160px;
+  }
+  @include Tablet {
+    margin-left: 120px;
+  }
+  @include lgMobile {
+    margin-left: 90px;
+  }
+  @include Mobile {
+    margin-left: 70px;
+  }
   .trustPhoto {
-    height: 500px;
-    width: 500px;
-    img {
-      height: 500px;
-      width: 500px;
-    }
-    //Trust Photo Responsive
-    @include Tablet {
-      width: 384px;
-    }
+    height: 70vh;
+    width: 50%;
+    //Responsive
     @include Mobile {
       display: none;
+    }
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
   .trustText {
     background-color: white;
     border: 4px solid #f5f5f5;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 50%;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
+    box-shadow: 4px 4px 10px #30303092;
+    //Responsive
+    @include Tablet {
+      padding-top: 20px;
+    }
+    @include Mobile {
+      width: 100%;
+      padding-top: 60px;
+    }
     h3 {
       font-size: 30px;
       font-weight: $global-weight;
       text-transform: capitalize;
       color: $primary-text;
       //Responsive
-      @include Tablet {
+      @include Laptop {
         font-size: 24px;
+      }
+      @include Mobile {
+        font-size: 20px;
       }
     }
     .subTitle {
@@ -48,24 +75,24 @@
     }
     .trustDesc1 {
       font-size: 18px;
-      width: 405px;
+      width: 90%;
       margin-top: 20px;
-      margin-left: 48px;
+      margin-left: 20px;
       //Responsive
-      @include Tablet {
-        width: 350px;
-        margin-left: 20px;
+      @include lgMobile {
+        font-size: 16px;
+        margin-left: 10px;
       }
     }
     .trustDesc2 {
       font-size: 18px;
-      width: 405px;
+      width: 90%;
       margin-top: 20px;
-      margin-left: 48px;
+      margin-left: 20px;
       //Responsive
-      @include Tablet {
-        width: 350px;
-        margin-left: 20px;
+      @include lgMobile {
+        font-size: 16px;
+        margin-left: 10px;
       }
     }
     .fa-comment {
@@ -84,19 +111,15 @@
         font-weight: $global-weight;
         color: $primary-text;
         transition: $global-Trans;
+        //Responsive
+        @include lgMobile {
+          font-size: 14px;
+        }
       }
       a:hover {
         color: $primary-blue;
       }
     }
-    //Trust Content Responsive
-    @include Tablet {
-      width: 384px;
-    }
-  }
-  //Trust Content Responsive
-  @include Laptop {
-    margin-top: 40px;
   }
 }
 //Care Type Row
@@ -105,28 +128,26 @@
   width: 100%;
   .careRow {
     height: 20vh;
-    width: 1000px;
+    width: 60%;
     @include Display(row, space-evenly, center);
-    margin-left: 210px;
+    margin-left: 270px;
     overflow-y: hidden;
     //Responsive
+    @include lgLaptop {
+      margin-left: 220px;
+    }
     @include Laptop {
-      margin-left: 0px;
+      margin-left: 210px;
     }
     @include Tablet {
-      width: 768px;
+      margin-left: 160px;
     }
-    @include Mobile {
-      height: 100%;
-      width: 400px;
-      flex-direction: column;
-      margin-top: 20px;
-      overflow-y: unset;
+    @include lgMobile {
+      margin-left: 100px;
     }
   }
   .careType {
     text-align: center;
-    // padding-top: 110px;
     #careIcon {
       font-size: 40px;
       color: $primary-orange;
@@ -136,7 +157,13 @@
       text-transform: capitalize;
       font-weight: $global-weight;
       color: $primary-text;
-      // margin-top: 100px;
+      //Responsive
+      @include Tablet {
+        font-size: 22px;
+      }
+      @include lgMobile {
+        font-size: 18px;
+      }
     }
     .readMore {
       a {
@@ -149,14 +176,6 @@
         color: $primary-blue;
       }
     }
-    //careType Responsive
-    @include Mobile {
-      padding-top: 30px;
-    }
-  }
-  //Care type Container Responsive
-  @include Mobile {
-    height: 100%;
   }
 }
 .contactShowcase {
@@ -164,9 +183,18 @@
   background-attachment: fixed;
   height: 70vh;
   width: 100%;
+  //Responsive
+  @include Mobile {
+    background-attachment: unset;
+    height: 40vh;
+  }
   .contactText {
     padding-top: 200px;
     text-align: center;
+    //Responsive
+    @include Mobile {
+      padding-top: 90px;
+    }
     h2 {
       font-size: 40px;
       font-weight: $global-weight;
@@ -190,35 +218,35 @@
       transition: $global-Trans;
       cursor: pointer;
       //Responsive
+      @include lgLaptop {
+        margin-left: 510px;
+      }
       @include Laptop {
-        margin-left: 440px;
+        margin-left: 430px;
       }
       @include Tablet {
         margin-left: 300px;
       }
+      @include lgMobile {
+        margin-left: 210px;
+      }
       @include Mobile {
-        margin-top: 20px;
-        margin-left: 130px;
+        margin-left: 140px;
       }
     }
     #conClick:hover {
       @include btnEffect;
     }
-    //Contact Text Responsive
-    @include Mobile {
-      padding-top: 50px;
-    }
-  }
-  //Contact Showcase Responsive
-  @include Mobile {
-    margin-top: 60px;
-    height: 30vh;
-    background-attachment: unset;
   }
 }
 #contactBar {
   @include Display(row, space-evenly, center);
   margin-top: -120px;
+  //Responsive
+  @include lgMobile {
+    @include Display(column, space-evenly, center);
+    margin-top: 0px;
+  }
   .block {
     height: 300px;
     width: 300px;
@@ -235,6 +263,10 @@
       // opacity: 0.4;
       border: 6px solid $primary-blue;
       border-radius: 100px;
+      //Responsive
+      @include Tablet {
+        margin-left: 50px;
+      }
     }
     .conTextContain {
       height: 130px;
@@ -263,53 +295,78 @@
   .blockTwo,
   .blockThree {
     opacity: 0;
-    //responsive
-    @include Mobile {
-      margin-top: 40px;
-    }
-  }
-  //Contact Bar responsive
-  @include Mobile {
-    @include Display(column, space-evenly, center);
-    margin-top: 20px;
   }
 }
 //Best Care section
 .bestCareContain {
-  height: 70vh;
+  height: auto;
   width: 100%;
   margin-top: -160px;
+  //Responsive
+  @include lgMobile {
+    margin-top: -860px;
+  }
   #bestCareContent {
     height: 70vh;
-    width: 100%;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 220px;
     @include Display(row, center, center);
-    position: absolute;
+    //Responsive
+    @include lgLaptop {
+      margin-left: 170px;
+    }
+    @include Laptop {
+      margin-left: 160px;
+    }
+    @include Tablet {
+      margin-left: 120px;
+    }
+    @include lgMobile {
+      margin-left: 90px;
+    }
+    @include Mobile {
+      margin-left: 70px;
+    }
     .careList {
       background-color: #fff;
       border: 4px solid #f5f5f5;
-      height: 500px;
-      width: 500px;
+      height: 100%;
+      width: 50%;
+      box-shadow: -2px 2px 10px #30303092;
       //Responsive
-      @include Tablet {
-        width: 384px;
+      @include Mobile {
+        width: 100%;
       }
     }
     .bestCareIntro {
       padding-top: 60px;
       padding-left: 60px;
+      //Responsive
+      @include Laptop {
+        padding-left: 0px;
+      }
+      @include Tablet {
+        padding-top: 40px;
+      }
+      @include Mobile {
+        padding-top: 70px;
+      }
       h1 {
         font-size: 28px;
         font-weight: $global-weight;
         text-transform: capitalize;
         color: $primary-text;
-      }
-      //Responsive
-      @include Mobile {
-        padding-left: 10px;
+        text-align: center;
+        //Responsive
+        @include Laptop {
+          font-size: 24px;
+        }
+        @include Tablet {
+          font-size: 20px;
+        }
       }
     }
-    //Best Care Content Responsive
-    margin-top: 40px;
   }
   .numberSpace {
     @include Display(row, unset, unset);
@@ -323,31 +380,33 @@
     }
   }
   .listContent {
-    width: 360px;
+    width: 90%;
     h3 {
       font-size: 22px;
       font-weight: $global-weight;
       color: $primary-text;
       text-transform: capitalize;
+      //Responsive
+      @include Tablet {
+        font-size: 20px;
+      }
+    }
+    p {
+      @include Tablet {
+        font-size: 14px;
+      }
     }
   }
   .bestCarePhoto {
-    img {
-      height: 500px;
-      width: 500px;
-      //Responsive
-      @include Tablet {
-        width: 384px;
-      }
-    }
-    //Responsive
+    height: 70vh;
+    width: 50%;
     @include Mobile {
       display: none;
     }
-  }
-  //Best Care Contain
-  @include Mobile {
-    margin-top: -1050px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 //Trusted CareGivers
@@ -356,10 +415,6 @@
   height: 40vh;
   width: 100%;
   margin-top: 60px;
-  //Responsive
-  @include Mobile {
-    height: 30vh;
-  }
 }
 .mesText {
   padding-top: 100px;
@@ -372,24 +427,8 @@
   }
   p {
     font-size: 18px;
-    width: 400px;
-    margin-left: 510px;
+    width: 100%;
     color: $button-text;
-    //Responsive
-    @include Laptop {
-      margin-left: 310px;
-    }
-    @include Tablet {
-      margin-left: 180px;
-    }
-    @include Mobile {
-      margin-left: 20px;
-      display: none;
-    }
-  }
-  //MesText Responsive
-  @include Mobile {
-    padding-top: 70px;
   }
 }
 .mesLink {
@@ -424,6 +463,24 @@
   width: 600px;
   margin-top: 20px;
   margin-left: 410px;
+  //Responsive
+  @include lgLaptop {
+    margin-left: 300px;
+  }
+  @include Laptop {
+    margin-left: 220px;
+  }
+  @include Tablet {
+    margin-left: 80px;
+  }
+  @include lgMobile {
+    margin-left: 0px;
+  }
+  @include Mobile {
+    @include Display(row, unset, center);
+    margin-left: 12px;
+    width: 96%;
+  }
   h3 {
     font-size: 20px;
     font-weight: $global-weight;
@@ -433,59 +490,83 @@
     cursor: pointer;
     @include Mobile {
       font-size: 15px;
+      padding-left: 10px;
     }
   }
   h3:hover {
     color: $primary-orange;
   }
-  //LinkRow Responisve
-  @include Laptop {
-    margin-left: 200px;
-  }
-  @include Tablet {
-    margin-left: 80px;
-  }
-  @include Mobile {
-    margin-left: 0px;
-    width: 400px;
-  }
+}
+.linkContent {
+  height: auto;
+  width: 100%;
 }
 #aboutus,
 #ourapproach,
 #weoffer,
 #wework {
+  height: 70vh;
+  width: 70%;
   margin-top: 40px;
+  margin-left: 220px;
   @include Display(row, center, center);
+  //Responsive
+  @include lgLaptop {
+    margin-left: 170px;
+  }
+  @include Laptop {
+    margin-left: 160px;
+  }
+  @include Tablet {
+    margin-left: 110px;
+  }
+  @include lgMobile {
+    margin-left: 90px;
+  }
+  @include Mobile {
+    margin-left: 60px;
+  }
 }
 //Hidden Class
 .hidden {
   display: none !important;
 }
 .linkContentPhto {
+  height: 70vh;
+  width: 50%;
+  //Responsive
+  @include Mobile {
+    display: none;
+  }
   img {
-    height: 500px;
-    width: 500px;
-    //Responsive
-    @include Tablet {
-      width: 384px;
-    }
-    @include Mobile {
-      display: none;
-    }
+    height: 100%;
+    width: 100%;
   }
 }
 .aboutUsText {
-  height: 500px;
-  width: 500px;
-  padding-top: 40px;
+  height: 70vh;
+  width: 50%;
+  padding-top: 80px;
   padding-left: 10px;
   text-align: center;
   background-color: white;
   border: 4px solid #f5f5f5;
+  box-shadow: 2px 2px 10px #30303092;
+  //Responsive
+  @include Laptop {
+    padding-top: 40px;
+  }
+  @include Mobile {
+    width: 100%;
+  }
   h2 {
     font-size: 24px;
     font-weight: $global-weight;
     text-transform: capitalize;
+    //Responsive
+    @include Laptop {
+      font-size: 20px;
+    }
   }
   .aboutDesc {
     font-size: 18px;
@@ -493,11 +574,13 @@
     color: $primary-text;
     padding-top: 30px;
     margin-left: 15px;
-    width: 450px;
+    width: 90%;
     //Responsive
+    @include Laptop {
+      font-size: 17px;
+    }
     @include Tablet {
-      width: 354px;
-      margin-left: 10px;
+      font-size: 14px;
     }
   }
   .aboutDesc2 {
@@ -506,11 +589,13 @@
     color: $primary-text;
     padding-top: 30px;
     margin-left: 15px;
-    width: 450px;
+    width: 90%;
     //Responsive
+    @include Laptop {
+      font-size: 17px;
+    }
     @include Tablet {
-      width: 354px;
-      margin-left: 10px;
+      font-size: 14px;
     }
   }
   .moreInfobtn {
@@ -526,17 +611,6 @@
     a:hover {
       @include btnEffect;
     }
-    //Responsive
-    @include Mobile {
-      margin-top: 30px;
-    }
-  }
-  //Responsive
-  @include Tablet {
-    width: 384px;
-  }
-  @include Mobile {
-    height: 600px;
   }
 }
 //ASL section
@@ -549,27 +623,36 @@
   margin-top: 60px;
   //Responsive
   @include Mobile {
-    height: 30vh;
     background-attachment: unset;
-    // position: relative;
+    height: 40vh;
   }
 }
 .aslContent {
   float: right;
   padding-top: 140px;
   padding-right: 60px;
+  //Responsive
+  @include Tablet {
+    padding-right: 10px;
+  }
+  @include Mobile {
+    float: none;
+    padding: 160px 0 0 30px;
+  }
   h1 {
     font-size: 40px;
     font-weight: lighter;
     color: $button-text;
     text-transform: capitalize;
     //Responsive
+    @include Laptop {
+      font-size: 30px;
+    }
     @include Tablet {
       font-size: 24px;
     }
     @include Mobile {
-      font-size: 22px;
-      text-align: center;
+      font-size: 18px;
     }
   }
   p {
@@ -579,10 +662,11 @@
     color: $button-text;
     //Responsive
     @include Tablet {
-      width: 350px;
+      font-size: 17px;
+      width: 300px;
     }
     @include Mobile {
-      display: none;
+      font-size: 14px;
     }
   }
   .aslMoreBtn {
@@ -598,81 +682,78 @@
     a:hover {
       @include btnEffect;
     }
-    //asl More Responsive
-    @include Mobile {
-      margin-left: 110px;
-    }
-  }
-  //ASL Content Responisve
-  @include Tablet {
-    padding-right: 5px;
-    padding-top: 130px;
-  }
-  @include Mobile {
-    padding-top: 80px;
-    width: 100%;
   }
 }
 #homeContact {
   height: 70vh;
   width: 100%;
+  margin-bottom: 60px;
+}
+.hmeMap {
+  height: 100%;
+  width: 70%;
   @include Display(row, center, center);
-}
-#mapLoc {
-  height: 500px;
-  width: 500px;
+  margin-top: 60px;
+  margin-left: 220px;
   //Responsive
+  @include lgLaptop {
+    margin-left: 170px;
+  }
+  @include Tablet {
+    margin-left: 110px;
+  }
+  @include lgMobile {
+    margin-left: 90px;
+  }
   @include Mobile {
-    display: none;
+    margin-left: 70px;
   }
-}
-.contactInfo {
-  padding-top: 40px;
-  padding-left: 60px;
-  text-align: left;
-  height: 500px;
-  width: 500px;
-  background-color: white;
-  border: 4px solid #f5f5f5;
-  //Responsive
-  @include Mobile {
-    padding-left: 20px;
-  }
-}
-.contactList {
-  .contactTitle {
-    font-size: 30px;
-    font-weight: $global-weight;
-    text-transform: capitalize;
-  }
-  .contactFlex {
-    padding-top: 40px;
-    @include Display(row, unset, unset);
-    h3 {
-      font-size: 24px;
-      #contactIcon {
-        padding-right: 10px;
-      }
-      //Responsive
-      @include Tablet {
-        width: 100px;
-        font-size: 18px;
-      }
-      @include Mobile {
-        width: 130px;
-      }
+  #mapLoc {
+    height: 100%;
+    width: 50%;
+    //Responsive
+    @include Mobile {
+      display: none;
     }
-    p,
-    a {
-      font-size: 18px;
+  }
+  .contactInfo {
+    padding-top: 60px;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border: 4px solid #f5f5f5;
+    box-shadow: 2px 2px 10px #30303092;
+    //Responsive
+    @include Mobile {
+      width: 100%;
+    }
+  }
+  .contactList {
+    .contactTitle {
+      font-size: 30px;
       font-weight: $global-weight;
-      color: $primary-text;
-      width: 250px;
-      padding-left: 30px;
-      //Responsive
-      @include Tablet {
+      color: $primary-orange;
+      text-transform: capitalize;
+      width: 100%;
+      text-align: center;
+    }
+    .contactFlex {
+      padding-top: 40px;
+      @include Display(column, unset, unset);
+      h3 {
+        font-size: 24px;
+        #contactIcon {
+          padding-right: 10px;
+        }
+      }
+      p,
+      a {
         font-size: 18px;
-        padding-left: 10px;
+        font-weight: $global-weight;
+        color: $primary-text;
+        width: 100%;
+        text-align: center;
       }
     }
   }

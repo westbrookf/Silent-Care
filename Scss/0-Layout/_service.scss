@@ -6,23 +6,37 @@
     text-transform: capitalize;
     color: $primary-text;
     padding-top: 40px;
+    //Responsive
+    @include Mobile {
+      font-size: 24px;
+    }
   }
   .mainServiceDes {
     font-size: 17px;
     font-weight: $global-weight;
-    width: 650px;
+    width: 50%;
     margin-top: 10px;
-    margin-left: 400px;
+    margin-left: 360px;
     //Responsive
+    @include lgLaptop {
+      width: 60%;
+      margin-left: 240px;
+    }
     @include Laptop {
-      margin-left: 250px;
+      margin-left: 190px;
     }
     @include Tablet {
       margin-left: 120px;
+      width: 70%;
+    }
+    @include lgMobile {
+      width: 90%;
+      margin-left: 30px;
     }
     @include Mobile {
-      width: 390px;
-      margin-left: 10px;
+      width: 90%;
+      margin-left: 30px;
+      font-size: 14px;
     }
   }
   .fa-comment {
@@ -48,12 +62,18 @@
   margin-left: 50px;
   margin-bottom: 30px;
   //Responsive
+  @include lgLaptop {
+    margin-left: 0px;
+  }
   @include Laptop {
     margin-left: 30px;
   }
   @include Tablet {
     grid-template-columns: auto auto;
     margin-left: 60px;
+  }
+  @include lgLaptop {
+    margin-left: 0px;
   }
   @include Mobile {
     @include Display(column, space-evenly, center);
@@ -94,19 +114,20 @@
     text-align: left;
     padding-top: 16px;
     padding-left: 10px;
-  }
-  .serviceSubtext {
-    font-size: 17px;
-    font-weight: $global-weight;
-    padding-left: 10px;
-    text-align: left;
-    width: 380px;
+    //Responsive
+    @include Laptop {
+      font-size: 18px;
+    }
   }
 }
 .serviceLinks {
   margin-top: 20px;
   margin-left: 10px;
   margin-bottom: 20px;
+  //Responsive
+  @include Laptop {
+    margin-left: 0px;
+  }
   a {
     font-size: 18px;
     font-weight: $global-weight;
@@ -114,12 +135,13 @@
     background-color: $primary-orange;
     transition: $global-Trans;
     padding: $Btn;
+    //Responsive
+    @include Laptop {
+      padding: 6px;
+      font-size: 16px;
+    }
   }
   a:hover {
     @include btnEffect;
-  }
-  // Service Links responsive
-  @include Laptop {
-    margin-left: 90px;
   }
 }

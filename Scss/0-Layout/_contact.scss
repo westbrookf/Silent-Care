@@ -2,13 +2,35 @@
   width: 100%;
   @include Display(row, unset, center);
   padding-left: 120px;
+  //Responsive
+  @include Laptop {
+    padding-left: 50px;
+  }
+  @include lgMobile {
+    padding-left: 30px;
+  }
+  @include Mobile {
+    @include Display(column, unset, unset);
+    padding-left: 50px;
+  }
 }
 .contactOption {
-  width: 400px;
-  height: 200px;
+  width: 30vw;
+  height: 24vh;
   padding: 30px;
   text-align: center;
   margin-top: 100px;
+  //Responsive
+  @include Tablet {
+    padding: 16px;
+  }
+  @include lgMobile {
+    padding: 24px 4px 4px 4px;
+  }
+  @include Mobile {
+    width: 90%;
+    margin-top: 60px;
+  }
   .optIcon {
     font-size: 30px;
     padding-top: 20px;
@@ -17,27 +39,57 @@
     font-family: $primary-font;
     font-weight: lighter;
     font-size: 24px;
+    //Responsive
+    @include lgMobile {
+      font-size: 20px;
+    }
+    @include Mobile {
+      font-size: 24px;
+    }
   }
   p {
     font-family: $primary-font;
     font-weight: lighter;
     font-size: 18px;
+    //Responsive
+    @include lgMobile {
+      font-size: 14px;
+    }
+    @include Mobile {
+      font-size: 20px;
+      width: 100%;
+    }
   }
 }
 .contactAddress,
 .contactPgEmail {
   border-right: 2px solid $primary-orange;
+  //Responsive
+  @include Mobile {
+    border: none;
+  }
 }
 .messageContainer {
-  height: 640px;
-  width: 1300px;
+  height: 80vh;
+  width: 90%;
   margin-top: 120px;
   margin-left: 70px;
   background-color: white;
   border: 4px solid #f5f5f5;
+  box-shadow: 0px 2px 10px #30303092;
   position: relative;
   z-index: 100;
   margin-bottom: 40px;
+  //Responsive
+  @include Laptop {
+    margin-left: 50px;
+  }
+  @include lgMobile {
+    margin-left: 30px;
+  }
+  @include Mobile {
+    margin-left: 24px;
+  }
 }
 .sendMessage {
   margin-top: 60px;
@@ -61,11 +113,24 @@
   margin-top: 100px;
   margin-left: 240px;
   z-index: 99;
+  //Responsive
+  @include Laptop {
+    margin-left: 168px;
+  }
+  @include Tablet {
+    margin-left: 120px;
+  }
+  @include lgMobile {
+    margin-left: 90px;
+  }
+  @include Mobile {
+    margin-left: 70px;
+  }
   .input {
     font-size: 20px;
     font-weight: lighter;
-    width: 400px;
-    height: 40px;
+    height: 5vh;
+    width: 28vw;
     background-color: #f5f5f5;
     border: 4px solid #f5f5f5;
     padding-left: 10px;
@@ -78,8 +143,8 @@
     font-weight: lighter;
     padding: 12px 0 0 20px;
     display: block;
-    height: 230px;
-    width: 800px;
+    height: 30vh;
+    width: 56vw;
     margin-top: 40px;
     background-color: #f5f5f5;
     border: 1px solid #f5f5f5;
@@ -93,10 +158,15 @@
   margin-top: 12px;
   cursor: pointer;
   transition: 0.6s;
+  //Responsive
+  @include Mobile {
+    margin-left: 50px;
+  }
 }
 .submitBtn:hover {
   background-color: $primary-orange;
   color: #fff;
+  box-shadow: 5px 5px 10px black;
 }
 .mapOverlay {
   height: 50vh;

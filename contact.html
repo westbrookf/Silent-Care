@@ -83,11 +83,16 @@
         <h2>send a message</h2>
         <p>get in touch</p>
       </div>
-      <form class="messageForm">
+      <form
+        action="mailto:westbrookfrederick@gmail.com@example.com"
+        method="post"
+        enctype="text/plain"
+        class="messageForm"
+      >
         <input type="text" class="input Name" placeholder="Your Name" />
         <input type="email" class="input inptName" placeholder="Your Email" />
         <textarea placeholder="We're Listening" class="messageInput"></textarea>
-        <button type="submit" class="submitBtn">Submit</button>
+        <button type="submit" value="send" class="submitBtn">Send</button>
       </form>
     </div>
     <div class="mapOverlay"></div>
