@@ -4,7 +4,7 @@
   width: 100%;
   overflow-x: hidden;
   //Responsive
-  @include Mobile {
+  @include lgMobile {
     height: 40vh;
   }
 }
@@ -12,21 +12,26 @@
   display: inline-flex;
   padding-left: 60px;
   padding-top: 40px;
-  .hmeLink {
-    img {
-      height: 150px;
-      width: 300px;
-    }
-  }
   //Responsive
-  @include Mobile {
+  @include lgMobile {
     display: none;
+  }
+  @include Tablet {
+    pdding-top: 0px;
+  }
+  .hmeLink {
+    height: 150px;
+    width: 300px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 #mainNav {
   opacity: 0;
   width: 0px;
-  @include Mobile {
+  @include lgMobile {
     margin-right: 0;
     opacity: 1;
     @include Display(row, unset, unset);
@@ -38,6 +43,12 @@
   width: 300px;
   height: 100vh;
   background-color: #00a2e848;
+  //Responsive
+  @include lgMobile {
+    float: none;
+    background-color: transparent;
+    width: 100%;
+  }
   #closeBtn {
     padding-left: 20px;
     padding-top: 10px;
@@ -45,7 +56,7 @@
     color: $button-text;
     transition: 0.6s;
     //Responsive
-    @include Mobile {
+    @include lgMobile {
       display: none;
     }
   }
@@ -55,19 +66,23 @@
   .logo {
     padding-top: 40px;
     padding-left: 20px;
+    // Responsive
+    @include lgMobile {
+      padding-top: 0px;
+      padding-left: 10px;
+    }
     img {
       height: 200px;
       width: 260px;
       //responsive
-      @include Mobile {
-        height: 70px;
-        width: 70px;
+      @include lgMobile {
+        height: 100px;
+        width: 110px;
       }
-    }
-    //Logo Responsive
-    @include Mobile {
-      padding-top: 0px;
-      padding-left: 10px;
+      @include medMobile {
+        height: 80px;
+        width: 80px;
+      }
     }
   }
   #menu {
@@ -75,6 +90,13 @@
     height: 320px;
     text-align: center;
     padding-top: 30px;
+    //Responsive
+    @include lgMobile {
+      @include Display(row, space-evenly, unset);
+      padding-top: 10px;
+      height: 40px;
+      width: 70vw;
+    }
     a {
       font-size: 26px;
       font-weight: $global-weight;
@@ -84,20 +106,16 @@
       margin-left: 80px;
       transition: 0.6s;
       //Responsive
-      @include Mobile {
-        font-size: 14px;
+      @include lgMobile {
+        font-size: 16px;
         margin-left: 10px;
+      }
+      @include medMobile {
+        font-size: 14px;
       }
     }
     a:hover {
       color: $primary-orange;
-    }
-    //Responsive
-    @include Mobile {
-      @include Display(row, space-evenly, unset);
-      padding-top: 10px;
-      height: 40px;
-      width: 306px;
     }
   }
   .appointmentBtn {
@@ -105,6 +123,10 @@
     text-align: center;
     margin-top: 40px;
     margin-left: 40px;
+    //Responsive
+    @include lgMobile {
+      display: none;
+    }
     a {
       background-color: $primary-orange;
       font-size: 18px;
@@ -117,16 +139,6 @@
     a:hover {
       @include btnEffect;
     }
-    //appointment Btn Responsive
-    @include Mobile {
-      display: none;
-    }
-  }
-  // Navset Responsive
-  @include Mobile {
-    float: none;
-    background-color: transparent;
-    width: 100%;
   }
 }
 #openBtn {
@@ -137,7 +149,7 @@
   opacity: 1;
   transition-duration: 0.6s;
   //Responisve
-  @include Mobile {
+  @include lgMobile {
     opacity: 0;
   }
 }
@@ -147,13 +159,20 @@
 #introHead {
   padding-top: 280px;
   padding-left: 60px;
+  //Responsive
+  @include Tablet {
+    padding-top: 215px;
+  }
   h1 {
     font-size: 50px;
     font-weight: $global-weight;
     text-transform: capitalize;
     color: $button-text;
     //Responsive
-    @include Mobile {
+    @include Tablet {
+      font-size: 34px;
+    }
+    @include lgMobile {
       font-size: 20px;
     }
   }
@@ -161,12 +180,15 @@
     font-size: 24px;
     color: $button-text;
     //Responsive
-    @include Mobile {
+    @include Tablet {
+      font-size: 18px;
+    }
+    @include lgMobile {
       font-size: 12px;
     }
   }
   //Intro Head Responsive
-  @include Mobile {
+  @include lgMobile {
     padding-top: 40px;
     padding-left: 10px;
   }
@@ -183,7 +205,7 @@
     color: $button-text;
     transition: $global-Trans;
     //Responsive
-    @include Mobile {
+    @include lgMobile {
       font-size: 14px;
       padding: 5px 10px 5px 10px;
     }
@@ -195,7 +217,7 @@
     margin-left: 20px;
   }
   //Intro Btn Responsive
-  @include Mobile {
+  @include lgMobile {
     padding-left: 10px;
   }
 }

@@ -17,13 +17,16 @@
     margin-left: 160px;
   }
   @include Tablet {
-    margin-left: 120px;
+    margin-left: 100px;
   }
   @include lgMobile {
     margin-left: 90px;
   }
   @include Mobile {
     margin-left: 70px;
+  }
+  @include medMobile {
+    margin-left: 60px;
   }
   .trustPhoto {
     height: 70vh;
@@ -62,6 +65,9 @@
       @include Laptop {
         font-size: 24px;
       }
+      @include Tablet {
+        font-size: 18px;
+      }
       @include Mobile {
         font-size: 20px;
       }
@@ -79,8 +85,12 @@
       margin-top: 20px;
       margin-left: 20px;
       //Responsive
+      @include Tablet {
+        font-size: 14px;
+        margin-left: 10px;
+      }
       @include lgMobile {
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 10px;
       }
     }
@@ -90,8 +100,12 @@
       margin-top: 20px;
       margin-left: 20px;
       //Responsive
+      @include Tablet {
+        font-size: 14px;
+        margin-left: 10px;
+      }
       @include lgMobile {
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 10px;
       }
     }
@@ -106,6 +120,10 @@
     }
     .emailLink {
       padding-top: 20px;
+      //Responsive
+      @include medMobile {
+        padding-top: 10px;
+      }
       a {
         font-size: 20px;
         font-weight: $global-weight;
@@ -140,10 +158,13 @@
       margin-left: 210px;
     }
     @include Tablet {
-      margin-left: 160px;
+      margin-left: 130px;
     }
     @include lgMobile {
       margin-left: 100px;
+    }
+    @include medMobile {
+      margin-left: 70px;
     }
   }
   .careType {
@@ -151,6 +172,13 @@
     #careIcon {
       font-size: 40px;
       color: $primary-orange;
+      //Responsive
+      @include Tablet {
+        font-size: 30px;
+      }
+      @include medMobile {
+        font-size: 26px;
+      }
     }
     h3 {
       font-size: 24px;
@@ -159,10 +187,13 @@
       color: $primary-text;
       //Responsive
       @include Tablet {
-        font-size: 22px;
+        font-size: 18px;
       }
       @include lgMobile {
         font-size: 18px;
+      }
+      @include medMobile {
+        font-size: 14px;
       }
     }
     .readMore {
@@ -228,10 +259,13 @@
         margin-left: 300px;
       }
       @include lgMobile {
-        margin-left: 210px;
+        margin-left: 200px;
       }
       @include Mobile {
         margin-left: 140px;
+      }
+      @include medMobile {
+        margin-left: 110px;
       }
     }
     #conClick:hover {
@@ -254,6 +288,11 @@
     background-color: #f9f9f9;
     text-align: left;
     overflow: hidden;
+    //Responsive
+    @include medMobile {
+      height: 200px;
+      width: 90%;
+    }
     .conRowIcon {
       font-size: 100px;
       color: $primary-blue;
@@ -266,6 +305,12 @@
       //Responsive
       @include Tablet {
         margin-left: 50px;
+      }
+      @include medMobile {
+        font-size: 50px;
+        margin-left: 120px;
+        border-radius: none;
+        border: none;
       }
     }
     .conTextContain {
@@ -280,6 +325,11 @@
         margin-top: 30px;
         padding-top: 10px;
         padding-left: 20px;
+        //Responsive
+        @include medMobile {
+          font-size: 20px;
+          margin-top: 0px;
+        }
       }
       p {
         font-size: 18px;
@@ -288,6 +338,10 @@
         width: 240px;
         padding-top: 4px;
         padding-left: 20px;
+        //Responsive
+        @include medMobile {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -306,6 +360,9 @@
   @include lgMobile {
     margin-top: -860px;
   }
+  @include medMobile {
+    margin-top: -600px;
+  }
   #bestCareContent {
     height: 70vh;
     width: 70%;
@@ -314,9 +371,6 @@
     @include Display(row, center, center);
     //Responsive
     @include lgLaptop {
-      margin-left: 170px;
-    }
-    @include Laptop {
       margin-left: 160px;
     }
     @include Tablet {
@@ -343,6 +397,9 @@
       padding-top: 60px;
       padding-left: 60px;
       //Responsive
+      @include lgLaptop {
+        padding-left: 20px;
+      }
       @include Laptop {
         padding-left: 0px;
       }
@@ -352,6 +409,9 @@
       @include Mobile {
         padding-top: 70px;
       }
+      @include medMobile {
+        padding-top: 30px;
+      }
       h1 {
         font-size: 28px;
         font-weight: $global-weight;
@@ -359,11 +419,14 @@
         color: $primary-text;
         text-align: center;
         //Responsive
-        @include Laptop {
+        @include lgLaptop {
           font-size: 24px;
         }
         @include Tablet {
           font-size: 20px;
+        }
+        @include medMobile {
+          font-size: 18px;
         }
       }
     }
@@ -371,12 +434,23 @@
   .numberSpace {
     @include Display(row, unset, unset);
     padding-top: 30px;
+    //Responsive
+    @include lgMobile {
+      padding-top: 20px;
+    }
+    @include Mobile {
+      padding-top: 40px;
+    }
   }
   .listNum {
     padding-right: 10px;
     h2 {
       font-size: 30px;
       color: $primary-orange;
+      //Responsive
+      @include lgMobile {
+        font-size: 24px;
+      }
     }
   }
   .listContent {
@@ -390,10 +464,25 @@
       @include Tablet {
         font-size: 20px;
       }
+      @include lgMobile {
+        font-size: 18px;
+      }
+      @include medMobile {
+        font-size: 18px;
+      }
     }
     p {
       @include Tablet {
         font-size: 14px;
+      }
+      @include lgMobile {
+        font-size: 12px;
+      }
+      @include Mobile {
+        font-size: 14px;
+      }
+      @include medMobile {
+        font-size: 12px;
       }
     }
   }
@@ -471,10 +560,13 @@
     margin-left: 220px;
   }
   @include Tablet {
-    margin-left: 80px;
+    margin-left: 70px;
   }
   @include lgMobile {
-    margin-left: 0px;
+    // margin-left: 10px;
+    justify-content: unset;
+    width: 80%;
+    margin-left: 46px;
   }
   @include Mobile {
     @include Display(row, unset, center);
@@ -488,9 +580,21 @@
     text-transform: capitalize;
     transition: $global-Trans;
     cursor: pointer;
+    //Responsive
+    @include Tablet {
+      font-size: 18px;
+    }
+    @include lgMobile {
+      font-size: 17px;
+      padding-left: 10px;
+    }
     @include Mobile {
       font-size: 15px;
       padding-left: 10px;
+    }
+    @include medMobile {
+      font-size: 14px;
+      padding-left: 6px;
     }
   }
   h3:hover {
@@ -512,9 +616,6 @@
   @include Display(row, center, center);
   //Responsive
   @include lgLaptop {
-    margin-left: 170px;
-  }
-  @include Laptop {
     margin-left: 160px;
   }
   @include Tablet {
@@ -553,7 +654,7 @@
   border: 4px solid #f5f5f5;
   box-shadow: 2px 2px 10px #30303092;
   //Responsive
-  @include Laptop {
+  @include lgLaptop {
     padding-top: 40px;
   }
   @include Mobile {
@@ -564,8 +665,14 @@
     font-weight: $global-weight;
     text-transform: capitalize;
     //Responsive
-    @include Laptop {
+    @include lgLaptop {
       font-size: 20px;
+    }
+    @include lgMobile {
+      font-size: 16px;
+    }
+    @include medMobile {
+      font-size: 14px;
     }
   }
   .aboutDesc {
@@ -576,11 +683,24 @@
     margin-left: 15px;
     width: 90%;
     //Responsive
-    @include Laptop {
-      font-size: 17px;
+    @include lgLaptop {
+      font-size: 16px;
+      padding-top: 14px;
     }
     @include Tablet {
       font-size: 14px;
+    }
+    @include lgMobile {
+      font-size: 12px;
+      margin-left: 6px;
+    }
+    @include Mobile {
+      font-size: 14px;
+      line-height: 26px;
+    }
+    @include medMobile {
+      font-size: 12px;
+      line-height: 20px;
     }
   }
   .aboutDesc2 {
@@ -591,15 +711,32 @@
     margin-left: 15px;
     width: 90%;
     //Responsive
-    @include Laptop {
-      font-size: 17px;
+    @include lgLaptop {
+      font-size: 16px;
+      padding-top: 14px;
     }
     @include Tablet {
       font-size: 14px;
     }
+    @include lgMobile {
+      font-size: 12px;
+      margin-left: 6px;
+    }
+    @include Mobile {
+      font-size: 14px;
+      line-height: 26px;
+    }
+    @include medMobile {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
   .moreInfobtn {
     margin-top: 50px;
+    //Responsive
+    @include Laptop {
+      margin-top: 30px;
+    }
     a {
       font-size: 18px;
       font-weight: $global-weight;
@@ -607,6 +744,10 @@
       padding: $Btn;
       background-color: $primary-orange;
       transition: $global-Trans;
+      //Responsive
+      @include lgMobile {
+        font-size: 14px;
+      }
     }
     a:hover {
       @include btnEffect;
@@ -637,7 +778,7 @@
   }
   @include Mobile {
     float: none;
-    padding: 160px 0 0 30px;
+    padding: 130px 0 0 30px;
   }
   h1 {
     font-size: 40px;
@@ -708,6 +849,9 @@
   @include Mobile {
     margin-left: 70px;
   }
+  @include medMobile {
+    margin-left: 60px;
+  }
   #mapLoc {
     height: 100%;
     width: 50%;
@@ -743,6 +887,13 @@
       @include Display(column, unset, unset);
       h3 {
         font-size: 24px;
+        //Responsive
+        @include Laptop {
+          font-size: 20px;
+        }
+        @include lgMobile {
+          font-size: 18px;
+        }
         #contactIcon {
           padding-right: 10px;
         }
@@ -754,6 +905,13 @@
         color: $primary-text;
         width: 100%;
         text-align: center;
+        //Responsive
+        @include Laptop {
+          font-size: 16px;
+        }
+        @include lgMobile {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -7,10 +7,26 @@
     @include Display(unset, unset, unset);
     height: 40px;
     border-bottom: 1px solid #b0b0b0;
+    //Responsive
+    @include Mobile {
+      flex-direction: column;
+      text-align: center;
+      height: 70px;
+    }
     .address {
       @include Display(unset, unset, unset);
       margin-left: 60px;
       margin-top: 10px;
+      //Address Responsive
+      @include Tablet {
+        margin-left: 10px;
+      }
+      @include Mobile {
+        margin-left: 50px;
+      }
+      @include medMobile {
+        margin-left: 24px;
+      }
       .fa-home {
         font-size: 20px;
         color: #303030;
@@ -32,18 +48,18 @@
           font-size: 14px;
         }
       }
-      //Address Responsive
-      @include Tablet {
-        margin-left: 10px;
-      }
-      @include Mobile {
-        margin-left: 50px;
-      }
     }
     .email {
       @include Display(unset, unset, unset);
       margin-left: 50px;
       margin-top: 10px;
+      //Responsive
+      @include Mobile {
+        margin-left: 110px;
+      }
+      @include medMobile {
+        margin-left: 84px;
+      }
       .fa-envelope {
         font-size: 20px;
         color: $primary-text;
@@ -60,16 +76,6 @@
           font-size: 16px;
         }
       }
-      //Email Responsive
-      @include Mobile {
-        margin-left: 110px;
-      }
-    }
-    //Header Social Responsive
-    @include Mobile {
-      flex-direction: column;
-      text-align: center;
-      height: 70px;
     }
   }
   .headerContact {
@@ -85,7 +91,7 @@
       }
     }
     .logo {
-      height: 140px;
+      height: 120px;
       width: 300px;
       //Responsive
       @include Laptop {
@@ -113,8 +119,16 @@
       @include Display(unset, unset, unset);
       margin-top: 40px;
       margin-right: 90px;
+      //Responsive
+      @include Laptop {
+        margin-right: 22px;
+      }
       .phone {
         @include Display(unset, unset, unset);
+        //Responsive
+        @include Tablet {
+          padding-left: 10px;
+        }
         .fa-phone {
           font-size: 30px;
           color: $primary-text;
@@ -146,10 +160,6 @@
               font-size: 14px;
             }
           }
-        }
-        //Phone Responsive
-        @include Tablet {
-          padding-left: 10px;
         }
       }
       .opHours {
@@ -208,10 +218,6 @@
       .aptBtn:hover {
         @include btnEffect;
       }
-      //Mini Contact Responsive
-      @include Laptop {
-        margin-right: 22px;
-      }
     }
     //Header Contact Responsive
     @include Mobile {
@@ -223,7 +229,7 @@
     width: 100%;
     background-color: white;
     padding-top: 10px;
-    padding-left: 60px;
+    padding-left: 25px;
     background-color: $primary-orange;
     a {
       font-family: $primary-font;
@@ -235,6 +241,9 @@
       //Responsive
       @include Mobile {
         margin-left: 20px;
+      }
+      @include medMobile {
+        font-size: 18px;
       }
     }
     a:hover {

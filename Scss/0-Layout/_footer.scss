@@ -12,6 +12,9 @@
       font-size: 12px;
       padding-left: 10px;
     }
+    @include medMobile {
+      font-size: 10px;
+    }
   }
 }
 .phoneNum {

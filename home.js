@@ -10,10 +10,12 @@ function Open() {
   NavTimeline.add({
     targets: "#openBtn",
     opacity: 0,
+    display: "",
     duration: 300
   })
     .add({
-      targets: ".showLogo",
+      targets: ".showLogo, .hmeLink",
+      height: "0px",
       opacity: ["1", "0"],
       duration: 500,
       easing: "easeInSine"
@@ -28,6 +30,13 @@ function Open() {
     .add({
       targets: ".logo",
       opacity: ["0", "1"],
+      delay: 2,
+      duration: 600,
+      easing: "linear"
+    })
+    .add({
+      targets: "#introHead",
+      paddingTop: "410px",
       delay: 2,
       duration: 600,
       easing: "linear"
@@ -60,6 +69,20 @@ function Close() {
       targets: ".showLogo",
       opacity: ["0", "1"],
       duration: 500,
+      easing: "linear"
+    })
+    .add({
+      targets: ".showLogo, .hmeLink",
+      height: "150px",
+      opacity: ["0", "1"],
+      duration: 500,
+      easing: "easeInSine"
+    })
+    .add({
+      targets: "#introHead",
+      paddingTop: "280px",
+      delay: 2,
+      duration: 600,
       easing: "linear"
     });
 }

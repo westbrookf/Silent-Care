@@ -60,6 +60,9 @@
     width: 60vw;
     margin-top: 10px;
   }
+  @include medMobile {
+    height: 30vh;
+  }
   h3 {
     font-size: 24px;
     font-weight: $global-weight;
@@ -97,6 +100,9 @@
     @include Mobile {
       font-size: 16px;
     }
+    @include medMobile {
+      padding-top: 12px;
+    }
   }
 }
 .fact:hover {
@@ -119,6 +125,13 @@
 .visitContent {
   padding-top: 170px;
   text-align: center;
+  //Responsive
+  @include Mobile {
+    padding-top: 90px;
+  }
+  @include medMobile {
+    padding-top: 70px;
+  }
   .visitTitle {
     font-size: 34px;
     font-weight: $global-weight;
@@ -128,10 +141,6 @@
     @include Mobile {
       font-size: 24px;
     }
-  }
-  //Visit Content Responsive
-  @include Mobile {
-    padding-top: 90px;
   }
 }
 .ourValue {
@@ -171,6 +180,11 @@
       width: 400px;
       margin-left: 10px;
     }
+    @include medMobile {
+      width: 90%;
+      font-size: 16px;
+      margin-left: 20px;
+    }
   }
 }
 .valuesRow {
@@ -180,6 +194,9 @@
   @include Mobile {
     flex-direction: column;
     margin-left: 90px;
+  }
+  @include medMobile {
+    margin-left: 60px;
   }
 }
 .box {
@@ -193,6 +210,9 @@
     width: 70%;
     margin-top: 12px;
     padding-top: 20px;
+  }
+  @include medMobile {
+    width: 80%;
   }
   #globeStyle {
     font-size: 40px;
@@ -239,6 +259,9 @@
   }
   @include Mobile {
     margin-left: 140px;
+  }
+  @include medMobile {
+    margin-left: 120px;
   }
   a {
     font-size: 20px;

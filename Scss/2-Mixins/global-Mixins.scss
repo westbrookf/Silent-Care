@@ -29,7 +29,7 @@
 }
 //Tablet
 @mixin Tablet {
-  @media only screen and(max-width: 768px) {
+  @media only screen and(max-width: 769px) {
     @content;
   }
 }
@@ -42,6 +42,12 @@
 //Mobile
 @mixin Mobile {
   @media only screen and(max-width: 425px) {
+    @content;
+  }
+}
+//Medium Mobile
+@mixin medMobile {
+  @media only screen and(max-width: 385px) {
     @content;
   }
 }
