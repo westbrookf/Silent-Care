@@ -111,8 +111,7 @@ function contact() {
     .add({
       targets: ".bestCareContain",
       marginTop: "-20px",
-      easing: "linear",
-      delay: 500
+      easing: "linear"
     })
     .add({
       targets: ".blockOne",
