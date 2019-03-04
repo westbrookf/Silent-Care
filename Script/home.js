@@ -6,41 +6,10 @@ openNav.addEventListener("click", Open);
 closeNav.addEventListener("click", Close);
 
 function Open() {
-  let NavTimeline = anime.timeline();
-  NavTimeline.add({
-    targets: "#openBtn",
-    opacity: 0,
-    display: "",
-    duration: 300
-  })
-    .add({
-      targets: ".showLogo, .hmeLink",
-      height: "0px",
-      opacity: ["1", "0"],
-      duration: 500,
-      easing: "easeInSine"
-    })
-    .add({
-      targets: "#mainNav",
-      opacity: ["0", ".5", "1"],
-      width: "300px",
-      duration: 600,
-      easing: "easeInSine"
-    })
-    .add({
-      targets: ".logo",
-      opacity: ["0", "1"],
-      delay: 2,
-      duration: 600,
-      easing: "linear"
-    })
-    .add({
-      targets: "#introHead",
-      paddingTop: "410px",
-      delay: 2,
-      duration: 600,
-      easing: "linear"
-    });
+  // openNav.style.width = "0";
+  openNav.style.opacity = "0";
+  const mainNav = document.querySelector(".navSet");
+  mainNav.style.width = "30%";
 }
 
 function Close() {
