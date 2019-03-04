@@ -112,7 +112,9 @@
 }
 //Home Vist Section
 .homeVisitShowcase {
-  @include Background(url(../img/housemeet.jpeg));
+  @include Background(
+    url("https://doc-0o-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r80lp8u8il1r0fn1b5ua9la71adqde0l/1551650400000/00044937640541043010/*/12K2a8yPpFbzE_mlkuCTsFPbmoPojxkMP")
+  );
   height: 50vh;
   width: 100%;
   background-position: top;

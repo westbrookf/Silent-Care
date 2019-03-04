@@ -210,7 +210,9 @@
   }
 }
 .contactShowcase {
-  @include Background(url(../img/img10.jpg));
+  @include Background(
+    url("https://doc-10-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/tjk4tviq7h8iclsq1qin4cej23pndun4/1551650400000/00044937640541043010/*/1ngqkTGLhCGKL_mpetxw2a3W2KeSgPOPQ")
+  );
   background-attachment: fixed;
   height: 70vh;
   width: 100%;
@@ -500,7 +502,9 @@
 }
 //Trusted CareGivers
 #quickMesContain {
-  @include Background(url(../img/img12.jpeg));
+  @include Background(
+    url("https://doc-08-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/4in2qhfkq87jui8fibhscq4nlll3k71u/1551650400000/00044937640541043010/*/11rbb-B5IxSwjpcrOaQRPfzZXXv8S8SpS")
+  );
   height: 40vh;
   width: 100%;
   margin-top: 60px;
@@ -756,7 +760,9 @@
 }
 //ASL section
 #aslShowcase {
-  @include Background(url(../img/yellow.jpeg));
+  @include Background(
+    url("https://doc-0c-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/724lg84s36qcun599vlr66hf1jvp7bk1/1551650400000/00044937640541043010/*/1WYhJCfcPQUwf8cub7j6DghfmKLCNGz9f")
+  );
   background-position: top;
   background-attachment: fixed;
   height: 50vh;

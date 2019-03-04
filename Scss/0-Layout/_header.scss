@@ -1,5 +1,7 @@
 #showcaseImg {
-  @include Background(url(../img/img8.jpg));
+  @include Background(
+    url("https://doc-0o-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/2jec6iq06tjl1ef4f6b15v0e92be3b5g/1551650400000/00044937640541043010/*/1cBlFOpC5uyzpOnJCy_AyjltDwt11u7w8")
+  );
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
