@@ -1,7 +1,5 @@
 #showcaseImg {
-  @include Background(
-    url("https://doc-0o-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/2jec6iq06tjl1ef4f6b15v0e92be3b5g/1551650400000/00044937640541043010/*/1cBlFOpC5uyzpOnJCy_AyjltDwt11u7w8")
-  );
+  @include Background(url("https://gdurl.com/lLIfM"));
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
@@ -12,6 +10,8 @@
 }
 .showLogo {
   display: inline-flex;
+  height: 200px;
+  width: 400px;
   padding-left: 60px;
   padding-top: 40px;
   //Responsive
@@ -22,8 +22,10 @@
     pdding-top: 0px;
   }
   .hmeLink {
-    height: 150px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.8s;
     img {
       height: 100%;
       width: 100%;
@@ -31,8 +33,10 @@
   }
 }
 #mainNav {
-  opacity: 1;
+  opacity: 0;
   width: 0%;
+  transition-duration: 1.5s;
+  // transition-delay: 0.6s;
   @include lgMobile {
     margin-right: 0;
     opacity: 1;
@@ -45,6 +49,8 @@
   width: 0%;
   height: 100%;
   background-color: #00a2e848;
+  opacity: 0;
+  transition-duration: 0.8s;
   //Responsive
   @include lgMobile {
     float: none;
@@ -68,6 +74,7 @@
   .logo {
     padding-top: 40px;
     padding-left: 40px;
+    // transition-delay: 1s;
     // Responsive
     @include lgMobile {
       padding-top: 0px;
@@ -89,7 +96,7 @@
   }
   #menu {
     @include Display(column, space-evenly, unset);
-    height: 320px;
+    height: auto;
     text-align: center;
     padding-top: 30px;
     //Responsive
@@ -104,6 +111,7 @@
       font-weight: $global-weight;
       color: $button-text;
       text-transform: capitalize;
+      padding-top: 20px;
       width: 100%;
       text-align: ceter;
       transition: 0.6s;
@@ -121,17 +129,17 @@
     }
   }
   .appointmentBtn {
-    width: 220px;
+    width: 80%;
     text-align: center;
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 40px;
     //Responsive
     @include lgMobile {
       display: none;
     }
     a {
       background-color: $primary-orange;
-      font-size: 18px;
+      font-size: 20px;
       color: $button-text;
       font-weight: $global-weight;
       text-transform: capitalize;
@@ -159,7 +167,7 @@
   color: $primary-blue;
 }
 #introHead {
-  padding-top: 280px;
+  padding-top: 200px;
   padding-left: 60px;
   //Responsive
   @include Tablet {

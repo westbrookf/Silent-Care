@@ -210,9 +210,7 @@
   }
 }
 .contactShowcase {
-  @include Background(
-    url("https://doc-10-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/tjk4tviq7h8iclsq1qin4cej23pndun4/1551650400000/00044937640541043010/*/1ngqkTGLhCGKL_mpetxw2a3W2KeSgPOPQ")
-  );
+  @include Background(url("https://gdurl.com/8J_M"));
   background-attachment: fixed;
   height: 70vh;
   width: 100%;
@@ -278,6 +276,8 @@
 #contactBar {
   @include Display(row, space-evenly, center);
   margin-top: -120px;
+  opacity: 0;
+  transition-duration: 2s;
   //Responsive
   @include lgMobile {
     @include Display(column, space-evenly, center);
@@ -347,17 +347,13 @@
       }
     }
   }
-  .blockOne,
-  .blockTwo,
-  .blockThree {
-    opacity: 0;
-  }
 }
 //Best Care section
 .bestCareContain {
   height: auto;
   width: 100%;
   margin-top: -160px;
+  transition-duration: 1.4s;
   //Responsive
   @include lgMobile {
     margin-top: -860px;
@@ -502,9 +498,7 @@
 }
 //Trusted CareGivers
 #quickMesContain {
-  @include Background(
-    url("https://doc-08-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/4in2qhfkq87jui8fibhscq4nlll3k71u/1551650400000/00044937640541043010/*/11rbb-B5IxSwjpcrOaQRPfzZXXv8S8SpS")
-  );
+  @include Background(url("https://gdurl.com/XY76"));
   height: 40vh;
   width: 100%;
   margin-top: 60px;
@@ -760,9 +754,7 @@
 }
 //ASL section
 #aslShowcase {
-  @include Background(
-    url("https://doc-0c-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/724lg84s36qcun599vlr66hf1jvp7bk1/1551650400000/00044937640541043010/*/1WYhJCfcPQUwf8cub7j6DghfmKLCNGz9f")
-  );
+  @include Background(url("https://gdurl.com/7Rn8"));
   background-position: top;
   background-attachment: fixed;
   height: 50vh;

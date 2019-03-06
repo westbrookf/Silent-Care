@@ -1,5 +1,5 @@
 #showcaseImg {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://doc-0o-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/2jec6iq06tjl1ef4f6b15v0e92be3b5g/1551650400000/00044937640541043010/*/1cBlFOpC5uyzpOnJCy_AyjltDwt11u7w8");
+  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/lLIfM");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -11,6 +11,8 @@
 
 .showLogo {
   display: inline-flex;
+  height: 200px;
+  width: 400px;
   padding-left: 60px;
   padding-top: 40px; }
   @media only screen and (max-width: 600px) {
@@ -20,15 +22,18 @@
     .showLogo {
       pdding-top: 0px; } }
   .showLogo .hmeLink {
-    height: 150px;
-    width: 300px; }
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.8s; }
     .showLogo .hmeLink img {
       height: 100%;
       width: 100%; }
 
 #mainNav {
-  opacity: 1;
-  width: 0%; }
+  opacity: 0;
+  width: 0%;
+  transition-duration: 1.5s; }
   @media only screen and (max-width: 600px) {
     #mainNav {
       margin-right: 0;
@@ -43,7 +48,9 @@
   float: right;
   width: 0%;
   height: 100%;
-  background-color: #00a2e848; }
+  background-color: #00a2e848;
+  opacity: 0;
+  transition-duration: 0.8s; }
   @media only screen and (max-width: 600px) {
     .navSet {
       float: none;
@@ -83,7 +90,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: unset;
-    height: 320px;
+    height: auto;
     text-align: center;
     padding-top: 30px; }
     @media only screen and (max-width: 600px) {
@@ -100,6 +107,7 @@
       font-weight: lighter;
       color: #e7e7e7;
       text-transform: capitalize;
+      padding-top: 20px;
       width: 100%;
       text-align: ceter;
       transition: 0.6s; }
@@ -113,16 +121,16 @@
     .navSet #menu a:hover {
       color: #ff4500; }
   .navSet .appointmentBtn {
-    width: 220px;
+    width: 80%;
     text-align: center;
     margin-top: 40px;
-    margin-left: 100px; }
+    margin-left: 40px; }
     @media only screen and (max-width: 600px) {
       .navSet .appointmentBtn {
         display: none; } }
     .navSet .appointmentBtn a {
       background-color: #ff4500;
-      font-size: 18px;
+      font-size: 20px;
       color: #e7e7e7;
       font-weight: lighter;
       text-transform: capitalize;
@@ -138,7 +146,7 @@
   margin-right: 60px;
   float: right;
   opacity: 1;
-  transition-duration: 1ss; }
+  transition-duration: 1s; }
   @media only screen and (max-width: 600px) {
     #openBtn {
       opacity: 0; } }
@@ -147,7 +155,7 @@
   color: #00a2e8; }
 
 #introHead {
-  padding-top: 280px;
+  padding-top: 200px;
   padding-left: 60px; }
   @media only screen and (max-width: 769px) {
     #introHead {
@@ -650,7 +658,7 @@
       color: #00a2e8; }
 
 .contactShowcase {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://doc-10-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/tjk4tviq7h8iclsq1qin4cej23pndun4/1551650400000/00044937640541043010/*/1ngqkTGLhCGKL_mpetxw2a3W2KeSgPOPQ");
+  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/8J_M");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -713,7 +721,9 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: -120px; }
+  margin-top: -120px;
+  opacity: 0;
+  transition-duration: 2s; }
   @media only screen and (max-width: 600px) {
     #contactBar {
       display: flex;
@@ -775,15 +785,12 @@
         @media only screen and (max-width: 385px) {
           #contactBar .block .conTextContain p {
             font-size: 16px; } }
-  #contactBar .blockOne,
-  #contactBar .blockTwo,
-  #contactBar .blockThree {
-    opacity: 0; }
 
 .bestCareContain {
   height: auto;
   width: 100%;
-  margin-top: -160px; }
+  margin-top: -160px;
+  transition-duration: 1.4s; }
   @media only screen and (max-width: 600px) {
     .bestCareContain {
       margin-top: -860px; } }
@@ -912,7 +919,7 @@
       width: 100%; }
 
 #quickMesContain {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://doc-08-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/4in2qhfkq87jui8fibhscq4nlll3k71u/1551650400000/00044937640541043010/*/11rbb-B5IxSwjpcrOaQRPfzZXXv8S8SpS");
+  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/XY76");
   background-size: cover;
   background-position: center;
   height: 40vh;
@@ -1164,7 +1171,7 @@
       background-color: #00a2e8; }
 
 #aslShowcase {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://doc-0c-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/724lg84s36qcun599vlr66hf1jvp7bk1/1551650400000/00044937640541043010/*/1WYhJCfcPQUwf8cub7j6DghfmKLCNGz9f");
+  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/7Rn8");
   background-size: cover;
   background-position: center;
   background-position: top;
@@ -1359,7 +1366,7 @@
   width: 28vw;
   height: 22vh;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: white;
   border: 3px solid #ff4500;
   transition: 0.6s; }
   @media only screen and (max-width: 1020px) {
@@ -1414,13 +1421,10 @@
         padding-top: 12px; } }
 
 .fact:hover {
-  transform: scale(1.1);
-  box-shadow: 5px 5px 10px black;
-  background-color: #00a2e8;
-  background-color: #f5f5f5; }
+  transform: scale(1.1); }
 
 .homeVisitShowcase {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://doc-0o-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r80lp8u8il1r0fn1b5ua9la71adqde0l/1551650400000/00044937640541043010/*/12K2a8yPpFbzE_mlkuCTsFPbmoPojxkMP");
+  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/IWdp");
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -1509,7 +1513,8 @@
   width: 20%;
   border: 3px solid #ff4500;
   padding: 20px;
-  background-color: #f5f5f5; }
+  background-color: white;
+  transition: 0.6s; }
   @media only screen and (max-width: 425px) {
     .box {
       width: 70%;
@@ -1537,6 +1542,9 @@
     @media only screen and (max-width: 769px) {
       .box .valuePara {
         font-size: 14px; } }
+
+.box:hover {
+  transform: scale(1.1); }
 
 .valueContact {
   margin-top: 40px;
@@ -1980,7 +1988,7 @@
       border: none; } }
 
 .messageContainer {
-  height: 80vh;
+  height: 86vh;
   width: 90%;
   margin-top: 120px;
   margin-left: 70px;
@@ -2017,7 +2025,7 @@
     text-transform: capitalize; }
 
 .messageForm {
-  margin-top: 100px;
+  margin-top: 60px;
   margin-left: 240px;
   z-index: 99; }
   @media only screen and (max-width: 1020px) {
@@ -2032,24 +2040,37 @@
   @media only screen and (max-width: 425px) {
     .messageForm {
       margin-left: 70px; } }
+  .messageForm .inputContain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: unset;
+    width: 56vw; }
+  .messageForm .nameInputContain,
+  .messageForm .emailInputContain {
+    width: 40%; }
+  .messageForm label {
+    font-size: 18px; }
   .messageForm .input {
     font-size: 20px;
     font-weight: lighter;
     height: 5vh;
-    width: 28vw;
+    width: 100%;
     background-color: #f5f5f5;
     border: 4px solid #f5f5f5;
-    padding-left: 10px; }
-  .messageForm .messageInput {
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 12px 0 0 20px;
-    display: block;
-    height: 30vh;
-    width: 56vw;
-    margin-top: 40px;
-    background-color: #f5f5f5;
-    border: 1px solid #f5f5f5; }
+    padding-left: 10px;
+    display: block; }
+  .messageForm .mesInputContain {
+    margin-top: 30px; }
+    .messageForm .mesInputContain .messageInput {
+      font-size: 20px;
+      font-weight: lighter;
+      padding: 12px 0 0 20px;
+      display: block;
+      height: 30vh;
+      width: 56vw;
+      background-color: #f5f5f5;
+      border: 1px solid #f5f5f5; }
 
 .submitBtn {
   font-size: 17px;
@@ -2082,6 +2103,6 @@
   list-style-type: none; }
 
 body {
-  background-image: url("https://doc-08-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/ol08i7spnac791id6bp2ts0dmf1kd8lq/1551657600000/00044937640541043010/*/1vtKYlxXVTJpgia2NasRDQ4hznVHi53gM"); }
+  background-image: url("https://gdurl.com/H1kj"); }
 
 /*# sourceMappingURL=app.css.map */

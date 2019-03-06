@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- FavIcon -->
-    <link rel="shorcut icon" type="image/jpg" href="img/logo1.jpg" />
+    <link rel="shorcut icon" type="image/jpg" href="https://gdurl.com/Ssss/" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/app.css" />
     <!-- typography -->
@@ -37,11 +37,7 @@
       </div>
       <div class="headerContact">
         <div class="logoContain">
-          <img
-            src="https://doc-10-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/por6m22fkf9gmb9ouuhd8e4tk59ngf7n/1551650400000/00044937640541043010/*/1iayC89LFmm8AmpEhgO791xuaPHG28M1V"
-            alt="Company Logo"
-            class="logo"
-          />
+          <img src="https://gdurl.com/Ssss/" alt="Company Logo" class="logo" />
         </div>
         <div class="miniContact">
           <div class="phone">
@@ -89,16 +85,33 @@
         <h2>send a message</h2>
         <p>get in touch</p>
       </div>
-      <form
-        action="mailto:westbrookfrederick@gmail.com@example.com"
-        method="post"
-        enctype="text/plain"
-        class="messageForm"
-      >
-        <input type="text" class="input Name" placeholder="Your Name" />
-        <input type="email" class="input inptName" placeholder="Your Email" />
-        <textarea placeholder="We're Listening" class="messageInput"></textarea>
-        <button type="submit" value="send" class="submitBtn">Send</button>
+      <form action="/contact.php" method="post" class="messageForm">
+        <div class="inputContain">
+          <div class="nameInputContain">
+            <label for="name"
+              >Your Name
+              <input type="text" class="input Name" name="name" required />
+            </label>
+          </div>
+          <div class="emailInputContain">
+            <label for="email"
+              >Your Email
+              <input
+                type="email"
+                class="input inptName"
+                name="email"
+                required
+              />
+            </label>
+          </div>
+        </div>
+        <div class="mesInputContain">
+          <label for="message"
+            >Message
+            <textarea class="messageInput" name="message"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="submitBtn" name="submit">Send</button>
       </form>
     </div>
     <div class="contMap" id="contactPgMap"></div>
