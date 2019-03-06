@@ -85,7 +85,12 @@
         <h2>send a message</h2>
         <p>get in touch</p>
       </div>
-      <form action="/contact.php" method="post" class="messageForm">
+      <form
+        action="POST"
+        name="contactForm"
+        data-netlify="true"
+        class="messageForm"
+      >
         <div class="inputContain">
           <div class="nameInputContain">
             <label for="name"
