@@ -1,5 +1,5 @@
 #showcaseImg {
-  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/lLIfM");
+  background: linear-gradient(to right, #0e0e0e58, #3e3e3e1b), url("https://gdurl.com/lLIfM");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -52,7 +52,7 @@
   float: right;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, #eeeeee1b, #00a2e848);
+  background: linear-gradient(to right, #d5d4d41b, #00a2e85a);
   opacity: 0;
   transition-duration: 0.8s;
   border: none; }
@@ -679,7 +679,7 @@
       color: #00a2e8; }
 
 .contactShowcase {
-  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/8J_M");
+  background: linear-gradient(to right, #0e0e0e58, #3e3e3e1b), url("https://gdurl.com/8J_M");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -940,7 +940,7 @@
       width: 100%; }
 
 #quickMesContain {
-  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/XY76");
+  background: linear-gradient(to right, #0e0e0e58, #3e3e3e1b), url("https://gdurl.com/XY76");
   background-size: cover;
   background-position: center;
   height: 40vh;
@@ -1192,7 +1192,7 @@
       background-color: #00a2e8; }
 
 #aslShowcase {
-  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/7Rn8");
+  background: linear-gradient(to right, #0e0e0e58, #3e3e3e1b), url("https://gdurl.com/7Rn8");
   background-size: cover;
   background-position: center;
   background-position: top;
@@ -1445,7 +1445,7 @@
   transform: scale(1.1); }
 
 .homeVisitShowcase {
-  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/IWdp");
+  background: linear-gradient(to right, #0e0e0e58, #3e3e3e1b), url("https://gdurl.com/IWdp");
   background-size: cover;
   background-position: center;
   height: 50vh;
