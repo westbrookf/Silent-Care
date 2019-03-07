@@ -1882,6 +1882,10 @@
     text-transform: capitalize;
     color: #303030;
     padding-top: 40px; }
+    @media only screen and (min-width: 1920px) {
+      .serviceContain .serviceIntro {
+        font-size: 40px;
+        padding-top: 60px; } }
     @media only screen and (max-width: 425px) {
       .serviceContain .serviceIntro {
         font-size: 24px; } }
@@ -1891,6 +1895,10 @@
     width: 50%;
     margin-top: 10px;
     margin-left: 360px; }
+    @media only screen and (min-width: 1920px) {
+      .serviceContain .mainServiceDes {
+        margin-left: 460px;
+        font-size: 28px; } }
     @media only screen and (max-width: 1200px) {
       .serviceContain .mainServiceDes {
         width: 60%;
@@ -1919,11 +1927,17 @@
     font-size: 30px;
     color: #ff4500;
     padding-top: 10px; }
+    @media only screen and (min-width: 1920px) {
+      .serviceContain .fa-comment {
+        font-size: 40px; } }
   .serviceContain a {
     font-size: 20px;
     font-weight: lighter;
     color: #303030;
     padding-left: 10px; }
+    @media only screen and (min-width: 1920px) {
+      .serviceContain a {
+        font-size: 40px; } }
   .serviceContain a:hover {
     color: #00a2e8; }
 
@@ -1934,6 +1948,9 @@
   margin-top: 60px;
   margin-left: 50px;
   margin-bottom: 30px; }
+  @media only screen and (min-width: 1920px) {
+    .gridContainer {
+      margin-left: 30px; } }
   @media only screen and (max-width: 1200px) {
     .gridContainer {
       margin-left: 0px; } }
@@ -1963,10 +1980,18 @@
   overflow: hidden;
   background-color: white;
   border: 2px solid #e7e7e7; }
+  @media only screen and (min-width: 1920px) {
+    .serviceType {
+      height: 400px;
+      width: 600px; } }
   .serviceType #gridPhto {
     height: 220px;
     width: 400px;
     transition: 0.6s; }
+    @media only screen and (min-width: 1920px) {
+      .serviceType #gridPhto {
+        height: 80%;
+        width: 100%; } }
   .serviceType #gridPhto:hover {
     transform: scale(1.1); }
   @media only screen and (max-width: 1020px) {
@@ -1989,6 +2014,9 @@
     text-align: left;
     padding-top: 16px;
     padding-left: 10px; }
+    @media only screen and (min-width: 1920px) {
+      .serviceContentContain .serviceTitle {
+        font-size: 34px; } }
     @media only screen and (max-width: 1020px) {
       .serviceContentContain .serviceTitle {
         font-size: 18px; } }
@@ -2007,6 +2035,9 @@
     background-color: #ff4500;
     transition: 0.6s;
     padding: 10px 20px 10px 20px; }
+    @media only screen and (min-width: 1920px) {
+      .serviceLinks a {
+        font-size: 24px; } }
     @media only screen and (max-width: 1020px) {
       .serviceLinks a {
         padding: 6px;
@@ -2023,6 +2054,9 @@
   align-items: unset;
   margin-top: 60px;
   margin-left: 70px; }
+  @media only screen and (min-width: 1920px) {
+    .portContainer {
+      margin-left: 100px; } }
   @media only screen and (max-width: 1200px) {
     .portContainer {
       margin-left: 20px; } }
@@ -2063,6 +2097,9 @@
     font-size: 30px;
     text-transform: capitalize;
     color: #ff4500; }
+    @media only screen and (min-width: 1920px) {
+      .portContent .portTitle {
+        font-size: 40px; } }
     @media only screen and (max-width: 425px) {
       .portContent .portTitle {
         text-align: center; } }
@@ -2073,6 +2110,11 @@
     font-size: 18px;
     line-height: 30px;
     width: 100%; }
+    @media only screen and (min-width: 1920px) {
+      .portContent .paraBlockOne,
+      .portContent .paraBlockTwo {
+        font-size: 30px;
+        line-height: 40px; } }
     @media only screen and (max-width: 425px) {
       .portContent .paraBlockOne,
       .portContent .paraBlockTwo {
@@ -2094,6 +2136,11 @@
       width: 70%;
       margin-left: 120px;
       padding-top: 50px; }
+      @media only screen and (min-width: 1920px) {
+        .portContent .ownerQuoteBlock .ownerQuote {
+          font-size: 40px;
+          padding-top: 40px;
+          margin-left: 140px; } }
       @media only screen and (max-width: 769px) {
         .portContent .ownerQuoteBlock .ownerQuote {
           margin-left: 50px;
@@ -2134,6 +2181,9 @@
         padding-top: 40px;
         color: #00a2e8;
         transition: 0.6s; }
+        @media only screen and (min-width: 1920px) {
+          .rightNav .servIcons .icon .gridIcon {
+            font-size: 70px; } }
       .rightNav .servIcons .icon .gridIcon:hover {
         color: #ff4500;
         transform: scale(1.1); }
@@ -2151,6 +2201,9 @@
         justify-content: space-evenly;
         align-items: unset;
         margin-top: 30px; }
+        @media only screen and (min-width: 1920px) {
+          .rightNav .mreServices .servThumbnail .thumbLink {
+            margin-top: 40px; } }
         @media only screen and (max-width: 425px) {
           .rightNav .mreServices .servThumbnail .thumbLink {
             display: flex;
@@ -2162,6 +2215,10 @@
         .rightNav .mreServices .servThumbnail .thumbLink img {
           height: 7vh;
           width: 5vw; }
+          @media only screen and (min-width: 1920px) {
+            .rightNav .mreServices .servThumbnail .thumbLink img {
+              height: 7vh;
+              width: 7vw; } }
           @media only screen and (max-width: 425px) {
             .rightNav .mreServices .servThumbnail .thumbLink img {
               width: 100%;
@@ -2172,6 +2229,9 @@
           color: #303030;
           width: 90%;
           padding-left: 8px; }
+          @media only screen and (min-width: 1920px) {
+            .rightNav .mreServices .servThumbnail .thumbLink .servMiniDesc {
+              font-size: 30px; } }
           @media only screen and (max-width: 425px) {
             .rightNav .mreServices .servThumbnail .thumbLink .servMiniDesc {
               padding-left: 30px; } }
@@ -2197,6 +2257,9 @@
       font-weight: lighter;
       text-transform: capitalize;
       padding-top: 15px; }
+      @media only screen and (min-width: 1920px) {
+        .rightNav .visitUs h2 {
+          font-size: 40px; } }
       @media only screen and (max-width: 769px) {
         .rightNav .visitUs h2 {
           font-size: 20px;
@@ -2253,10 +2316,16 @@
   .contactOption .optIcon {
     font-size: 30px;
     padding-top: 20px; }
+    @media only screen and (min-width: 1920px) {
+      .contactOption .optIcon {
+        font-size: 40px; } }
   .contactOption h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: lighter;
     font-size: 24px; }
+    @media only screen and (min-width: 1920px) {
+      .contactOption h2 {
+        font-size: 44px; } }
     @media only screen and (max-width: 600px) {
       .contactOption h2 {
         font-size: 20px; } }
@@ -2267,6 +2336,9 @@
     font-family: "Open Sans", sans-serif;
     font-weight: lighter;
     font-size: 18px; }
+    @media only screen and (min-width: 1920px) {
+      .contactOption p {
+        font-size: 30px; } }
     @media only screen and (max-width: 600px) {
       .contactOption p {
         font-size: 14px; } }
@@ -2324,6 +2396,9 @@
   margin-top: 60px;
   margin-left: 240px;
   z-index: 99; }
+  @media only screen and (min-width: 1920px) {
+    .messageForm {
+      margin-left: 270px; } }
   @media only screen and (max-width: 1020px) {
     .messageForm {
       margin-left: 168px; } }
@@ -2342,11 +2417,17 @@
     justify-content: space-evenly;
     align-items: unset;
     width: 56vw; }
+    @media only screen and (min-width: 1920px) {
+      .messageForm .inputContain {
+        width: 80%; } }
   .messageForm .nameInputContain,
   .messageForm .emailInputContain {
     width: 40%; }
   .messageForm label {
     font-size: 18px; }
+    @media only screen and (min-width: 1920px) {
+      .messageForm label {
+        font-size: 30px; } }
   .messageForm .input {
     font-size: 20px;
     font-weight: lighter;
@@ -2367,6 +2448,9 @@
       width: 56vw;
       background-color: #f5f5f5;
       border: 1px solid #f5f5f5; }
+      @media only screen and (min-width: 1920px) {
+        .messageForm .mesInputContain .messageInput {
+          width: 62vw; } }
 
 .submitBtn {
   font-size: 17px;
@@ -2376,6 +2460,9 @@
   margin-top: 12px;
   cursor: pointer;
   transition: 0.6s; }
+  @media only screen and (min-width: 1920px) {
+    .submitBtn {
+      font-size: 30px; } }
   @media only screen and (max-width: 425px) {
     .submitBtn {
       margin-left: 50px; } }
