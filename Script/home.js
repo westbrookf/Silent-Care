@@ -38,7 +38,7 @@ function contact() {
   const conBar = document.querySelector("#contactBar");
   conBar.style.display = "flex";
   const careContent = document.querySelector(".bestCareContain");
-  careContent.style.marginTop = "100px";
+  careContent.style.marginTop = "90px";
   conBar.style.opacity = "1";
 }
 

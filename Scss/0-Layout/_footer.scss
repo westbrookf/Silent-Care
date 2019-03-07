@@ -8,6 +8,9 @@
   p {
     padding-left: 60px;
     //Responsive
+    @include Desktop {
+      font-size: 24px;
+    }
     @include Mobile {
       font-size: 12px;
       padding-left: 10px;
@@ -21,6 +24,9 @@
   h3 {
     padding-right: 60px;
     //Responsive
+    @include Desktop {
+      font-size: 24px;
+    }
     @include Mobile {
       font-size: 12px;
       padding-right: 10px;

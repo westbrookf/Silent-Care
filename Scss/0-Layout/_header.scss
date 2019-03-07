@@ -151,6 +151,9 @@
     margin-top: 40px;
     margin-left: 40px;
     //Responsive
+    @include Desktop {
+      margin-left: 50px;
+    }
     @include lgMobile {
       display: none;
     }
@@ -162,6 +165,10 @@
       text-transform: capitalize;
       padding: $Btn;
       transition: $global-Trans;
+      //Responsive
+      @include Desktop {
+        font-size: 30px;
+      }
     }
     a:hover {
       @include btnEffect;
@@ -190,6 +197,9 @@
   padding-top: 200px;
   padding-left: 60px;
   //Responsive
+  @include Desktop {
+    padding-top: 300px;
+  }
   @include Tablet {
     padding-top: 215px;
   }
@@ -199,6 +209,9 @@
     text-transform: capitalize;
     color: $button-text;
     //Responsive
+    @include Desktop {
+      font-size: 70px;
+    }
     @include Tablet {
       font-size: 34px;
     }
@@ -210,6 +223,9 @@
     font-size: 24px;
     color: $button-text;
     //Responsive
+    @include Desktop {
+      font-size: 30px;
+    }
     @include Tablet {
       font-size: 18px;
     }
@@ -235,6 +251,9 @@
     color: $button-text;
     transition: $global-Trans;
     //Responsive
+    @include Desktop {
+      font-size: 30px;
+    }
     @include lgMobile {
       font-size: 14px;
       padding: 5px 10px 5px 10px;

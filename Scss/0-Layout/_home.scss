@@ -11,6 +11,10 @@
   margin-left: 220px;
   @include Display(row, center, center);
   //Responsive
+  @include Desktop {
+    width: 80%;
+    margin-left: 190px;
+  }
   @include lgLaptop {
     margin-left: 170px;
   }
@@ -62,6 +66,9 @@
       text-transform: capitalize;
       color: $primary-text;
       //Responsive
+      @include Desktop {
+        font-size: 44px;
+      }
       @include Laptop {
         font-size: 24px;
       }
@@ -78,6 +85,10 @@
       text-transform: capitalize;
       color: $primary-orange;
       padding-top: 10px;
+      //Responsive
+      @include Desktop {
+        font-size: 30px;
+      }
     }
     .trustDesc1 {
       font-size: 18px;
@@ -85,6 +96,10 @@
       margin-top: 20px;
       margin-left: 20px;
       //Responsive
+      @include Desktop {
+        font-size: 30px;
+        margin-left: 30px;
+      }
       @include Tablet {
         font-size: 14px;
         margin-left: 10px;
@@ -100,6 +115,10 @@
       margin-top: 20px;
       margin-left: 20px;
       //Responsive
+      @include Desktop {
+        font-size: 30px;
+        margin-left: 30px;
+      }
       @include Tablet {
         font-size: 14px;
         margin-left: 10px;
@@ -114,6 +133,10 @@
       font-size: 30px;
       color: $primary-orange;
       transition: $global-Trans;
+      //Responsive
+      @include Desktop {
+        font-size: 50px;
+      }
     }
     .fa-comment:hover {
       color: $primary-blue;
@@ -130,6 +153,9 @@
         color: $primary-text;
         transition: $global-Trans;
         //Responsive
+        @include Desktop {
+          font-size: 40px;
+        }
         @include lgMobile {
           font-size: 14px;
         }
@@ -151,6 +177,9 @@
     margin-left: 270px;
     overflow-y: hidden;
     //Responsive
+    @include Desktop {
+      margin-left: 360px;
+    }
     @include lgLaptop {
       margin-left: 220px;
     }
@@ -173,6 +202,9 @@
       font-size: 40px;
       color: $primary-orange;
       //Responsive
+      @include Desktop {
+        font-size: 60px;
+      }
       @include Tablet {
         font-size: 30px;
       }
@@ -186,6 +218,9 @@
       font-weight: $global-weight;
       color: $primary-text;
       //Responsive
+      @include Desktop {
+        font-size: 30px;
+      }
       @include Tablet {
         font-size: 18px;
       }
@@ -223,6 +258,9 @@
     padding-top: 200px;
     text-align: center;
     //Responsive
+    @include Desktop {
+      padding-top: 270px;
+    }
     @include Mobile {
       padding-top: 90px;
     }
@@ -232,6 +270,9 @@
       text-transform: capitalize;
       color: $button-text;
       //Responsive
+      @include Desktop {
+        font-size: 60px;
+      }
       @include Mobile {
         font-size: 30px;
       }
@@ -245,10 +286,16 @@
       padding: $Btn;
       margin-top: 40px;
       margin-left: 630px;
+      text-align: center;
       width: 160px;
       transition: $global-Trans;
       cursor: pointer;
       //Responsive
+      @include Desktop {
+        font-size: 30px;
+        margin-left: 840px;
+        width: 200px;
+      }
       @include lgLaptop {
         margin-left: 510px;
       }
@@ -283,6 +330,12 @@
     @include Display(column, space-evenly, center);
     margin-top: 0px;
   }
+  .contactPhone,
+  .contactEmail,
+  .contactAdress {
+    height: 100%;
+    width: 100%;
+  }
   .block {
     height: 300px;
     width: 300px;
@@ -291,6 +344,10 @@
     text-align: left;
     overflow: hidden;
     //Responsive
+    @include Desktop {
+      height: 500px;
+      width: 460px;
+    }
     @include medMobile {
       height: 200px;
       width: 90%;
@@ -305,6 +362,12 @@
       border: 6px solid $primary-blue;
       border-radius: 100px;
       //Responsive
+      @include Desktop {
+        margin-left: 88px;
+        font-size: 200px;
+        padding: 30px;
+        margin-left: 80px;
+      }
       @include Tablet {
         margin-left: 50px;
       }
@@ -318,6 +381,10 @@
     .conTextContain {
       height: 130px;
       background-color: #fff;
+      //Responsive
+      @include Desktop {
+        height: 150px;
+      }
       h3 {
         font-size: 30px;
         font-weight: lighter;
@@ -328,6 +395,10 @@
         padding-top: 10px;
         padding-left: 20px;
         //Responsive
+        @include Desktop {
+          padding-top: 30px;
+          font-size: 40px;
+        }
         @include medMobile {
           font-size: 20px;
           margin-top: 0px;
@@ -337,10 +408,14 @@
         font-size: 18px;
         font-weight: lighter;
         color: $primary-text;
-        width: 240px;
+        width: 100%;
         padding-top: 4px;
         padding-left: 20px;
         //Responsive
+        @include Desktop {
+          font-size: 22px;
+          padding-bottom: 20px;
+        }
         @include medMobile {
           font-size: 16px;
         }
@@ -352,7 +427,7 @@
 .bestCareContain {
   height: auto;
   width: 100%;
-  margin-top: -160px;
+  margin-top: -350px;
   transition-duration: 1.4s;
   //Responsive
   @include lgMobile {
@@ -368,6 +443,10 @@
     margin-left: 220px;
     @include Display(row, center, center);
     //Responsive
+    @include Desktop {
+      width: 80%;
+      margin-left: 190px;
+    }
     @include lgLaptop {
       margin-left: 160px;
     }
@@ -417,6 +496,11 @@
         color: $primary-text;
         text-align: center;
         //Responsive
+        @include Desktop {
+          font-size: 44px;
+          width: 90%;
+          margin-left: -10px;
+        }
         @include lgLaptop {
           font-size: 24px;
         }
@@ -433,6 +517,9 @@
     @include Display(row, unset, unset);
     padding-top: 30px;
     //Responsive
+    @include Desktop {
+      padding-top: 60px;
+    }
     @include lgMobile {
       padding-top: 20px;
     }
@@ -446,6 +533,9 @@
       font-size: 30px;
       color: $primary-orange;
       //Responsive
+      @include Desktop {
+        font-size: 40px;
+      }
       @include lgMobile {
         font-size: 24px;
       }
@@ -455,10 +545,13 @@
     width: 90%;
     h3 {
       font-size: 22px;
-      font-weight: $global-weight;
+      font-weight: 500;
       color: $primary-text;
       text-transform: capitalize;
       //Responsive
+      @include Desktop {
+        font-size: 36px;
+      }
       @include Tablet {
         font-size: 20px;
       }
@@ -470,6 +563,9 @@
       }
     }
     p {
+      @include Desktop {
+        font-size: 28px;
+      }
       @include Tablet {
         font-size: 14px;
       }
@@ -511,11 +607,19 @@
     font-weight: $global-weight;
     color: $button-text;
     text-transform: capitalize;
+    //Responsive
+    @include Desktop {
+      font-size: 60px;
+    }
   }
   p {
     font-size: 18px;
     width: 100%;
     color: $button-text;
+    //Responsive
+    @include Desktop {
+      font-size: 30px;
+    }
   }
 }
 .mesLink {
@@ -528,6 +632,10 @@
     background-color: $primary-orange;
     padding: $Btn;
     transition: $global-Trans;
+    //Responsive
+    @include Desktop {
+      font-size: 30px;
+    }
   }
   a:hover {
     @include btnEffect;
@@ -542,6 +650,10 @@
     font-weight: $global-weight;
     color: $primary-text;
     text-transform: capitalize;
+    //Responsive
+    @include Desktop {
+      font-size: 50px;
+    }
   }
 }
 //Link Row
@@ -551,6 +663,10 @@
   margin-top: 20px;
   margin-left: 410px;
   //Responsive
+  @include Desktop {
+    width: 800px;
+    margin-left: 550px;
+  }
   @include lgLaptop {
     margin-left: 300px;
   }
@@ -579,6 +695,9 @@
     transition: $global-Trans;
     cursor: pointer;
     //Responsive
+    @include Desktop {
+      font-size: 30px;
+    }
     @include Tablet {
       font-size: 18px;
     }
@@ -613,6 +732,10 @@
   margin-left: 220px;
   @include Display(row, center, center);
   //Responsive
+  @include Desktop {
+    width: 80%;
+    margin-left: 190px;
+  }
   @include lgLaptop {
     margin-left: 160px;
   }
@@ -663,6 +786,9 @@
     font-weight: $global-weight;
     text-transform: capitalize;
     //Responsive
+    @include Desktop {
+      font-size: 40px;
+    }
     @include lgLaptop {
       font-size: 20px;
     }
@@ -681,6 +807,10 @@
     margin-left: 15px;
     width: 90%;
     //Responsive
+    @include Desktop {
+      font-size: 30px;
+      margin-left: 25px;
+    }
     @include lgLaptop {
       font-size: 16px;
       padding-top: 14px;
@@ -709,6 +839,10 @@
     margin-left: 15px;
     width: 90%;
     //Responsive
+    @include Desktop {
+      font-size: 30px;
+      margin-left: 25px;
+    }
     @include lgLaptop {
       font-size: 16px;
       padding-top: 14px;
@@ -743,6 +877,9 @@
       background-color: $primary-orange;
       transition: $global-Trans;
       //Responsive
+      @include Desktop {
+        font-size: 30px;
+      }
       @include lgMobile {
         font-size: 14px;
       }
@@ -784,6 +921,9 @@
     color: $button-text;
     text-transform: capitalize;
     //Responsive
+    @include Desktop {
+      font-size: 50px;
+    }
     @include Laptop {
       font-size: 30px;
     }
@@ -800,6 +940,10 @@
     width: 500px;
     color: $button-text;
     //Responsive
+    @include Desktop {
+      font-size: 30px;
+      width: 700px;
+    }
     @include Tablet {
       font-size: 17px;
       width: 300px;
@@ -817,6 +961,10 @@
       font-weight: $global-weight;
       color: $button-text;
       transition: $global-Trans;
+      //Responsive
+      @include Desktop {
+        font-size: 30px;
+      }
     }
     a:hover {
       @include btnEffect;
@@ -835,6 +983,10 @@
   margin-top: 60px;
   margin-left: 220px;
   //Responsive
+  @include Desktop {
+    width: 80%;
+    margin-left: 190px;
+  }
   @include lgLaptop {
     margin-left: 170px;
   }
@@ -879,6 +1031,10 @@
       text-transform: capitalize;
       width: 100%;
       text-align: center;
+      //Responsive
+      @include Desktop {
+        font-size: 40px;
+      }
     }
     .contactFlex {
       padding-top: 40px;
@@ -886,6 +1042,9 @@
       h3 {
         font-size: 24px;
         //Responsive
+        @include Desktop {
+          font-size: 40px;
+        }
         @include Laptop {
           font-size: 20px;
         }
@@ -904,6 +1063,9 @@
         width: 100%;
         text-align: center;
         //Responsive
+        @include Desktop {
+          font-size: 30px;
+        }
         @include Laptop {
           font-size: 16px;
         }
