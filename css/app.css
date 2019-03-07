@@ -293,6 +293,9 @@
     align-items: unset;
     height: 40px;
     border-bottom: 1px solid #b0b0b0; }
+    @media only screen and (min-width: 1920px) {
+      .headContain .headerSocial {
+        height: 60px; } }
     @media only screen and (max-width: 425px) {
       .headContain .headerSocial {
         flex-direction: column;
@@ -317,6 +320,9 @@
       .headContain .headerSocial .address .fa-home {
         font-size: 20px;
         color: #303030; }
+        @media only screen and (min-width: 1920px) {
+          .headContain .headerSocial .address .fa-home {
+            font-size: 30px; } }
         @media only screen and (max-width: 425px) {
           .headContain .headerSocial .address .fa-home {
             font-size: 18px; } }
@@ -325,6 +331,9 @@
         font-size: 20px;
         color: #505050;
         margin-left: 10px; }
+        @media only screen and (min-width: 1920px) {
+          .headContain .headerSocial .address h4 {
+            font-size: 30px; } }
         @media only screen and (max-width: 769px) {
           .headContain .headerSocial .address h4 {
             font-size: 16px; } }
@@ -347,6 +356,9 @@
       .headContain .headerSocial .email .fa-envelope {
         font-size: 20px;
         color: #303030; }
+        @media only screen and (min-width: 1920px) {
+          .headContain .headerSocial .email .fa-envelope {
+            font-size: 30px; } }
       .headContain .headerSocial .email h4 {
         font-family: "Open Sans", sans-serif;
         margin-left: 10px;
@@ -354,6 +366,9 @@
         color: #303030;
         font-weight: lighter;
         margin-top: -4px; }
+        @media only screen and (min-width: 1920px) {
+          .headContain .headerSocial .email h4 {
+            font-size: 30px; } }
         @media only screen and (max-width: 769px) {
           .headContain .headerSocial .email h4 {
             font-size: 16px; } }
@@ -364,6 +379,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: unset; }
+    @media only screen and (min-width: 1920px) {
+      .headContain .headerContact {
+        height: 20vh; } }
     .headContain .headerContact .logoContain {
       display: flex;
       flex-direction: unset;
@@ -376,6 +394,10 @@
     .headContain .headerContact .logo {
       height: 120px;
       width: 300px; }
+      @media only screen and (min-width: 1920px) {
+        .headContain .headerContact .logo {
+          height: 200px;
+          width: 300px; } }
       @media only screen and (max-width: 1020px) {
         .headContain .headerContact .logo {
           width: 200px; } }
@@ -416,6 +438,9 @@
           font-size: 30px;
           color: #303030;
           padding-top: 6px; }
+          @media only screen and (min-width: 1920px) {
+            .headContain .headerContact .miniContact .phone .fa-phone {
+              font-size: 50px; } }
           @media only screen and (max-width: 769px) {
             .headContain .headerContact .miniContact .phone .fa-phone {
               font-size: 18px; } }
@@ -426,6 +451,9 @@
           text-transform: capitalize;
           color: #303030;
           padding-left: 14px; }
+          @media only screen and (min-width: 1920px) {
+            .headContain .headerContact .miniContact .phone .contactText h3 {
+              font-size: 40px; } }
           @media only screen and (max-width: 769px) {
             .headContain .headerContact .miniContact .phone .contactText h3 {
               font-size: 18px; } }
@@ -433,6 +461,9 @@
           color: #ff4500;
           padding-left: 14px;
           letter-spacing: 2px; }
+          @media only screen and (min-width: 1920px) {
+            .headContain .headerContact .miniContact .phone .contactText h4 {
+              font-size: 30px; } }
           @media only screen and (max-width: 769px) {
             .headContain .headerContact .miniContact .phone .contactText h4 {
               font-size: 14px; } }
@@ -446,6 +477,9 @@
           font-size: 30px;
           color: #303030;
           padding-top: 6px; }
+          @media only screen and (min-width: 1920px) {
+            .headContain .headerContact .miniContact .opHours .fa-clock {
+              font-size: 50px; } }
           @media only screen and (max-width: 769px) {
             .headContain .headerContact .miniContact .opHours .fa-clock {
               font-size: 18px; } }
@@ -456,12 +490,18 @@
           text-transform: capitalize;
           color: #303030;
           padding-left: 14px; }
+          @media only screen and (min-width: 1920px) {
+            .headContain .headerContact .miniContact .opHours h3 {
+              font-size: 40px; } }
           @media only screen and (max-width: 769px) {
             .headContain .headerContact .miniContact .opHours h3 {
               font-size: 18px; } }
         .headContain .headerContact .miniContact .opHours h4 {
           color: #ff4500;
           padding-left: 14px; }
+          @media only screen and (min-width: 1920px) {
+            .headContain .headerContact .miniContact .opHours h4 {
+              font-size: 30px; } }
           @media only screen and (max-width: 769px) {
             .headContain .headerContact .miniContact .opHours h4 {
               font-size: 14px; } }
@@ -478,6 +518,12 @@
         margin-right: -20px;
         margin-left: 20px;
         transition: 0.6s; }
+        @media only screen and (min-width: 1920px) {
+          .headContain .headerContact .miniContact .aptBtn {
+            font-size: 30px;
+            padding-top: 10px;
+            height: 70px;
+            margin-top: 20px; } }
         @media only screen and (max-width: 769px) {
           .headContain .headerContact .miniContact .aptBtn {
             margin-right: 0px;
@@ -496,6 +542,9 @@
     padding-top: 10px;
     padding-left: 25px;
     background-color: #ff4500; }
+    @media only screen and (min-width: 1920px) {
+      .headContain .nav {
+        height: 60px; } }
     .headContain .nav a {
       font-family: "Open Sans", sans-serif;
       font-size: 20px;
@@ -503,6 +552,9 @@
       color: #f7f7f7;
       text-transform: capitalize;
       margin-left: 30px; }
+      @media only screen and (min-width: 1920px) {
+        .headContain .nav a {
+          font-size: 30px; } }
       @media only screen and (max-width: 425px) {
         .headContain .nav a {
           margin-left: 20px; } }
@@ -905,8 +957,11 @@
 .bestCareContain {
   height: auto;
   width: 100%;
-  margin-top: -350px;
+  margin-top: 90px;
   transition-duration: 1.4s; }
+  @media only screen and (min-width: 1920px) {
+    .bestCareContain {
+      margin-top: -350px; } }
   @media only screen and (max-width: 600px) {
     .bestCareContain {
       margin-top: -860px; } }
@@ -1536,6 +1591,9 @@
     font-weight: lighter;
     color: #303030;
     text-transform: capitalize; }
+    @media only screen and (min-width: 1920px) {
+      .rightTitle h2 {
+        font-size: 40px; } }
     @media only screen and (max-width: 425px) {
       .rightTitle h2 {
         font-size: 24px; } }
@@ -1570,6 +1628,9 @@
   background-color: white;
   border: 3px solid #ff4500;
   transition: 0.6s; }
+  @media only screen and (min-width: 1920px) {
+    .fact {
+      height: 26vh; } }
   @media only screen and (max-width: 1020px) {
     .fact {
       width: 26vw; } }
@@ -1589,6 +1650,9 @@
     color: #303030;
     text-transform: capitalize;
     padding-top: 40px; }
+    @media only screen and (min-width: 1920px) {
+      .fact h3 {
+        font-size: 36px; } }
     @media only screen and (max-width: 1020px) {
       .fact h3 {
         padding-top: 20px;
@@ -1607,6 +1671,11 @@
     line-height: 24px;
     width: 90%;
     margin-left: 20px; }
+    @media only screen and (min-width: 1920px) {
+      .fact p {
+        padding-top: 20px;
+        font-size: 26px;
+        line-height: 26px; } }
     @media only screen and (max-width: 1020px) {
       .fact p {
         font-size: 14px; } }
@@ -1637,7 +1706,7 @@
       height: 30vh; } }
 
 .visitContent {
-  padding-top: 170px;
+  padding-top: 220px;
   text-align: center; }
   @media only screen and (max-width: 425px) {
     .visitContent {
@@ -1650,6 +1719,9 @@
     font-weight: lighter;
     color: white;
     text-transform: capitalize; }
+    @media only screen and (min-width: 1920px) {
+      .visitContent .visitTitle {
+        font-size: 46px; } }
     @media only screen and (max-width: 425px) {
       .visitContent .visitTitle {
         font-size: 24px; } }
@@ -1664,6 +1736,9 @@
     font-size: 30px;
     font-weight: lighter;
     text-transform: capitalize; }
+    @media only screen and (min-width: 1920px) {
+      .ourValuesText h2 {
+        font-size: 40px; } }
   .ourValuesText p {
     font-size: 18px;
     font-weight: lighter;
@@ -1671,6 +1746,11 @@
     width: 47%;
     margin-top: 20px;
     margin-left: 360px; }
+    @media only screen and (min-width: 1920px) {
+      .ourValuesText p {
+        font-size: 30px;
+        margin-left: 400px;
+        width: 60%; } }
     @media only screen and (max-width: 1200px) {
       .ourValuesText p {
         margin-left: 320px; } }
@@ -1716,6 +1796,9 @@
   padding: 20px;
   background-color: white;
   transition: 0.6s; }
+  @media only screen and (min-width: 1920px) {
+    .box {
+      height: 360px; } }
   @media only screen and (max-width: 425px) {
     .box {
       width: 70%;
@@ -1734,12 +1817,18 @@
     font-size: 24px;
     font-weight: lighter;
     text-transform: capitalize; }
+    @media only screen and (min-width: 1920px) {
+      .box .valueTitle {
+        font-size: 40px; } }
     @media only screen and (max-width: 600px) {
       .box .valueTitle {
         font-size: 18px; } }
   .box .valuePara {
     font-size: 17px;
     color: #303030; }
+    @media only screen and (min-width: 1920px) {
+      .box .valuePara {
+        font-size: 28px; } }
     @media only screen and (max-width: 769px) {
       .box .valuePara {
         font-size: 14px; } }
@@ -1751,6 +1840,9 @@
   margin-top: 40px;
   margin-left: 640px;
   margin-bottom: 40px; }
+  @media only screen and (min-width: 1920px) {
+    .valueContact {
+      margin-left: 870px; } }
   @media only screen and (max-width: 1200px) {
     .valueContact {
       margin-left: 530px; } }
@@ -1775,6 +1867,9 @@
     padding: 10px 20px 10px 20px;
     color: white;
     transition: 0.6s; }
+    @media only screen and (min-width: 1920px) {
+      .valueContact a {
+        font-size: 30px; } }
   .valueContact a:hover {
     box-shadow: 5px 5px 10px black;
     background-color: #00a2e8; }

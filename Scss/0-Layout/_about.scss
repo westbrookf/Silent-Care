@@ -15,6 +15,9 @@
     font-weight: $global-weight;
     color: $primary-text;
     text-transform: capitalize;
+    @include Desktop {
+      font-size: 40px;
+    }
     @include Mobile {
       font-size: 24px;
     }
@@ -50,6 +53,9 @@
   border: 3px solid $primary-orange;
   transition: $global-Trans;
   //Fact Responsive
+  @include Desktop {
+    height: 26vh;
+  }
   @include Laptop {
     width: 26vw;
   }
@@ -70,6 +76,9 @@
     text-transform: capitalize;
     padding-top: 40px;
     //Responsive
+    @include Desktop {
+      font-size: 36px;
+    }
     @include Laptop {
       padding-top: 20px;
       font-size: 20px;
@@ -90,6 +99,11 @@
     width: 90%;
     margin-left: 20px;
     //Responsive
+    @include Desktop {
+      padding-top: 20px;
+      font-size: 26px;
+      line-height: 26px;
+    }
     @include Laptop {
       font-size: 14px;
     }
@@ -121,7 +135,7 @@
   }
 }
 .visitContent {
-  padding-top: 170px;
+  padding-top: 220px;
   text-align: center;
   //Responsive
   @include Mobile {
@@ -136,6 +150,9 @@
     color: $button-text;
     text-transform: capitalize;
     //Responsive
+    @include Desktop {
+      font-size: 46px;
+    }
     @include Mobile {
       font-size: 24px;
     }
@@ -151,6 +168,10 @@
     font-size: 30px;
     font-weight: $global-weight;
     text-transform: capitalize;
+    //Responsive
+    @include Desktop {
+      font-size: 40px;
+    }
   }
   p {
     font-size: 18px;
@@ -160,6 +181,11 @@
     margin-top: 20px;
     margin-left: 360px;
     //Responsive
+    @include Desktop {
+      font-size: 30px;
+      margin-left: 400px;
+      width: 60%;
+    }
     @include lgLaptop {
       margin-left: 320px;
     }
@@ -205,6 +231,9 @@
   background-color: white;
   transition: 0.6s;
   //Box responsive
+  @include Desktop {
+    height: 360px;
+  }
   @include Mobile {
     width: 70%;
     margin-top: 12px;
@@ -226,6 +255,9 @@
     font-weight: $global-weight;
     text-transform: capitalize;
     //Responsive
+    @include Desktop {
+      font-size: 40px;
+    }
     @include lgMobile {
       font-size: 18px;
     }
@@ -234,6 +266,9 @@
     font-size: 17px;
     color: $primary-text;
     //responsive
+    @include Desktop {
+      font-size: 28px;
+    }
     @include Tablet {
       font-size: 14px;
     }
@@ -247,6 +282,9 @@
   margin-left: 640px;
   margin-bottom: 40px;
   //Value Contact Responsive
+  @include Desktop {
+    margin-left: 870px;
+  }
   @include lgLaptop {
     margin-left: 530px;
   }
@@ -271,6 +309,10 @@
     padding: $Btn;
     color: $button-text;
     transition: $global-Trans;
+    //Responsive
+    @include Desktop {
+      font-size: 30px;
+    }
   }
   a:hover {
     @include btnEffect;

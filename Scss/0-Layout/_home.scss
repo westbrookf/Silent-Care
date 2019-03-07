@@ -427,9 +427,12 @@
 .bestCareContain {
   height: auto;
   width: 100%;
-  margin-top: -350px;
+  margin-top: 90px;
   transition-duration: 1.4s;
   //Responsive
+  @include Desktop {
+    margin-top: -350px;
+  }
   @include lgMobile {
     margin-top: -860px;
   }
