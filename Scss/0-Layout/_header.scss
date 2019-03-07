@@ -15,6 +15,10 @@
   padding-left: 60px;
   padding-top: 40px;
   //Responsive
+  @include Desktop {
+    height: 300px;
+    width: 480px;
+  }
   @include lgMobile {
     display: none;
   }
@@ -46,11 +50,12 @@
 }
 .navSet {
   float: right;
-  width: 0%;
   height: 100%;
-  background-color: #00a2e848;
+  width: 100%;
+  background: linear-gradient(to right, #eeeeee1b, #00a2e848);
   opacity: 0;
   transition-duration: 0.8s;
+  border: none;
   //Responsive
   @include lgMobile {
     float: none;
@@ -64,6 +69,9 @@
     color: $button-text;
     transition: 0.6s;
     //Responsive
+    @include Desktop {
+      font-size: 60px;
+    }
     @include lgMobile {
       display: none;
     }
@@ -76,6 +84,9 @@
     padding-left: 40px;
     // transition-delay: 1s;
     // Responsive
+    @include Desktop {
+      padding-left: 90px;
+    }
     @include lgMobile {
       padding-top: 0px;
       padding-left: 10px;
@@ -84,6 +95,10 @@
       height: 200px;
       width: 90%;
       //responsive
+      @include Desktop {
+        height: 300px;
+        width: 80%;
+      }
       @include lgMobile {
         height: 100px;
         width: 110px;
@@ -116,6 +131,9 @@
       text-align: ceter;
       transition: 0.6s;
       //Responsive
+      @include Desktop {
+        font-size: 50px;
+      }
       @include lgMobile {
         font-size: 16px;
         margin-left: 10px;
@@ -159,6 +177,9 @@
   opacity: 1;
   transition-duration: 1s;
   //Responisve
+  @include Desktop {
+    font-size: 100px;
+  }
   @include lgMobile {
     opacity: 0;
   }

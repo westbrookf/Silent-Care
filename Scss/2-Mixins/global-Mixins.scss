@@ -1,6 +1,6 @@
 //Showcase Images
 @mixin Background($background-Phto) {
-  background: linear-gradient(to right, #30303078, #3030306d), $background-Phto;
+  background: linear-gradient(to right, #6868681b, #eeeeee1b), $background-Phto;
   background-size: cover;
   background-position: center;
 }
@@ -17,6 +17,13 @@
   background-color: $primary-blue;
 }
 //Responsive Mixin
+
+@mixin Desktop {
+  @media only screen and(min-width: 1920px) {
+    @content;
+  }
+}
+
 @mixin lgLaptop {
   @media only screen and(max-width: 1200px) {
     @content;

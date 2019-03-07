@@ -1,5 +1,5 @@
 #showcaseImg {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/lLIfM");
+  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/lLIfM");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -15,6 +15,10 @@
   width: 400px;
   padding-left: 60px;
   padding-top: 40px; }
+  @media only screen and (min-width: 1920px) {
+    .showLogo {
+      height: 300px;
+      width: 480px; } }
   @media only screen and (max-width: 600px) {
     .showLogo {
       display: none; } }
@@ -46,11 +50,12 @@
 
 .navSet {
   float: right;
-  width: 0%;
   height: 100%;
-  background-color: #00a2e848;
+  width: 100%;
+  background: linear-gradient(to right, #eeeeee1b, #00a2e848);
   opacity: 0;
-  transition-duration: 0.8s; }
+  transition-duration: 0.8s;
+  border: none; }
   @media only screen and (max-width: 600px) {
     .navSet {
       float: none;
@@ -60,8 +65,11 @@
     padding-left: 20px;
     padding-top: 10px;
     font-size: 30px;
-    color: #e7e7e7;
+    color: white;
     transition: 0.6s; }
+    @media only screen and (min-width: 1920px) {
+      .navSet #closeBtn {
+        font-size: 60px; } }
     @media only screen and (max-width: 600px) {
       .navSet #closeBtn {
         display: none; } }
@@ -70,6 +78,9 @@
   .navSet .logo {
     padding-top: 40px;
     padding-left: 40px; }
+    @media only screen and (min-width: 1920px) {
+      .navSet .logo {
+        padding-left: 90px; } }
     @media only screen and (max-width: 600px) {
       .navSet .logo {
         padding-top: 0px;
@@ -77,6 +88,10 @@
     .navSet .logo img {
       height: 200px;
       width: 90%; }
+      @media only screen and (min-width: 1920px) {
+        .navSet .logo img {
+          height: 300px;
+          width: 80%; } }
       @media only screen and (max-width: 600px) {
         .navSet .logo img {
           height: 100px;
@@ -105,12 +120,15 @@
     .navSet #menu a {
       font-size: 30px;
       font-weight: lighter;
-      color: #e7e7e7;
+      color: white;
       text-transform: capitalize;
       padding-top: 20px;
       width: 100%;
       text-align: ceter;
       transition: 0.6s; }
+      @media only screen and (min-width: 1920px) {
+        .navSet #menu a {
+          font-size: 50px; } }
       @media only screen and (max-width: 600px) {
         .navSet #menu a {
           font-size: 16px;
@@ -131,7 +149,7 @@
     .navSet .appointmentBtn a {
       background-color: #ff4500;
       font-size: 20px;
-      color: #e7e7e7;
+      color: white;
       font-weight: lighter;
       text-transform: capitalize;
       padding: 10px 20px 10px 20px;
@@ -147,6 +165,9 @@
   float: right;
   opacity: 1;
   transition-duration: 1s; }
+  @media only screen and (min-width: 1920px) {
+    #openBtn {
+      font-size: 100px; } }
   @media only screen and (max-width: 600px) {
     #openBtn {
       opacity: 0; } }
@@ -164,7 +185,7 @@
     font-size: 50px;
     font-weight: lighter;
     text-transform: capitalize;
-    color: #e7e7e7; }
+    color: white; }
     @media only screen and (max-width: 769px) {
       #introHead h1 {
         font-size: 34px; } }
@@ -173,7 +194,7 @@
         font-size: 20px; } }
   #introHead p {
     font-size: 24px;
-    color: #e7e7e7; }
+    color: white; }
     @media only screen and (max-width: 769px) {
       #introHead p {
         font-size: 18px; } }
@@ -194,7 +215,7 @@
     font-size: 18px;
     font-weight: lighter;
     text-transform: capitalize;
-    color: #e7e7e7;
+    color: white;
     transition: 0.6s; }
     @media only screen and (max-width: 600px) {
       #introBtn a {
@@ -658,7 +679,7 @@
       color: #00a2e8; }
 
 .contactShowcase {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/8J_M");
+  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/8J_M");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -678,14 +699,14 @@
       font-size: 40px;
       font-weight: lighter;
       text-transform: capitalize;
-      color: #e7e7e7; }
+      color: white; }
       @media only screen and (max-width: 425px) {
         .contactShowcase .contactText h2 {
           font-size: 30px; } }
     .contactShowcase .contactText #conClick {
       font-size: 18px;
       font-weight: lighter;
-      color: #e7e7e7;
+      color: white;
       text-transform: capitalize;
       background-color: #ff4500;
       padding: 10px 20px 10px 20px;
@@ -919,7 +940,7 @@
       width: 100%; }
 
 #quickMesContain {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/XY76");
+  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/XY76");
   background-size: cover;
   background-position: center;
   height: 40vh;
@@ -932,12 +953,12 @@
   .mesText h1 {
     font-size: 30px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: white;
     text-transform: capitalize; }
   .mesText p {
     font-size: 18px;
     width: 100%;
-    color: #e7e7e7; }
+    color: white; }
 
 .mesLink {
   margin-top: 20px; }
@@ -945,7 +966,7 @@
     font-size: 18px;
     font-weight: lighter;
     text-transform: capitalize;
-    color: #e7e7e7;
+    color: white;
     background-color: #ff4500;
     padding: 10px 20px 10px 20px;
     transition: 0.6s; }
@@ -1159,7 +1180,7 @@
     .aboutUsText .moreInfobtn a {
       font-size: 18px;
       font-weight: lighter;
-      color: #e7e7e7;
+      color: white;
       padding: 10px 20px 10px 20px;
       background-color: #ff4500;
       transition: 0.6s; }
@@ -1171,7 +1192,7 @@
       background-color: #00a2e8; }
 
 #aslShowcase {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/7Rn8");
+  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/7Rn8");
   background-size: cover;
   background-position: center;
   background-position: top;
@@ -1198,7 +1219,7 @@
   .aslContent h1 {
     font-size: 40px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: white;
     text-transform: capitalize; }
     @media only screen and (max-width: 1020px) {
       .aslContent h1 {
@@ -1213,7 +1234,7 @@
     font-size: 20px;
     font-weight: lighter;
     width: 500px;
-    color: #e7e7e7; }
+    color: white; }
     @media only screen and (max-width: 769px) {
       .aslContent p {
         font-size: 17px;
@@ -1228,7 +1249,7 @@
       padding: 10px 20px 10px 20px;
       font-size: 18px;
       font-weight: lighter;
-      color: #e7e7e7;
+      color: white;
       transition: 0.6s; }
     .aslContent .aslMoreBtn a:hover {
       box-shadow: 5px 5px 10px black;
@@ -1424,7 +1445,7 @@
   transform: scale(1.1); }
 
 .homeVisitShowcase {
-  background: linear-gradient(to right, #30303078, #3030306d), url("https://gdurl.com/IWdp");
+  background: linear-gradient(to right, #6868681b, #eeeeee1b), url("https://gdurl.com/IWdp");
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -1447,7 +1468,7 @@
   .visitContent .visitTitle {
     font-size: 34px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: white;
     text-transform: capitalize; }
     @media only screen and (max-width: 425px) {
       .visitContent .visitTitle {
@@ -1572,7 +1593,7 @@
     font-size: 20px;
     background-color: #ff4500;
     padding: 10px 20px 10px 20px;
-    color: #e7e7e7;
+    color: white;
     transition: 0.6s; }
   .valueContact a:hover {
     box-shadow: 5px 5px 10px black;
@@ -1707,7 +1728,7 @@
   .serviceLinks a {
     font-size: 18px;
     font-weight: lighter;
-    color: #e7e7e7;
+    color: white;
     background-color: #ff4500;
     transition: 0.6s;
     padding: 10px 20px 10px 20px; }
