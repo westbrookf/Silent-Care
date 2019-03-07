@@ -15,6 +15,10 @@
   padding-left: 60px;
   padding-top: 40px;
   //Responsive
+  @include lgDesktop {
+    height: 400px;
+    width: 620px;
+  }
   @include Desktop {
     height: 300px;
     width: 480px;
@@ -69,6 +73,9 @@
     color: $button-text;
     transition: 0.6s;
     //Responsive
+    @include lgDesktop {
+      font-size: 80px;
+    }
     @include Desktop {
       font-size: 60px;
     }
@@ -83,6 +90,9 @@
     padding-top: 40px;
     padding-left: 40px;
     // Responsive
+    @include lgDesktop {
+      padding-left: 160px;
+    }
     @include Desktop {
       padding-left: 90px;
     }
@@ -94,6 +104,10 @@
       height: 200px;
       width: 90%;
       //responsive
+      @include lgDesktop {
+        height: 400px;
+        width: 80%;
+      }
       @include Desktop {
         height: 300px;
         width: 80%;
@@ -130,6 +144,10 @@
       text-align: ceter;
       transition: 0.6s;
       //Responsive
+      @include lgDesktop {
+        font-size: 60px;
+        padding-top: 30px;
+      }
       @include Desktop {
         font-size: 50px;
       }
@@ -151,6 +169,10 @@
     margin-top: 40px;
     margin-left: 40px;
     //Responsive
+    @include lgDesktop {
+      margin-top: 90px;
+      margin-left: 60px;
+    }
     @include Desktop {
       margin-left: 50px;
     }
@@ -166,6 +188,9 @@
       padding: $Btn;
       transition: $global-Trans;
       //Responsive
+      @include lgDesktop {
+        font-size: 50px;
+      }
       @include Desktop {
         font-size: 30px;
       }
@@ -183,6 +208,9 @@
   opacity: 1;
   transition-duration: 1s;
   //Responisve
+  @include lgDesktop {
+    font-size: 140px;
+  }
   @include Desktop {
     font-size: 100px;
   }
@@ -197,11 +225,18 @@
   padding-top: 200px;
   padding-left: 60px;
   //Responsive
+  @include lgDesktop {
+    padding-top: 400px;
+  }
   @include Desktop {
     padding-top: 300px;
   }
   @include Tablet {
     padding-top: 215px;
+  }
+  @include lgMobile {
+    padding-top: 40px;
+    padding-left: 10px;
   }
   h1 {
     font-size: 50px;
@@ -209,6 +244,9 @@
     text-transform: capitalize;
     color: $button-text;
     //Responsive
+    @include lgDesktop {
+      font-size: 90px;
+    }
     @include Desktop {
       font-size: 70px;
     }
@@ -223,6 +261,9 @@
     font-size: 24px;
     color: $button-text;
     //Responsive
+    @include lgDesktop {
+      font-size: 50px;
+    }
     @include Desktop {
       font-size: 30px;
     }
@@ -232,11 +273,6 @@
     @include lgMobile {
       font-size: 12px;
     }
-  }
-  //Intro Head Responsive
-  @include lgMobile {
-    padding-top: 40px;
-    padding-left: 10px;
   }
 }
 #introBtn {
@@ -251,6 +287,9 @@
     color: $button-text;
     transition: $global-Trans;
     //Responsive
+    @include lgDesktop {
+      font-size: 40px;
+    }
     @include Desktop {
       font-size: 30px;
     }
