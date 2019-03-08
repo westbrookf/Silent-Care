@@ -35,6 +35,9 @@
     font-size: 30px;
     padding-top: 20px;
     //Responsive
+    @include lgDesktop {
+      font-size: 50px;
+    }
     @include Desktop {
       font-size: 40px;
     }
@@ -44,6 +47,9 @@
     font-weight: lighter;
     font-size: 24px;
     //Responsive
+    @include lgDesktop {
+      font-size: 60px;
+    }
     @include Desktop {
       font-size: 44px;
     }
@@ -59,6 +65,9 @@
     font-weight: lighter;
     font-size: 18px;
     //Responsive
+    @include lgDesktop {
+      font-size: 40px;
+    }
     @include Desktop {
       font-size: 30px;
     }
@@ -111,12 +120,20 @@
     font-weight: lighter;
     color: $primary-font;
     text-transform: capitalize;
+    //Responsive
+    @include lgDesktop {
+      font-size: 60px;
+    }
   }
   p {
     font-size: 18px;
     font-weight: lighter;
     color: $primary-orange;
     text-transform: capitalize;
+    //Responsive
+    @include lgDesktop {
+      font-size: 40px;
+    }
   }
 }
 .messageForm {
@@ -143,6 +160,9 @@
     @include Display(row, space-evenly, unset);
     width: 56vw;
     //Responsive
+    @include lgDesktop {
+      width: 90%;
+    }
     @include Desktop {
       width: 80%;
     }
@@ -154,6 +174,9 @@
   label {
     font-size: 18px;
     //Responsive
+    @include lgDesktop {
+      font-size: 50px;
+    }
     @include Desktop {
       font-size: 30px;
     }
@@ -180,6 +203,10 @@
       background-color: #f5f5f5;
       border: 1px solid #f5f5f5;
       //Responsive
+      @include lgDesktop {
+        width: 72vw;
+        height: 34vh;
+      }
       @include Desktop {
         width: 62vw;
       }
@@ -195,6 +222,10 @@
   cursor: pointer;
   transition: 0.6s;
   //Responsive
+  @include lgDesktop {
+    font-size: 40px;
+    width: 180px;
+  }
   @include Desktop {
     font-size: 30px;
   }

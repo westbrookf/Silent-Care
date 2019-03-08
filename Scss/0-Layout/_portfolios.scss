@@ -4,6 +4,10 @@
   margin-top: 60px;
   margin-left: 70px;
   //Responsive
+  @include lgDesktop {
+    margin-top: 120px;
+    margin-left: 100px;
+  }
   @include Desktop {
     margin-left: 100px;
   }
@@ -49,6 +53,9 @@
     text-transform: capitalize;
     color: $primary-orange;
     //Responsive
+    @include lgDesktop {
+      font-size: 60px;
+    }
     @include Desktop {
       font-size: 40px;
     }
@@ -64,6 +71,10 @@
     line-height: 30px;
     width: 100%;
     //Responsive
+    @include lgDesktop {
+      font-size: 40px;
+      line-height: 50px;
+    }
     @include Desktop {
       font-size: 30px;
       line-height: 40px;
@@ -91,6 +102,11 @@
       margin-left: 120px;
       padding-top: 50px;
       //Responsive
+      @include lgDesktop {
+        font-size: 50px;
+        padding-top: 70px;
+        margin-left: 160px;
+      }
       @include Desktop {
         font-size: 40px;
         padding-top: 40px;
@@ -141,6 +157,9 @@
         color: $primary-blue;
         transition: 0.6s;
         //Responsive
+        @include lgDesktop {
+          font-size: 80px;
+        }
         @include Desktop {
           font-size: 70px;
         }
@@ -164,6 +183,9 @@
         @include Display(row, space-evenly, unset);
         margin-top: 30px;
         //Responsive
+        @include lgDesktop {
+          margin-top: 60px;
+        }
         @include Desktop {
           margin-top: 40px;
         }
@@ -176,6 +198,10 @@
           height: 7vh;
           width: 5vw;
           //Responsive
+          @include lgDesktop {
+            height: 8vh;
+            width: 8vw;
+          }
           @include Desktop {
             height: 7vh;
             width: 7vw;
@@ -192,6 +218,9 @@
           width: 90%;
           padding-left: 8px;
           //Responsive
+          @include lgDesktop {
+            font-size: 40px;
+          }
           @include Desktop {
             font-size: 30px;
           }
@@ -227,6 +256,9 @@
       text-transform: capitalize;
       padding-top: 15px;
       //Responsive
+      @include lgDesktop {
+        font-size: 50px;
+      }
       @include Desktop {
         font-size: 40px;
       }

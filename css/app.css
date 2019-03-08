@@ -2217,7 +2217,8 @@
     @media only screen and (min-width: 2560px) and (max-width: 2560px) {
       .serviceContain .mainServiceDes {
         font-size: 40px;
-        margin-left: 620px; } }
+        width: 70%;
+        margin-left: 370px; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .serviceContain .mainServiceDes {
         margin-left: 460px;
@@ -2402,6 +2403,10 @@
   align-items: unset;
   margin-top: 60px;
   margin-left: 70px; }
+  @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+    .portContainer {
+      margin-top: 120px;
+      margin-left: 100px; } }
   @media only screen and (min-width: 1920px) and (max-width: 1920px) {
     .portContainer {
       margin-left: 100px; } }
@@ -2445,6 +2450,9 @@
     font-size: 30px;
     text-transform: capitalize;
     color: #ff4500; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .portContent .portTitle {
+        font-size: 60px; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .portContent .portTitle {
         font-size: 40px; } }
@@ -2458,6 +2466,11 @@
     font-size: 18px;
     line-height: 30px;
     width: 100%; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .portContent .paraBlockOne,
+      .portContent .paraBlockTwo {
+        font-size: 40px;
+        line-height: 50px; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .portContent .paraBlockOne,
       .portContent .paraBlockTwo {
@@ -2484,6 +2497,11 @@
       width: 70%;
       margin-left: 120px;
       padding-top: 50px; }
+      @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+        .portContent .ownerQuoteBlock .ownerQuote {
+          font-size: 50px;
+          padding-top: 70px;
+          margin-left: 160px; } }
       @media only screen and (min-width: 1920px) and (max-width: 1920px) {
         .portContent .ownerQuoteBlock .ownerQuote {
           font-size: 40px;
@@ -2529,6 +2547,9 @@
         padding-top: 40px;
         color: #00a2e8;
         transition: 0.6s; }
+        @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+          .rightNav .servIcons .icon .gridIcon {
+            font-size: 80px; } }
         @media only screen and (min-width: 1920px) and (max-width: 1920px) {
           .rightNav .servIcons .icon .gridIcon {
             font-size: 70px; } }
@@ -2549,6 +2570,9 @@
         justify-content: space-evenly;
         align-items: unset;
         margin-top: 30px; }
+        @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+          .rightNav .mreServices .servThumbnail .thumbLink {
+            margin-top: 60px; } }
         @media only screen and (min-width: 1920px) and (max-width: 1920px) {
           .rightNav .mreServices .servThumbnail .thumbLink {
             margin-top: 40px; } }
@@ -2563,6 +2587,10 @@
         .rightNav .mreServices .servThumbnail .thumbLink img {
           height: 7vh;
           width: 5vw; }
+          @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+            .rightNav .mreServices .servThumbnail .thumbLink img {
+              height: 8vh;
+              width: 8vw; } }
           @media only screen and (min-width: 1920px) and (max-width: 1920px) {
             .rightNav .mreServices .servThumbnail .thumbLink img {
               height: 7vh;
@@ -2577,6 +2605,9 @@
           color: #303030;
           width: 90%;
           padding-left: 8px; }
+          @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+            .rightNav .mreServices .servThumbnail .thumbLink .servMiniDesc {
+              font-size: 40px; } }
           @media only screen and (min-width: 1920px) and (max-width: 1920px) {
             .rightNav .mreServices .servThumbnail .thumbLink .servMiniDesc {
               font-size: 30px; } }
@@ -2605,6 +2636,9 @@
       font-weight: lighter;
       text-transform: capitalize;
       padding-top: 15px; }
+      @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+        .rightNav .visitUs h2 {
+          font-size: 50px; } }
       @media only screen and (min-width: 1920px) and (max-width: 1920px) {
         .rightNav .visitUs h2 {
           font-size: 40px; } }
@@ -2664,6 +2698,9 @@
   .contactOption .optIcon {
     font-size: 30px;
     padding-top: 20px; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .contactOption .optIcon {
+        font-size: 50px; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .contactOption .optIcon {
         font-size: 40px; } }
@@ -2671,6 +2708,9 @@
     font-family: "Open Sans", sans-serif;
     font-weight: lighter;
     font-size: 24px; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .contactOption h2 {
+        font-size: 60px; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .contactOption h2 {
         font-size: 44px; } }
@@ -2684,6 +2724,9 @@
     font-family: "Open Sans", sans-serif;
     font-weight: lighter;
     font-size: 18px; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .contactOption p {
+        font-size: 40px; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .contactOption p {
         font-size: 30px; } }
@@ -2734,11 +2777,17 @@
     font-weight: lighter;
     color: "Open Sans", sans-serif;
     text-transform: capitalize; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .sendMessage h2 {
+        font-size: 60px; } }
   .sendMessage p {
     font-size: 18px;
     font-weight: lighter;
     color: #ff4500;
     text-transform: capitalize; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .sendMessage p {
+        font-size: 40px; } }
 
 .messageForm {
   margin-top: 60px;
@@ -2765,6 +2814,9 @@
     justify-content: space-evenly;
     align-items: unset;
     width: 56vw; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .messageForm .inputContain {
+        width: 90%; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .messageForm .inputContain {
         width: 80%; } }
@@ -2773,6 +2825,9 @@
     width: 40%; }
   .messageForm label {
     font-size: 18px; }
+    @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+      .messageForm label {
+        font-size: 50px; } }
     @media only screen and (min-width: 1920px) and (max-width: 1920px) {
       .messageForm label {
         font-size: 30px; } }
@@ -2796,6 +2851,10 @@
       width: 56vw;
       background-color: #f5f5f5;
       border: 1px solid #f5f5f5; }
+      @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+        .messageForm .mesInputContain .messageInput {
+          width: 72vw;
+          height: 34vh; } }
       @media only screen and (min-width: 1920px) and (max-width: 1920px) {
         .messageForm .mesInputContain .messageInput {
           width: 62vw; } }
@@ -2808,6 +2867,10 @@
   margin-top: 12px;
   cursor: pointer;
   transition: 0.6s; }
+  @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+    .submitBtn {
+      font-size: 40px;
+      width: 180px; } }
   @media only screen and (min-width: 1920px) and (max-width: 1920px) {
     .submitBtn {
       font-size: 30px; } }

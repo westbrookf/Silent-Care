@@ -28,7 +28,8 @@
     //Responsive
     @include lgDesktop {
       font-size: 40px;
-      margin-left: 620px;
+      width: 70%;
+      margin-left: 370px;
     }
     @include Desktop {
       margin-left: 460px;
