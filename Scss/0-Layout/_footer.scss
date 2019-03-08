@@ -8,6 +8,9 @@
   p {
     padding-left: 60px;
     //Responsive
+    @include lgDesktop {
+      font-size: 40px;
+    }
     @include Desktop {
       font-size: 24px;
     }
@@ -24,6 +27,9 @@
   h3 {
     padding-right: 60px;
     //Responsive
+    @include lgDesktop {
+      font-size: 35px;
+    }
     @include Desktop {
       font-size: 24px;
     }

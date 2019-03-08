@@ -8,6 +8,9 @@
     height: 40px;
     border-bottom: 1px solid #b0b0b0;
     //Responsive
+    @include lgDesktop {
+      height: 100px;
+    }
     @include Desktop {
       height: 60px;
     }
@@ -34,6 +37,9 @@
         font-size: 20px;
         color: #303030;
         //Responsive
+        @include lgDesktop {
+          font-size: 50px;
+        }
         @include Desktop {
           font-size: 30px;
         }
@@ -47,6 +53,9 @@
         color: #505050;
         margin-left: 10px;
         //Responsive
+        @include lgDesktop {
+          font-size: 40px;
+        }
         @include Desktop {
           font-size: 30px;
         }
@@ -73,6 +82,9 @@
         font-size: 20px;
         color: $primary-text;
         //Responsive
+        @include lgDesktop {
+          font-size: 50px;
+        }
         @include Desktop {
           font-size: 30px;
         }
@@ -85,6 +97,9 @@
         font-weight: $global-weight;
         margin-top: -4px;
         //Responsive
+        @include lgDesktop {
+          font-size: 40px;
+        }
         @include Desktop {
           font-size: 30px;
         }
@@ -99,6 +114,9 @@
     width: 100%;
     @include Display(row, space-between, unset);
     //Responsive
+    @include lgDesktop {
+      height: 22vh;
+    }
     @include Desktop {
       height: 20vh;
     }
@@ -114,6 +132,10 @@
       height: 120px;
       width: 300px;
       //Responsive
+      @include lgDesktop {
+        height: 300px;
+        width: 400px;
+      }
       @include Desktop {
         height: 200px;
         width: 300px;
@@ -144,6 +166,9 @@
       margin-top: 40px;
       margin-right: 90px;
       //Responsive
+      @include lgDesktop {
+        margin-top: 80px;
+      }
       @include Laptop {
         margin-right: 22px;
       }
@@ -158,6 +183,10 @@
           color: $primary-text;
           padding-top: 6px;
           //Responsive
+
+          @include lgDesktop {
+            font-size: 60px;
+          }
           @include Desktop {
             font-size: 50px;
           }
@@ -174,6 +203,9 @@
             color: $primary-text;
             padding-left: 14px;
             //Responsive
+            @include lgDesktop {
+              font-size: 50px;
+            }
             @include Desktop {
               font-size: 40px;
             }
@@ -186,6 +218,9 @@
             padding-left: 14px;
             letter-spacing: 2px;
             //Responsive
+            @include lgDesktop {
+              font-size: 40px;
+            }
             @include Desktop {
               font-size: 30px;
             }
@@ -203,6 +238,9 @@
           color: $primary-text;
           padding-top: 6px;
           //Responsive
+          @include lgDesktop {
+            font-size: 60px;
+          }
           @include Desktop {
             font-size: 50px;
           }
@@ -218,6 +256,9 @@
           color: $primary-text;
           padding-left: 14px;
           //Responsive
+          @include lgDesktop {
+            font-size: 50px;
+          }
           @include Desktop {
             font-size: 40px;
           }
@@ -229,6 +270,9 @@
           color: $primary-orange;
           padding-left: 14px;
           //Responsive
+          @include lgDesktop {
+            font-size: 40px;
+          }
           @include Desktop {
             font-size: 30px;
           }
@@ -251,6 +295,12 @@
         margin-left: 20px;
         transition: $global-Trans;
         //Responsive
+        @include lgDesktop {
+          font-size: 50px;
+          height: 90px;
+          padding-top: 10px;
+          margin-top: 20px;
+        }
         @include Desktop {
           font-size: 30px;
           padding-top: 10px;
@@ -280,6 +330,9 @@
     padding-left: 25px;
     background-color: $primary-orange;
     //Responsive
+    @include lgDesktop {
+      height: 80px;
+    }
     @include Desktop {
       height: 60px;
     }
@@ -291,6 +344,10 @@
       text-transform: capitalize;
       margin-left: 30px;
       //Responsive
+      @include lgDesktop {
+        font-size: 50px;
+        margin-left: 60px;
+      }
       @include Desktop {
         font-size: 30px;
       }

@@ -7,6 +7,10 @@
     color: $primary-text;
     padding-top: 40px;
     //Responsive
+    @include lgDesktop {
+      font-size: 60px;
+      padding-top: 100px;
+    }
     @include Desktop {
       font-size: 40px;
       padding-top: 60px;
@@ -22,6 +26,10 @@
     margin-top: 10px;
     margin-left: 360px;
     //Responsive
+    @include lgDesktop {
+      font-size: 40px;
+      margin-left: 620px;
+    }
     @include Desktop {
       margin-left: 460px;
       font-size: 28px;
@@ -56,6 +64,10 @@
     color: $primary-orange;
     padding-top: 10px;
     //Responsive
+    @include lgDesktop {
+      font-size: 50px;
+      padding-top: 40px;
+    }
     @include Desktop {
       font-size: 40px;
     }
@@ -66,6 +78,9 @@
     color: $primary-text;
     padding-left: 10px;
     //Responsive
+    @include lgDesktop {
+      font-size: 50px;
+    }
     @include Desktop {
       font-size: 40px;
     }
@@ -112,6 +127,10 @@
   background-color: white;
   border: 2px solid $backColor;
   //Responsive
+  @include lgDesktop {
+    height: 700px;
+    width: 700px;
+  }
   @include Desktop {
     height: 400px;
     width: 600px;
@@ -121,6 +140,10 @@
     width: 400px;
     transition: $global-Trans;
     //Responsive
+    @include lgDesktop {
+      height: 550px;
+      width: 100%;
+    }
     @include Desktop {
       height: 80%;
       width: 100%;
@@ -148,6 +171,10 @@
     padding-top: 16px;
     padding-left: 10px;
     //Responsive
+    @include lgDesktop {
+      font-size: 50px;
+      padding-top: 30px;
+    }
     @include Desktop {
       font-size: 34px;
     }
@@ -161,6 +188,9 @@
   margin-left: 10px;
   margin-bottom: 20px;
   //Responsive
+  @include lgDesktop {
+    margin-top: 30px;
+  }
   @include Laptop {
     margin-left: 0px;
   }
@@ -172,6 +202,9 @@
     transition: $global-Trans;
     padding: $Btn;
     //Responsive
+    @include lgDesktop {
+      font-size: 30px;
+    }
     @include Desktop {
       font-size: 24px;
     }
