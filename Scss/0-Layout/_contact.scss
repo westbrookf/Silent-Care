@@ -100,6 +100,9 @@
   z-index: 100;
   margin-bottom: 40px;
   //Responsive
+  @include lgDesktop {
+    margin-left: 120px;
+  }
   @include Laptop {
     margin-left: 50px;
   }

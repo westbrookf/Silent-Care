@@ -2757,6 +2757,9 @@
   position: relative;
   z-index: 100;
   margin-bottom: 40px; }
+  @media only screen and (min-width: 2560px) and (max-width: 2560px) {
+    .messageContainer {
+      margin-left: 120px; } }
   @media only screen and (max-width: 1020px) {
     .messageContainer {
       margin-left: 50px; } }
