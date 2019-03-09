@@ -168,6 +168,8 @@
     text-align: center;
     margin-top: 40px;
     margin-left: 40px;
+    opacity: 0;
+    transition-duration: 1.2s;
     //Responsive
     @include lgDesktop {
       margin-top: 90px;

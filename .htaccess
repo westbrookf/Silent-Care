@@ -1,16 +1,5 @@
-# Mod_rewrite starts here
-
 RewriteEngine on
-
-# Does not apply to existing directories meaning that if the folder exists on the server then dont change anything and dont run the rule
-
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Check for file in directory with .html extension
 
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
-
-# Here we will show the page that has the .html extension
-
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^([a-zA_Z0-9_-\s]+)/$/$1.html [NC,L]

@@ -15,6 +15,9 @@ function Open() {
   showLogo.style.opacity = "0";
   const menNav = document.querySelector(".navSet");
   menNav.style.opacity = "1";
+  const aptBtn = document.querySelector(".appointmentBtn");
+  aptBtn.style.opacity = "1";
+  aptBtn.style.width = "80%";
 }
 
 function Close() {
