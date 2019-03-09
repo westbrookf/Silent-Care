@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
 
  $mailTo = "admin@silentcarehhc.com";
  $headers ="From: $mailFrom";
- $txt = "new email from".$name;
+ $txt = "new email from".$name."\n\n".$message;
 
  mail($mailTo, $name, $txt, $headers);
 }
