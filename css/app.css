@@ -149,7 +149,7 @@
           font-size: 50px; } }
       @media only screen and (max-width: 600px) {
         .navSet #menu a {
-          font-size: 16px;
+          font-size: 14px;
           margin-left: 10px; } }
       @media only screen and (max-width: 385px) {
         .navSet #menu a {
@@ -2902,6 +2902,6 @@
   list-style-type: none; }
 
 body {
-  background-image: url("https://gdurl.com/H1kj"); }
+  background-image: url("https://gdurl.com/H1kj") !important; }
 
 /*# sourceMappingURL=app.css.map */
